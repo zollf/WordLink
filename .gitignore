@@ -11,3 +11,9 @@ web-build/
 
 # macOS
 .DS_Store
+
+#node
+node_modules
+
+#jest coverage
+coverage
