@@ -14,5 +14,3 @@ jest.doMock('react-native', () => {
     ReactNative,
   );
 });
-
-
