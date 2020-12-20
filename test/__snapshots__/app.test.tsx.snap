@@ -41,6 +41,7 @@ exports[`<App/> matches snapshot 1`] = `
     }
   >
     <View
+      data-test-id="wrapper"
       style={
         Object {
           "bottom": 80,
@@ -51,6 +52,7 @@ exports[`<App/> matches snapshot 1`] = `
       }
     >
       <View
+        data-test-id="menu-bar"
         style={
           Object {
             "alignItems": "center",
