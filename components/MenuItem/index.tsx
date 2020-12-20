@@ -1,19 +1,19 @@
 import React from 'react';
-import { TouchableOpacity, View, Text } from 'react-native';
+import { TouchableOpacity, View, Text, Image, ImageSourcePropType } from 'react-native';
 import { observer } from 'mobx-react';
 
 import styles from './styles';
 
 interface Props {
-  title: string;
   onPress: () => void;
   active: boolean;
+  icon: ImageSourcePropType;
 }
 
-const MenuItem = ({ title, onPress, active }: Props ) => {
+const MenuItem = ({ onPress, active, icon }: Props ) => {
   return (
     <TouchableOpacity onPress={onPress} style={[styles.menuItem, active ? styles.active : styles.notActive]}>
-      <Text style={styles.text}>{title}</Text>
+      <Image source={icon} style={styles.image}/>
     </TouchableOpacity>
   )
 }

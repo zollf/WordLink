@@ -9,7 +9,9 @@ import styles from './styles';
 const Profile = () => {
   return (
     <View style={styles.profile}>
-      <Text>Profile</Text>
+      <View style={styles.content}>
+        <Text>Profile</Text>
+      </View>
       <MenuBar />
     </View>
   );
