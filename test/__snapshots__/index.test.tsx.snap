@@ -3,9 +3,5 @@
 exports[`<Index/> matches snapshot 1`] = `
 <View
   style={Object {}}
->
-  <Text>
-    Open up App.tsx to start working on your app!
-  </Text>
-</View>
+/>
 `;
