@@ -1,13 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Index/> matches snapshot 1`] = `
+exports[`<Profile/> matches snapshot 1`] = `
 <View
   style={
     Object {
       "height": "100%",
+      "paddingLeft": 25,
+      "paddingTop": 50,
     }
   }
 >
+  <Text>
+    Profile
+  </Text>
   <View
     data-test-id="wrapper"
     style={

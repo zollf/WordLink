@@ -43,7 +43,12 @@
     },
     "jest": {
         "preset": "react-native",
-        "collectCoverage": true
+        "collectCoverage": true,
+        "collectCoverageFrom": [
+            "!lib/**",
+            "src/**",
+            "component/**"
+        ]
     },
     "private": true
 }

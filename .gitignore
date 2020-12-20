@@ -17,3 +17,6 @@ node_modules
 
 #jest coverage
 coverage
+
+#yarn error
+yarn-error.log
