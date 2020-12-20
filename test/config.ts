@@ -1,5 +1,6 @@
 import * as ReactNative from 'react-native';
 
+jest.useFakeTimers()
 jest.mock('@react-native-async-storage/async-storage', () => jest.fn())
 jest.doMock('react-native', () => {
   // Extend ReactNative
@@ -10,6 +11,10 @@ jest.doMock('react-native', () => {
         ...ReactNative.LayoutAnimation,
         configureNext: jest.fn(),
       },
+      Animated: {
+        Value: jest.fn(),
+        View: ReactNative.View
+      }
     },
     ReactNative,
   );

@@ -194,22 +194,26 @@ exports[`<Profile/> matches snapshot 1`] = `
       </View>
       <View
         style={
-          Object {
-            "backgroundColor": "#F3F3F3",
-            "borderRadius": 5,
-            "height": 50,
-            "left": 10,
-            "position": "absolute",
-            "shadowColor": "#000",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 2,
+          Array [
+            Object {
+              "backgroundColor": "#F3F3F3",
+              "borderRadius": 5,
+              "height": 50,
+              "position": "absolute",
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 50,
+              "zIndex": -1,
             },
-            "shadowOpacity": 0.1,
-            "shadowRadius": 4,
-            "width": 50,
-            "zIndex": -1,
-          }
+            Object {
+              "left": 10,
+            },
+          ]
         }
       />
     </View>
