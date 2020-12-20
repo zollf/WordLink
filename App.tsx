@@ -1,8 +1,15 @@
 import React from 'react';
+import { ImageBackground } from 'react-native';
 import { Index, Menu, Welcome, Profile } from './src';
+
+import Background from './images/background.png';
+
+import styles from './styles/main';
 
 const App = () => {
   const currentPage: string = 'index';
+  const image = { uri: Background };
+
   const render = () => {
     switch (currentPage) {
       case 'index':
@@ -18,7 +25,9 @@ const App = () => {
     }
   }
   return (
-    render()
+    <ImageBackground source={Background} style={styles.image}>
+      {render()}
+    </ImageBackground>
   );
 }
 

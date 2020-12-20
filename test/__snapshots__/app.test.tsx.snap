@@ -2,17 +2,39 @@
 
 exports[`<App/> matches snapshot 1`] = `
 <View
+  accessibilityIgnoresInvertColors={true}
   style={
     Object {
-      "alignItems": "center",
-      "backgroundColor": "#fff",
-      "flex": 1,
-      "justifyContent": "center",
+      "height": "100%",
+      "width": "100%",
     }
   }
 >
-  <Text>
-    Open up App.tsx to start working on your app!
-  </Text>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../images/background.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": "100%",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={Object {}}
+  />
 </View>
 `;

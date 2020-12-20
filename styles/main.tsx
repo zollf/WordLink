@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native"
 
-import AppStyle from '../../styles';
-
 const styles = StyleSheet.create({
-  container: {
+  image: {
+    width: "100%",
+    height: "100%",
   },
 });
 
