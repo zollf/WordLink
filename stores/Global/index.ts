@@ -11,7 +11,6 @@ class GlobalStore {
   }
 
   setCurrentPage = (page: string) => {
-    console.log('hello');
     this.currentPage = page;
   }
 }
