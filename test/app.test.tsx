@@ -6,8 +6,6 @@ import GlobalMock from '../stores/mocks/GlobalMock';
 
 import renderer from 'react-test-renderer';
 
-jest.mock('@react-native-async-storage/async-storage', () => jest.fn())
-
 const component = (
   <Provider global={GlobalMock}>
     <App />

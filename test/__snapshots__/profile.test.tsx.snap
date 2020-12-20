@@ -5,22 +5,32 @@ exports[`<Profile/> matches snapshot 1`] = `
   style={
     Object {
       "height": "100%",
-      "paddingLeft": 25,
       "paddingTop": 50,
     }
   }
 >
-  <Text>
-    Profile
-  </Text>
+  <View
+    style={
+      Object {
+        "height": "100%",
+        "paddingLeft": 25,
+      }
+    }
+  >
+    <Text>
+      Profile
+    </Text>
+  </View>
   <View
     data-test-id="wrapper"
     style={
       Object {
+        "alignItems": "center",
         "bottom": 80,
-        "left": 60,
+        "display": "flex",
+        "justifyContent": "center",
         "position": "absolute",
-        "right": 60,
+        "width": "100%",
       }
     }
   >
@@ -42,6 +52,8 @@ exports[`<Profile/> matches snapshot 1`] = `
           },
           "shadowOpacity": 0.1,
           "shadowRadius": 4,
+          "width": 212,
+          "zIndex": -1,
         }
       }
     >
@@ -58,10 +70,9 @@ exports[`<Profile/> matches snapshot 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#F3F3F3",
             "borderRadius": 5,
             "display": "flex",
-            "height": 60,
+            "height": 50,
             "justifyContent": "center",
             "marginLeft": 10,
             "marginRight": 10,
@@ -73,15 +84,23 @@ exports[`<Profile/> matches snapshot 1`] = `
             },
             "shadowOpacity": 0.1,
             "shadowRadius": 4,
-            "width": 75,
+            "width": 50,
           }
         }
       >
-        <Text
-          style={Object {}}
-        >
-          Home
-        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../images/home.png",
+            }
+          }
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        />
       </View>
       <View
         accessible={true}
@@ -96,10 +115,9 @@ exports[`<Profile/> matches snapshot 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#F3F3F3",
             "borderRadius": 5,
             "display": "flex",
-            "height": 60,
+            "height": 50,
             "justifyContent": "center",
             "marginLeft": 10,
             "marginRight": 10,
@@ -111,15 +129,23 @@ exports[`<Profile/> matches snapshot 1`] = `
             },
             "shadowOpacity": 0.1,
             "shadowRadius": 4,
-            "width": 75,
+            "width": 50,
           }
         }
       >
-        <Text
-          style={Object {}}
-        >
-          Play
-        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../images/gamepad.png",
+            }
+          }
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        />
       </View>
       <View
         accessible={true}
@@ -134,10 +160,9 @@ exports[`<Profile/> matches snapshot 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#F3F3F3",
             "borderRadius": 5,
             "display": "flex",
-            "height": 60,
+            "height": 50,
             "justifyContent": "center",
             "marginLeft": 10,
             "marginRight": 10,
@@ -149,16 +174,44 @@ exports[`<Profile/> matches snapshot 1`] = `
             },
             "shadowOpacity": 0.1,
             "shadowRadius": 4,
-            "width": 75,
+            "width": 50,
           }
         }
       >
-        <Text
-          style={Object {}}
-        >
-          Profile
-        </Text>
+        <Image
+          source={
+            Object {
+              "testUri": "../../../images/avatar.png",
+            }
+          }
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        />
       </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#F3F3F3",
+            "borderRadius": 5,
+            "height": 50,
+            "left": 10,
+            "position": "absolute",
+            "shadowColor": "#000",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 2,
+            },
+            "shadowOpacity": 0.1,
+            "shadowRadius": 4,
+            "width": 50,
+            "zIndex": -1,
+          }
+        }
+      />
     </View>
   </View>
 </View>
