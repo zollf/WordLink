@@ -1,14 +1,22 @@
 import React from 'react';
-
 //@ts-ignore there are two app file names [json, tsx], todo: work-around 
 import App from '../App.tsx';
+import { Provider } from 'mobx-react';
+import GlobalMock from '../stores/mocks/GlobalMock';
 
 import renderer from 'react-test-renderer';
 
-const component = (<App />);
+jest.mock('@react-native-async-storage/async-storage', () => jest.fn())
+
+const component = (
+  <Provider global={GlobalMock}>
+    <App />
+  </Provider>
+);
 
 describe('<App/>', () => {
+  const wrapper = renderer.create(component);
   it('matches snapshot', () => {
-    expect(renderer.create(component)).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 });

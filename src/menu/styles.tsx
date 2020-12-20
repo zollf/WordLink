@@ -4,6 +4,7 @@ import AppStyle from '../../styles';
 
 const styles = StyleSheet.create({
   menu: {
+    height: "100%",
   },
 });
 

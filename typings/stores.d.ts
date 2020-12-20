@@ -1,0 +1,1 @@
+type Global = import('../stores/Global').default;
