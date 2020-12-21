@@ -7,6 +7,6 @@ const AppStyle = {
   green: '#4DCC4B',
   red: "#FF5740",
   orange_2: "#FFBE40",
-}
+};
 
 export default AppStyle;

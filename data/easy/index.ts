@@ -6,5 +6,7 @@ const easy: Levels = {
   2: {
     title: "Level 2",
     game: {},
-  }
-}
+  },
+};
+
+export default easy;

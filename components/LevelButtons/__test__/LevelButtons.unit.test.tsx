@@ -14,7 +14,7 @@ const component = (
 );
 
 describe('<MenuBar/>', () => {
-  const wrapper = renderer.create(component)
+  const wrapper = renderer.create(component);
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });

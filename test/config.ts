@@ -1,7 +1,7 @@
 import * as ReactNative from 'react-native';
 
-jest.useFakeTimers()
-jest.mock('@react-native-async-storage/async-storage', () => jest.fn())
+jest.useFakeTimers();
+jest.mock('@react-native-async-storage/async-storage', () => jest.fn());
 jest.doMock('react-native', () => {
   // Extend ReactNative
   return Object.setPrototypeOf(
