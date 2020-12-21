@@ -17,7 +17,7 @@ const BackBlock = () => {
     'index': 10,
     'menu': (212/2)-25.5,
     'profile': 150,
-  }
+  };
 
   const [posX, setPosX] = useState(pages[previousPage]);
 
@@ -33,7 +33,7 @@ const BackBlock = () => {
     <Animated.View style={[styles.block, {
       left: posX
     }]} />
-  )
-}
+  );
+};
 
 export default observer(BackBlock);

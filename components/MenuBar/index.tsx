@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-import { View, Text, Animated, LayoutAnimation } from 'react-native';
+import React from 'react';
+import { View } from 'react-native';
 import { observer } from 'mobx-react';
 
 import { useStore } from '../../hooks';
@@ -24,7 +24,7 @@ const MenuBar = () => {
         <BackBlock />
       </View>
     </View>
-  )
-}
+  );
+};
 
 export default observer(MenuBar);

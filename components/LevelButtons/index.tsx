@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { View, Animated, Easing } from "react-native"
+import { View, Animated, Easing } from "react-native";
 import Button from '../Button';
 
 import styles from './styles';
@@ -53,7 +53,7 @@ const LevelButtons = () => {
         }),
       ]),
     ]).start();
-  }, [easy]);
+  });
 
   return (
     <View>
