@@ -8,11 +8,11 @@ const NewUserPage = () => {
   return (
     <View style={{ ...styles.container }}>
       <View style={styles.header}>
-        <Text style={{ fontSize: 24 }}>Welcome Back!</Text>
-        <Text style={{ fontSize: 24 }}>Create a Username</Text>
+        <Text style={styles.font}>Welcome Back!</Text>
+        <Text style={styles.font}>Create a Username</Text>
       </View>
       <View style={styles.input}>
-        <Text style={{ width: 229, fontSize: 12 }}>Username</Text>
+        <Text style={styles.username}>Username</Text>
         <InputField color="blue" />
       </View>
       <View style={styles.button}>

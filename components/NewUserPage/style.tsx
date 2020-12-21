@@ -20,6 +20,13 @@ const styles = StyleSheet.create({
     flex: 2.5,
     alignItems: "center",
   },
+  username: {
+    width: 229,
+    fontSize: 12,
+  },
+  font: {
+    fontSize: 24,
+  },
 });
 
 export default styles;
