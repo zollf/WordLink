@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LevelCard/> matches snapshot 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#C8C8C8",
+      "borderRadius": 5,
+      "display": "flex",
+      "height": 60,
+      "justifyContent": "center",
+      "margin": 5,
+      "opacity": 1,
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 2,
+      },
+      "shadowOpacity": 0.1,
+      "shadowRadius": 4,
+      "width": 60,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 24,
+      }
+    }
+  >
+    1
+  </Text>
+</View>
+`;
