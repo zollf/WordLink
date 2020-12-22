@@ -1,7 +1,4 @@
 import React from 'react';
-import { View } from 'react-native';
-import { Provider } from 'mobx-react';
-import GlobalMock from '../../../stores/mocks/GlobalMock';
 
 import Button from '../';
 
@@ -14,7 +11,7 @@ const component = (
 );
 
 describe('<MenuBar/>', () => {
-  const wrapper = renderer.create(component)
+  const wrapper = renderer.create(component);
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
@@ -23,13 +20,4 @@ describe('<MenuBar/>', () => {
     wrapper.root.findByProps({"data-test-id": "button"}).props.onPress();
     expect(onPress).toBeCalled();
   });
-
-  it('all colors work', () => {
-    const colors = ['blue', 'orange', 'green', 'none'];
-    colors.forEach((c: string) => {
-      const colorComponent = <Button text="button" color={c} onPress={onPress}/>;
-      renderer.create(colorComponent).root.findByProps({"data-test-id": "button"}).props.onPress();
-      expect(onPress).toBeCalled();
-    });
-  })
 });

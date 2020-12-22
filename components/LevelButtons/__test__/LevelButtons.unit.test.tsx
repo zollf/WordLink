@@ -1,19 +1,19 @@
 import React from 'react';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-//@ts-ignore there are two app file names [json, tsx], todo: work-around 
-import App from '../App.tsx';
 import { Provider } from 'mobx-react';
-import GlobalMock from '../stores/mocks/GlobalMock';
+import GlobalMock from '../../../stores/mocks/GlobalMock';
+
+import LevelButtons from '../';
 
 import renderer from 'react-test-renderer';
 
+
 const component = (
   <Provider global={GlobalMock}>
-    <App />
+    <LevelButtons />
   </Provider>
 );
 
-describe('<App/>', () => {
+describe('<MenuBar/>', () => {
   const wrapper = renderer.create(component);
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();

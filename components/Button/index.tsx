@@ -7,25 +7,13 @@ import styles from './styles';
 interface Props {
   onPress: () => void;
   text: string;
-  color: string;
+  color: "white" | "grey" | "lightGrey" | "orange" | "blue" | "green" | "red" | "orange_2";
 }
 
 const Button = ({ onPress, text, color }: Props) => {
-  const selectColor = () => {
-    switch (color) {
-      case 'orange':
-        return AppStyle.orange;
-      case 'blue': 
-        return AppStyle.blue;
-      case 'green':
-        return AppStyle.green;
-      default:
-        return AppStyle.lightGrey;
-    }
-  }
   const styleColor = StyleSheet.create({
     color: {
-      backgroundColor: selectColor(),
+      backgroundColor: AppStyle[color],
     }
   });
 
@@ -35,8 +23,7 @@ const Button = ({ onPress, text, color }: Props) => {
     ]}>
       <Text style={styles.text}>{text}</Text>
     </TouchableOpacity>
-  )
-
+  );
 };
 
 export default Button;

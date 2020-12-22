@@ -1,8 +1,8 @@
 import { observable, action, makeObservable } from "mobx";
 
 class GlobalStore {
-  currentPage: string = 'menu';
-  previousPage: string = 'menu';
+  currentPage = 'menu';
+  previousPage = 'menu';
 
   constructor() {
     makeObservable(this, {

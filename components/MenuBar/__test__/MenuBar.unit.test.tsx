@@ -1,5 +1,4 @@
 import React from 'react';
-import { View } from 'react-native';
 import { Provider } from 'mobx-react';
 import GlobalMock from '../../../stores/mocks/GlobalMock';
 
@@ -14,7 +13,7 @@ const component = (
 );
 
 describe('<MenuBar/>', () => {
-  const wrapper = renderer.create(component)
+  const wrapper = renderer.create(component);
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
