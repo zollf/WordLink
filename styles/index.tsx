@@ -7,6 +7,7 @@ const AppStyle = {
   green: '#4DCC4B',
   red: "#FF5740",
   orange_2: "#FFBE40",
+  font: 'Raleway_400Regular',
 };
 
 export default AppStyle;
