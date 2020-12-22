@@ -34,6 +34,7 @@ exports[`<MenuBar/> matches snapshot 1`] = `
   <Text
     style={
       Object {
+        "fontFamily": "Raleway_400Regular",
         "fontSize": 18,
       }
     }
