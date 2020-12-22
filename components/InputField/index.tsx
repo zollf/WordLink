@@ -22,21 +22,9 @@ const InputField = ({ color }: Props) => {
     setUser(event.nativeEvent.text);
   };
 
-  const selectColor = () => {
-    switch (color) {
-      case "orange":
-        return AppStyle.orange;
-      case "blue":
-        return AppStyle.blue;
-      case "green":
-        return AppStyle.green;
-      default:
-        return AppStyle.lightGrey;
-    }
-  };
   const styleColor = StyleSheet.create({
     color: {
-      backgroundColor: selectColor(),
+      backgroundColor: AppStyle[color],
     },
   });
 
