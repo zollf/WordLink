@@ -1,5 +1,7 @@
 import { StyleSheet } from "react-native";
 
+import AppStyle from '../../styles';
+
 const styles = StyleSheet.create({
   menu: {
     height: "100%",
@@ -16,6 +18,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 24,
     marginBottom: 24,
+    fontFamily: AppStyle.font,
   }
 });
 

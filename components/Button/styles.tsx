@@ -1,5 +1,7 @@
 import { StyleSheet } from "react-native";
 
+import AppStyle from "../../styles";
+
 const styles = StyleSheet.create({
   button: {
     width: 175,
@@ -15,6 +17,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 18,
+    fontFamily: AppStyle.font,
   }
 });
 
