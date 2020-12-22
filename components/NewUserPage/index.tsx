@@ -6,7 +6,7 @@ import styles from "./style";
 
 const NewUserPage = () => {
   return (
-    <View style={{ ...styles.container }}>
+    <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.font}>Welcome Back!</Text>
         <Text style={styles.font}>Create a Username</Text>

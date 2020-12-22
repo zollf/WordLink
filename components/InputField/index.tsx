@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  StyleSheet,
+  NativeSyntheticEvent,
+  TextInputChangeEventData,
+} from "react-native";
 import InputFieldStyles from "./styles";
 import AppStyle from "../../styles";
 
@@ -9,8 +16,10 @@ interface Props {
 
 const InputField = ({ color }: Props) => {
   const [user, setUser] = useState("SampleUsername");
-  const handleChange = ({ target }: any) => {
-    setUser(target.value);
+  const handleChange = (
+    event: NativeSyntheticEvent<TextInputChangeEventData>
+  ) => {
+    setUser(event.nativeEvent.text);
   };
 
   const selectColor = () => {
