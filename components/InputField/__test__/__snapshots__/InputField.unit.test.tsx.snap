@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputField /> matches snapshot 1`] = `
+<TextInput
+  allowFontScaling={true}
+  data-test-id="text-input"
+  onChange={[Function]}
+  rejectResponderTermination={true}
+  style={
+    Array [
+      Object {
+        "borderRadius": 5,
+        "height": 39,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 2,
+        },
+        "shadowOpacity": 0.1,
+        "shadowRadius": 4,
+        "textAlign": "center",
+        "width": 229,
+      },
+      Object {
+        "backgroundColor": "#FF9C40",
+      },
+    ]
+  }
+  underlineColorAndroid="transparent"
+  value="SampleUsername"
+/>
+`;

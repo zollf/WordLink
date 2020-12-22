@@ -14,7 +14,7 @@ const BackBlock = () => {
   const { currentPage, previousPage } = useStore('global');
 
   const pages: Pages = {
-    'index': 10,
+    'welcome': 10,
     'menu': (212/2)-25.5,
     'profile': 150,
   };

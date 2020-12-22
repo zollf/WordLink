@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewUserPage /> matches snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "column",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1.5,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 24,
+        }
+      }
+    >
+      Welcome Back!
+    </Text>
+    <Text
+      style={
+        Object {
+          "fontSize": 24,
+        }
+      }
+    >
+      Create a Username
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 12,
+          "width": 229,
+        }
+      }
+    >
+      Username
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      data-test-id="text-input"
+      onChange={[Function]}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderRadius": 5,
+            "height": 39,
+            "shadowColor": "#000",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 2,
+            },
+            "shadowOpacity": 0.1,
+            "shadowRadius": 4,
+            "textAlign": "center",
+            "width": 229,
+          },
+          Object {
+            "backgroundColor": "#40BAFF",
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+      value="SampleUsername"
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 2.5,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FF9C40",
+          "borderRadius": 5,
+          "display": "flex",
+          "height": 76,
+          "justifyContent": "center",
+          "opacity": 1,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 2,
+          },
+          "shadowOpacity": 0.1,
+          "shadowRadius": 4,
+          "width": 175,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontFamily": "Raleway_400Regular",
+            "fontSize": 18,
+          }
+        }
+      >
+        Continue -&gt;
+      </Text>
+    </View>
+  </View>
+</View>
+`;

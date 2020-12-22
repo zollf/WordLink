@@ -1,9 +1,8 @@
-import { StyleSheet } from "react-native"
-
-import AppStyle from '../../styles';
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   welcome: {
+    height: "100%",
   },
 });
 
