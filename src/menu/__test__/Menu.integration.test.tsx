@@ -14,9 +14,6 @@ const component = (
 
 describe('<Menu />', () => {
   let wrapper = renderer.create(component);
-  it('matches snapshot', () => {
-    expect(wrapper).toMatchSnapshot();
-  });
 
   it('difficulty select works correctly', () => {
     wrapper.root.findAllByProps({"data-test-id": "button"})[0].props.onPress();

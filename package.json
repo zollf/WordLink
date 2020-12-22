@@ -56,10 +56,7 @@
         ],
         "setupFiles": [
             "<rootDir>/test/config.ts"
-        ],
-        "moduleNameMapper": {
-            "^@/(.*)$": "<rootDir>/$1"
-        }
+        ]
     },
     "private": true
 }
