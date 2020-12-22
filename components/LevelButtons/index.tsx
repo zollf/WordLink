@@ -1,56 +1,29 @@
-import React, { useRef, useEffect } from 'react';
-import { View, Animated, Easing } from "react-native";
+import React, { useEffect } from 'react';
+import { View, Animated } from "react-native";
+import { useStore, useAnimate } from '../../hooks';
 import Button from '../Button';
 
+import { ElasticSlideIn, FadeSlideIn } from '../../animations';
 import styles from './styles';
 
 const LevelButtons = () => {
-  const easy = useRef(new Animated.Value(-100)).current;
-  const medium = useRef(new Animated.Value(-100)).current;
-  const hard = useRef(new Animated.Value(-100)).current;
+  const { setCurrentDifficultyOpen } = useStore('global');
 
-  const easy_opacity = useRef(new Animated.Value(0)).current;
-  const medium_opacity = useRef(new Animated.Value(0)).current;
-  const hard_opacity = useRef(new Animated.Value(0)).current;
+  const [easy, easy_opacity] = useAnimate(-100, 0);
+  const [medium, medium_opacity] = useAnimate(-100, 0);
+  const [hard, hard_opacity] = useAnimate(-100, 0);
 
   useEffect(() => {
     Animated.parallel([
       Animated.stagger(50, [
-        Animated.timing(easy, {
-          toValue: 0,
-          duration: 200,
-          easing: Easing.elastic(1),
-          useNativeDriver: true,
-        }),
-        Animated.timing(medium, {
-          toValue: 1,
-          duration: 200,
-          easing: Easing.elastic(1),
-          useNativeDriver: true,
-        }),
-        Animated.timing(hard, {
-          toValue: 1,
-          duration: 200,
-          easing: Easing.elastic(1),
-          useNativeDriver: true,
-        }),
+        ElasticSlideIn(easy),
+        ElasticSlideIn(medium),
+        ElasticSlideIn(hard)
       ]),
       Animated.stagger(50, [
-        Animated.timing(easy_opacity, {
-          toValue: 1,
-          duration: 200,
-          useNativeDriver: true,
-        }),
-        Animated.timing(medium_opacity, {
-          toValue: 1,
-          duration: 200,
-          useNativeDriver: true,
-        }),
-        Animated.timing(hard_opacity, {
-          toValue: 1,
-          duration: 200,
-          useNativeDriver: true,
-        }),
+        FadeSlideIn(easy_opacity),
+        FadeSlideIn(medium_opacity),
+        FadeSlideIn(hard_opacity),
       ]),
     ]).start();
   });
@@ -61,21 +34,21 @@ const LevelButtons = () => {
         transform: [{translateX: easy}],
         opacity: easy_opacity,
       }]}>
-        <Button text="EASY" color="green" onPress={() => ({})}/>
+        <Button text="EASY" color="green" onPress={() => setCurrentDifficultyOpen('easy')}/>
       </Animated.View>
 
       <Animated.View style={[styles.button, {
         transform: [{translateX: medium}],
         opacity: medium_opacity,
       }]}>
-        <Button text="MEDIUM" color="orange_2" onPress={() => ({})}/>
+        <Button text="MEDIUM" color="orange_2" onPress={() => setCurrentDifficultyOpen('medium')}/>
       </Animated.View>
 
       <Animated.View style={[styles.button, {
         transform: [{translateX: hard}],
         opacity: hard_opacity,
       }]}>
-        <Button text="HARD" color="red" onPress={() => ({})}/>
+        <Button text="HARD" color="red" onPress={() => setCurrentDifficultyOpen('hard')}/>
       </Animated.View>
     </View>
   );

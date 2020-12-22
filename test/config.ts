@@ -6,6 +6,11 @@ jest.mock('@react-native-async-storage/async-storage', () => jest.fn());
 jest.mock('@expo-google-fonts/raleway', () => ({
   useFonts: jest.fn(() => [true]),
 }));
+
+const animationMock = {
+  start: jest.fn(),
+};
+
 jest.doMock('react-native', () => {
   // Extend ReactNative
   return Object.setPrototypeOf(
@@ -17,7 +22,11 @@ jest.doMock('react-native', () => {
       },
       Animated: {
         Value: jest.fn(),
-        View: ReactNative.View
+        View: ReactNative.View,
+        stagger: jest.fn(() => animationMock),
+        parallel: jest.fn(() => animationMock),
+        timing: jest.fn(() => animationMock),
+        start: jest.fn(() => animationMock),
       }
     },
     ReactNative,
