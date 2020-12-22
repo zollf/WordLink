@@ -56,7 +56,7 @@ exports[`<MenuBar/> matches snapshot 1`] = `
           "justifyContent": "center",
           "marginLeft": 10,
           "marginRight": 10,
-          "opacity": 1,
+          "opacity": 0.1,
           "shadowColor": "#000",
           "shadowOffset": Object {
             "height": 2,
@@ -191,7 +191,7 @@ exports[`<MenuBar/> matches snapshot 1`] = `
             "zIndex": -1,
           },
           Object {
-            "left": 10,
+            "left": undefined,
           },
         ]
       }
