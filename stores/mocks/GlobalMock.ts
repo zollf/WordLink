@@ -5,6 +5,7 @@ const GlobalMock: any = {
   currentDifficultyOpen: '',
   setCurrentDifficultyOpen: jest.fn((d: string) => GlobalMock.currentDifficultyOpen = d),
   getDifficultyColor: jest.fn(() => ''),
+  loadGame: jest.fn(),
 };
 
 export default GlobalMock;

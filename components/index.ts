@@ -6,3 +6,7 @@ export { default as LevelSelect } from './LevelSelect';
 export { default as Levels } from './Levels';
 export { default as InputField } from "./InputField";
 export { default as NewUserPage } from "./NewUserPage";
+export { default as PreGameMenu } from "./PreGameMenu";
+export { default as PreGameWords } from "./PreGameWords";
+export { default as BackButton } from "./BackButton";
+export { default as Game } from "./Game";

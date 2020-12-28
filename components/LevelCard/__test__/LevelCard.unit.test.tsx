@@ -10,7 +10,7 @@ const number = "1";
 
 const component = (
   <Provider global={GlobalMock}>
-    <LevelCard number={number}/>
+    <LevelCard number={number} difficulty="easy"/>
   </Provider>
 );
 

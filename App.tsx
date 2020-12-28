@@ -6,7 +6,7 @@ import AppLoading from 'expo-app-loading';
 import { global } from './stores';
 
 import _getData from './lib/getData';
-import { Index, Menu, Welcome, Profile } from './src';
+import { Index, Menu, Welcome, Profile, Game } from './src';
 import { useFonts, Raleway_400Regular } from '@expo-google-fonts/raleway';
 
 import image from './images/background.png';
@@ -30,11 +30,12 @@ const App = () => {
     });
   }, []);
     
-  const pages: Pages = {
+  const pages = {
     'index': <Index />,
     'menu': <Menu />,
     'welcome': <Welcome />,
     'profile': <Profile />,
+    'game': <Game />,
   };
 
   if (!fontsLoaded) {

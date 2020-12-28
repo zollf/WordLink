@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import Button from "../Button";
 import InputField from "../InputField";
-import styles from "./style";
+import styles from "./styles";
 
 const NewUserPage = () => {
   return (
