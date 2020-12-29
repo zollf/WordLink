@@ -8,6 +8,8 @@ const AppStyle = {
   red: "#FF5740",
   orange_2: "#FFBE40",
   font: 'Raleway_400Regular',
+  primary: '#FF9C40',
+  secondary: '#40BAFF',
 };
 
 export default AppStyle;

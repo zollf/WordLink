@@ -4,6 +4,9 @@ class GlobalStore {
   previousPage = 'menu';
   currentDifficultyOpen = '';
 
+  currentGameNumber = 0;
+  currentGameDifficulty = '';
+
   constructor() {
     makeObservable(this, {
       currentPage: observable,
@@ -12,6 +15,8 @@ class GlobalStore {
       setCurrentDifficultyOpen: action,
       setCurrentPage: action,
       getDifficultyColor: action,
+      currentGameNumber: observable,
+      currentGameDifficulty: observable,
     });
   }
 
@@ -33,7 +38,14 @@ class GlobalStore {
     };
     return color[difficulty];
   };
+
+  loadGame = (gameId: number, difficulty: string) => {
+    this.currentGameNumber = gameId;
+    this.currentGameDifficulty = difficulty;
+    this.setCurrentPage('game');
+  }
 }
 
 const global = new GlobalStore();
+export { GlobalStore };
 export default global;

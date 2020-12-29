@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { MobXProviderContext } from 'mobx-react';
 
 function useStore(store: 'global'): Global;
+function useStore(store: 'gameStore'): GameStore;
 function useStore<T>(store: string): T {
   const stores = useContext(MobXProviderContext);
   if (!stores || !stores[store]) {
