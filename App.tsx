@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { ImageBackground } from 'react-native';
 import { Provider, observer } from 'mobx-react';
 import { configure } from "mobx";
-import AppLoading from 'expo-app-loading';
 import { global } from './stores';
 
 import _getData from './lib/getData';
@@ -30,7 +29,7 @@ const App = () => {
     });
   }, []);
     
-  const pages = {
+  const pages: Pages = {
     'index': <Index />,
     'menu': <Menu />,
     'welcome': <Welcome />,

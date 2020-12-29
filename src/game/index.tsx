@@ -15,7 +15,6 @@ const Game = () => {
     if (!gameStore.inGame) {
       gameStore.loadGame(currentGameNumber, currentGameDifficulty);
     }
-    
   });
   
   return (

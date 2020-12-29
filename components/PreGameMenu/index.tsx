@@ -26,7 +26,7 @@ const PreGameMenu = () => {
         <Button color="primary" text="START" onPress={() => startGame()} />
       </View>
     ) : (
-      <BackButton color="blue"/>
+      <BackButton color="blue" overrideCallback={handleExit}/>
     )
   );
 };

@@ -7,17 +7,15 @@ import Letter from '../Letter';
 import styles from './styles';
 
 const CurrentWord = () => {
-  const { currentWord, changeLetter } = useStore('gameStore');
+  const { currentWord, changeLetter, completed } = useStore('gameStore');
   
   return (
-    <View>
-      <View style={styles.box}>
-        {currentWord.split("").map((letter: string, i: number) => (
-          <TouchableOpacity onPress={() => changeLetter(i)} key={`currentWord-${letter}-${i}`}>
-            <Letter letter={letter} />
-          </TouchableOpacity>
-        ))}
-      </View>
+    <View style={styles.box}>
+      {!completed && currentWord.split("").map((letter: string, i: number) => (
+        <TouchableOpacity onPress={() => changeLetter(i)} key={`currentWord-${letter}-${i}`}>
+          <Letter letter={letter} />
+        </TouchableOpacity>
+      ))}
     </View>
   );
 };

@@ -14,6 +14,7 @@ class GameStore {
   stepNumber = 0;
   path: string[] = [];
   visited = {};
+  completed = false;
 
   constructor() {
     makeObservable(this, {
@@ -26,6 +27,7 @@ class GameStore {
       stepNumber:         observable,
       loaded:             observable,
       error:              observable,
+      completed:          observable,
 
       getNewLetters:      action,
       isWord:             action,
@@ -116,7 +118,7 @@ class GameStore {
    * @param index 
    */
   changeLetter = (index: number) => {
-    if (this.selectedLetter) {
+    if (this.selectedLetter && this.game) {
       const newWordArr = this.currentWord.split("");
       newWordArr[index] = this.selectedLetter;
       const newWord = newWordArr.join("");
@@ -135,6 +137,11 @@ class GameStore {
 
         // Add to visited
         this.visited[newWord] = true;
+
+        // Completed Game
+        if (this.currentWord === this.game.end) {
+          this.completed = true;
+        }
       }
     }
   };
@@ -166,11 +173,14 @@ class GameStore {
    */
   clearGame = () => {
     this.inGame = false;
-    this.path = [];
     this.loaded = false;
     this.error = false;
+    this.completed = false;
+
+    this.path = [];
     this.stepNumber = 0;
     this.visited = {};
+   
   };
 }
 

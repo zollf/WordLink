@@ -1,43 +1,30 @@
-import React, { useEffect } from 'react';
-import { Animated } from 'react-native';
+import React from 'react';
+import { View, LayoutAnimation } from 'react-native';
 import { observer } from 'mobx-react';
-import { useStore, useAnimate } from '../../../../hooks';
+import { useStore } from '../../../../hooks';
 import Word from '../Word';
 
-import { ElasticSlideIn, FadeSlideIn } from '../../../../animations';
+import styles from './styles';
 
 const Path = () => {
   const { path, stepNumber } = useStore('gameStore');
-  const [translate, opacity] = useAnimate(-100, 0);
-
-  useEffect(() => {
-    Animated.parallel([
-      Animated.stagger(50, [
-        ElasticSlideIn(translate),
-      ]),
-      Animated.stagger(50, [
-        FadeSlideIn(opacity),
-      ]),
-    ]).start();
+  LayoutAnimation.configureNext({ 
+    duration: 500, 
+    update: { type: 'spring', springDamping: 0.4 }, 
   });
-  
+
   return (
-    <Animated.View style={{
-      transform: [{translateX: translate}],
-      opacity: opacity,
-    }}>
+    <View style={styles.path}>
       {path.map((word: string, i: number) => (
-        i > 0 && (
-          <Word style={{
-            opacity: (0.5 / stepNumber) * i
-          }} 
-          word={word}
-          color="lightGrey" 
-          key={`path-${word}`}
-          />
-        )
+        <Word style={{
+          opacity: stepNumber > 0 ? (0.5 / stepNumber) * i : 0
+        }} 
+        word={word}
+        color="lightGrey" 
+        key={`path-${word}`}
+        />
       ))}
-    </Animated.View>
+    </View>
   );
 };
 
