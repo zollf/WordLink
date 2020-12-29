@@ -1,15 +1,11 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  letterSelection: {
+  box: {
+    marginTop: 20,
+    marginBottom: 20,
     display: "flex",
     flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    marginTop: 60,
-    width: "100%",
-    paddingLeft: 40,
-    paddingRight: 40,
   },
 });
 

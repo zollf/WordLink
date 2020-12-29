@@ -38,14 +38,10 @@ const App = () => {
     'game': <Game />,
   };
 
-  if (!fontsLoaded) {
-    return <AppLoading />;
-  }
-
   return (
     <Provider global={global}>
       <ImageBackground source={image} style={styles.image}>
-        {pages[global.currentPage]}
+        {fontsLoaded && pages[global.currentPage]}
       </ImageBackground>
     </Provider>
   );

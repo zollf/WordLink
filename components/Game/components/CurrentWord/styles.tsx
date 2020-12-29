@@ -1,11 +1,20 @@
 import { StyleSheet } from "react-native";
 
+import AppStyle from "../../../../styles";
+
 const styles = StyleSheet.create({
   box: {
-    marginTop: 20,
-    marginBottom: 20,
     display: "flex",
     flexDirection: "row",
+  },
+  buttons: {
+    position: "absolute",
+    bottom: 0,
+  },
+  button: {
+    width: 200,
+    height: 20,
+    backgroundColor: AppStyle['primary'],
   },
 });
 

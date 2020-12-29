@@ -4,7 +4,7 @@ import AppStyle from '../../styles';
 
 const styles = StyleSheet.create({
   preGameWords: {
-    width: 153,
+    width: 200,
     height: 174,
     backgroundColor: AppStyle.lightGrey,
     display: 'flex',
@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
     margin: 24,
   },
   block: {
-    width: 122,
-    height: 39,
+    width: 180,
+    height: 60,
     borderRadius: 5,
     shadowColor: '#000',
     shadowRadius: 4,
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   text: {
-    fontSize: 12,
+    fontSize: 18,
     fontFamily: AppStyle.font
   }
 });

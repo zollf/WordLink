@@ -14,7 +14,7 @@ const Letter = ({ letter, color }: Props) => {
     <View style={[styles.box, color ? {
       backgroundColor: AppStyle[color]
     } : null]}>
-      <Text style={styles.text}>{letter.toUpperCase()}</Text>
+      <Text style={styles.text}>{letter}</Text>
     </View>
   );
 };

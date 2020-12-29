@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View } from 'react-native';
 import { Provider, observer } from 'mobx-react';
 import { useStore } from '../../hooks';
@@ -10,7 +10,14 @@ import styles from './styles';
 
 const Game = () => {
   const { currentGameNumber, currentGameDifficulty } = useStore('global');
-  gameStore.loadGame(currentGameNumber, currentGameDifficulty);
+
+  useEffect(() => {
+    if (!gameStore.inGame) {
+      gameStore.loadGame(currentGameNumber, currentGameDifficulty);
+    }
+    
+  });
+  
   return (
     <Provider gameStore={gameStore}>
       <View style={styles.game}>

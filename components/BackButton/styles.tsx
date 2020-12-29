@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 2, height: 2},
     shadowOpacity: 0.1,
     position: "absolute",
-    top: 20,
+    top: 60,
     left: 20,
   }
 });
