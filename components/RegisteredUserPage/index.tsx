@@ -9,14 +9,13 @@ const NewUserPage = () => {
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.font}>Welcome Back!</Text>
-        <Text style={styles.font}>Create a Username</Text>
       </View>
       <View style={styles.input}>
         <Text style={styles.username}>Username</Text>
-        <InputField color="blue" input={true} />
+        <InputField color="blue" input={false} value={"testBitch"} />
       </View>
       <View style={styles.button}>
-        <Button text="Continue" color="orange" onPress={() => ({})} />
+        <Button text="START" color="orange" onPress={() => ({})} />
       </View>
     </View>
   );

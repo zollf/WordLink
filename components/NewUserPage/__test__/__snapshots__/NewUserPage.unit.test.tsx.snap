@@ -58,8 +58,10 @@ exports[`<NewUserPage /> matches snapshot 1`] = `
     <TextInput
       allowFontScaling={true}
       data-test-id="text-input"
+      editable={true}
       onChange={[Function]}
       rejectResponderTermination={true}
+      selectTextOnFocus={true}
       style={
         Array [
           Object {
@@ -130,7 +132,7 @@ exports[`<NewUserPage /> matches snapshot 1`] = `
           }
         }
       >
-        Continue -&gt;
+        Continue
       </Text>
     </View>
   </View>
