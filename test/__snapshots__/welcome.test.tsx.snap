@@ -93,40 +93,43 @@ exports[`<Welcome/> matches snapshot 1`] = `
       }
     >
       <View
-        accessible={true}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "alignItems": "center",
-            "backgroundColor": "#FF9C40",
-            "borderRadius": 5,
-            "display": "flex",
-            "height": 76,
-            "justifyContent": "center",
-            "opacity": 1,
-            "shadowColor": "#000",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 2,
-            },
-            "shadowOpacity": 0.1,
-            "shadowRadius": 4,
-            "width": 175,
+            "transform": Array [
+              Object {
+                "scale": mockConstructor {},
+              },
+            ],
           }
         }
       >
-        <Text
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "fontFamily": "Raleway_400Regular",
-              "fontSize": 18,
+              "alignItems": "center",
+              "backgroundColor": "#FF9C40",
+              "borderRadius": 5,
+              "display": "flex",
+              "height": 76,
+              "justifyContent": "center",
+              "opacity": 1,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 175,
             }
           }
         >

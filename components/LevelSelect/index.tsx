@@ -5,7 +5,7 @@ import { useStore, useAnimate } from '../../hooks';
 import Button from '../Button';
 import Levels from '../Levels';
 
-import { ElasticSlideIn, FadeSlideIn } from '../../animations';
+import { ElasticSlideIn, FadeSlideIn, Animate } from '../../animations';
 import styles from './styles';
 
 const LevelSelect = () => {
@@ -33,22 +33,16 @@ const LevelSelect = () => {
 
   return (
     <View data-test-id="level-select">
-      <Animated.View style={[styles.levelSelect, {
-        transform: [{translateX: transitionTranslate}],
-        opacity: transitionOpacity,
-      }]}>
+      <Animate style={styles.levelSelect} transform={transitionTranslate} opacity={transitionOpacity}>
         <Button 
           text={currentDifficultyOpen.toUpperCase()} 
           color={getDifficultyColor(currentDifficultyOpen)} 
           onPress={() => setCurrentDifficultyOpen('')}
         />
-      </Animated.View>
-      <Animated.View style={[styles.levelSelect, {
-        transform: [{translateX: levelTranslate}],
-        opacity: levelOpacity,
-      }]}>
+      </Animate>
+      <Animate style={styles.levelSelect} transform={levelTranslate} opacity={levelOpacity}>
         <Levels />
-      </Animated.View>
+      </Animate>
     </View>
   );
 };

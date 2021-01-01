@@ -5,7 +5,6 @@ import AppStyle from '../../styles';
 const styles = StyleSheet.create({
   preGameWords: {
     width: 200,
-    height: 174,
     backgroundColor: AppStyle.lightGrey,
     display: 'flex',
     justifyContent: "space-between",
@@ -32,6 +31,13 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 18,
     fontFamily: AppStyle.font
+  },
+  image: {
+    width: 40,
+    height: 40,
+    transform: [{rotate: "90deg"}],
+    margin: 20,
+    zIndex: 1,
   }
 });
 

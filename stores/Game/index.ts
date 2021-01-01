@@ -50,12 +50,16 @@ class GameStore {
     this.gameId = gameId;
     this.difficulty = difficulty;
 
-    this.game = getLevel(difficulty)[gameId].game;
+    const gameLevel = getLevel(difficulty);
+
+    if (gameLevel) {
+      this.game = gameLevel[gameId].game;
+    } else {
+      this.error = true;
+    }
 
     if (this.game && this.game.start && this.game.end) {
       this.loaded = true;
-    } else {
-      this.error = true;
     }
   };
 
