@@ -103,7 +103,7 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
             "opacity": mockConstructor {},
             "transform": Array [
               Object {
-                "translateX": mockConstructor {},
+                "translateX": 0,
               },
             ],
           },
@@ -254,7 +254,7 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
             "opacity": mockConstructor {},
             "transform": Array [
               Object {
-                "translateX": mockConstructor {},
+                "translateX": 0,
               },
             ],
           },

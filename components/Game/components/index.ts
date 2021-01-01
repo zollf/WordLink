@@ -6,3 +6,4 @@ export { default as Path } from './Path';
 export { default as ControlButtons } from './ControlButtons';
 export { default as Completed } from './Completed';
 export { default as ExitModal } from './ExitModal';
+export { default as Information } from './Information';
