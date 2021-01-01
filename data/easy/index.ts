@@ -9,8 +9,11 @@ const easy: Levels = {
   },
   2: {
     title: "Level 2",
-    game: {},
-  },
+    game: {
+      start: 'SICK',
+      end: 'WELL'
+    },
+  }
 };
 
 export default easy;

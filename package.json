@@ -55,7 +55,8 @@
             "!lib/**",
             "src/**",
             "components/**",
-            "!**/*.snap"
+            "!**/*.snap",
+            "data/**"
         ],
         "setupFiles": [
             "<rootDir>/test/config.ts"
