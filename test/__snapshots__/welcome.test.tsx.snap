@@ -133,8 +133,17 @@ exports[`<Welcome/> matches snapshot 1`] = `
             }
           }
         >
-          START
-        </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "Raleway_400Regular",
+                "fontSize": 18,
+              }
+            }
+          >
+            START
+          </Text>
+        </View>
       </View>
     </View>
   </View>
