@@ -10,6 +10,10 @@ const AppStyle = {
   font: 'Raleway_400Regular',
   primary: '#FF9C40',
   secondary: '#40BAFF',
+
+  easy: '#4DCC4B',
+  medium: '#FFBE40',
+  hard: '#FF5740'
 };
 
 export default AppStyle;

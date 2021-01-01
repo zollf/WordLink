@@ -62,7 +62,10 @@ exports[`<Game /> matches snapshot 1`] = `
   <View
     style={
       Array [
-        undefined,
+        Object {
+          "position": "absolute",
+          "top": 150,
+        },
         Object {
           "opacity": mockConstructor {},
           "transform": Array [
@@ -76,26 +79,46 @@ exports[`<Game /> matches snapshot 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
-            "display": "flex",
-            "flexDirection": "row",
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F3F3F3",
+          "borderRadius": 5,
+          "display": "flex",
+          "justifyContent": "center",
+          "paddingBottom": 10,
+          "paddingLeft": 25,
+          "paddingRight": 25,
+          "paddingTop": 10,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 2,
           },
-          undefined,
-        ]
+          "shadowOpacity": 0.1,
+          "shadowRadius": 4,
+        }
       }
     >
+      <Text
+        style={
+          Object {
+            "fontFamily": "Raleway_400Regular",
+            "fontSize": 24,
+          }
+        }
+      >
+        
+      </Text>
       <View
         style={
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
+              "borderRadius": 4,
               "display": "flex",
-              "height": 40,
+              "height": 20,
               "justifyContent": "center",
-              "margin": 5,
+              "marginTop": 5,
               "shadowColor": "#000",
               "shadowOffset": Object {
                 "height": 2,
@@ -103,10 +126,10 @@ exports[`<Game /> matches snapshot 1`] = `
               },
               "shadowOpacity": 0.1,
               "shadowRadius": 4,
-              "width": 40,
+              "width": 50,
             },
             Object {
-              "backgroundColor": "#FF9C40",
+              "backgroundColor": "#4DCC4B",
             },
           ]
         }
@@ -115,183 +138,37 @@ exports[`<Game /> matches snapshot 1`] = `
           style={
             Object {
               "fontFamily": "Raleway_400Regular",
-              "fontSize": 24,
             }
           }
         >
-          F
-        </Text>
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            },
-            Object {
-              "backgroundColor": "#FF9C40",
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            Object {
-              "fontFamily": "Raleway_400Regular",
-              "fontSize": 24,
-            }
-          }
-        >
-          O
-        </Text>
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            },
-            Object {
-              "backgroundColor": "#FF9C40",
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            Object {
-              "fontFamily": "Raleway_400Regular",
-              "fontSize": 24,
-            }
-          }
-        >
-          R
-        </Text>
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            },
-            Object {
-              "backgroundColor": "#FF9C40",
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            Object {
-              "fontFamily": "Raleway_400Regular",
-              "fontSize": 24,
-            }
-          }
-        >
-          T
-        </Text>
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            },
-            Object {
-              "backgroundColor": "#FF9C40",
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            Object {
-              "fontFamily": "Raleway_400Regular",
-              "fontSize": 24,
-            }
-          }
-        >
-          Y
+          EASY
         </Text>
       </View>
     </View>
   </View>
   <View
     style={
-      Array [
-        undefined,
-        Object {
-          "opacity": mockConstructor {},
-          "transform": Array [
-            Object {
-              "translateX": mockConstructor {},
-            },
-          ],
-        },
-      ]
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "justifyContent": "center",
+        "marginBottom": 80,
+      }
     }
   >
     <View
       style={
-        Object {
-          "marginTop": -50,
-        }
+        Array [
+          undefined,
+          Object {
+            "opacity": mockConstructor {},
+            "transform": Array [
+              Object {
+                "translateX": mockConstructor {},
+              },
+            ],
+          },
+        ]
       }
     >
       <View
@@ -301,9 +178,7 @@ exports[`<Game /> matches snapshot 1`] = `
               "display": "flex",
               "flexDirection": "row",
             },
-            Object {
-              "opacity": 0,
-            },
+            undefined,
           ]
         }
       >
@@ -328,7 +203,7 @@ exports[`<Game /> matches snapshot 1`] = `
                 "width": 40,
               },
               Object {
-                "backgroundColor": "#F3F3F3",
+                "backgroundColor": "#FF9C40",
               },
             ]
           }
@@ -365,7 +240,7 @@ exports[`<Game /> matches snapshot 1`] = `
                 "width": 40,
               },
               Object {
-                "backgroundColor": "#F3F3F3",
+                "backgroundColor": "#FF9C40",
               },
             ]
           }
@@ -402,7 +277,7 @@ exports[`<Game /> matches snapshot 1`] = `
                 "width": 40,
               },
               Object {
-                "backgroundColor": "#F3F3F3",
+                "backgroundColor": "#FF9C40",
               },
             ]
           }
@@ -439,7 +314,7 @@ exports[`<Game /> matches snapshot 1`] = `
                 "width": 40,
               },
               Object {
-                "backgroundColor": "#F3F3F3",
+                "backgroundColor": "#FF9C40",
               },
             ]
           }
@@ -476,7 +351,7 @@ exports[`<Game /> matches snapshot 1`] = `
                 "width": 40,
               },
               Object {
-                "backgroundColor": "#F3F3F3",
+                "backgroundColor": "#FF9C40",
               },
             ]
           }
@@ -494,325 +369,536 @@ exports[`<Game /> matches snapshot 1`] = `
         </View>
       </View>
     </View>
-  </View>
-  <View
-    style={
-      Array [
-        undefined,
-        Object {
-          "opacity": mockConstructor {},
-          "transform": Array [
-            Object {
-              "translateX": mockConstructor {},
-            },
-          ],
-        },
-      ]
-    }
-  >
     <View
       style={
-        Object {
-          "display": "flex",
-          "flexDirection": "row",
-        }
+        Array [
+          undefined,
+          Object {
+            "opacity": mockConstructor {},
+            "transform": Array [
+              Object {
+                "translateX": mockConstructor {},
+              },
+            ],
+          },
+        ]
       }
     >
       <View
         style={
           Object {
-            "transform": Array [
-              Object {
-                "scale": mockConstructor {},
-              },
-            ],
+            "marginTop": -50,
           }
         }
       >
         <View
-          accessible={true}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "opacity": 1,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
+            Array [
+              Object {
+                "display": "flex",
+                "flexDirection": "row",
               },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            }
+              Object {
+                "opacity": 0,
+              },
+            ]
           }
         >
-          <Text
+          <View
             style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 24,
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F3F3F3",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 40,
+                  "justifyContent": "center",
+                  "margin": 5,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 0.1,
+                  "shadowRadius": 4,
+                  "width": 40,
+                },
+                Object {
+                  "backgroundColor": "#F3F3F3",
+                },
+              ]
             }
           >
-            F
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "transform": Array [
-              Object {
-                "scale": mockConstructor {},
-              },
-            ],
-          }
-        }
-      >
-        <View
-          accessible={true}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "opacity": 1,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 24,
+            <Text
+              style={
+                Object {
+                  "fontFamily": "Raleway_400Regular",
+                  "fontSize": 24,
+                }
               }
+            >
+              F
+            </Text>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F3F3F3",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 40,
+                  "justifyContent": "center",
+                  "margin": 5,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 0.1,
+                  "shadowRadius": 4,
+                  "width": 40,
+                },
+                Object {
+                  "backgroundColor": "#F3F3F3",
+                },
+              ]
             }
           >
-            O
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "transform": Array [
-              Object {
-                "scale": mockConstructor {},
-              },
-            ],
-          }
-        }
-      >
-        <View
-          accessible={true}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "opacity": 1,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 24,
+            <Text
+              style={
+                Object {
+                  "fontFamily": "Raleway_400Regular",
+                  "fontSize": 24,
+                }
               }
+            >
+              O
+            </Text>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F3F3F3",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 40,
+                  "justifyContent": "center",
+                  "margin": 5,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 0.1,
+                  "shadowRadius": 4,
+                  "width": 40,
+                },
+                Object {
+                  "backgroundColor": "#F3F3F3",
+                },
+              ]
             }
           >
-            R
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "transform": Array [
-              Object {
-                "scale": mockConstructor {},
-              },
-            ],
-          }
-        }
-      >
-        <View
-          accessible={true}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "opacity": 1,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 24,
+            <Text
+              style={
+                Object {
+                  "fontFamily": "Raleway_400Regular",
+                  "fontSize": 24,
+                }
               }
+            >
+              R
+            </Text>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F3F3F3",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 40,
+                  "justifyContent": "center",
+                  "margin": 5,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 0.1,
+                  "shadowRadius": 4,
+                  "width": 40,
+                },
+                Object {
+                  "backgroundColor": "#F3F3F3",
+                },
+              ]
             }
           >
-            T
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "transform": Array [
-              Object {
-                "scale": mockConstructor {},
-              },
-            ],
-          }
-        }
-      >
-        <View
-          accessible={true}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "opacity": 1,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            }
-          }
-        >
-          <Text
-            style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 24,
+            <Text
+              style={
+                Object {
+                  "fontFamily": "Raleway_400Regular",
+                  "fontSize": 24,
+                }
               }
+            >
+              T
+            </Text>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F3F3F3",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 40,
+                  "justifyContent": "center",
+                  "margin": 5,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 0.1,
+                  "shadowRadius": 4,
+                  "width": 40,
+                },
+                Object {
+                  "backgroundColor": "#F3F3F3",
+                },
+              ]
             }
           >
-            Y
-          </Text>
+            <Text
+              style={
+                Object {
+                  "fontFamily": "Raleway_400Regular",
+                  "fontSize": 24,
+                }
+              }
+            >
+              Y
+            </Text>
+          </View>
         </View>
       </View>
     </View>
-  </View>
-  <View
-    style={
-      Array [
-        undefined,
-        Object {
-          "opacity": mockConstructor {},
-          "transform": Array [
-            Object {
-              "translateX": mockConstructor {},
-            },
-          ],
-        },
-      ]
-    }
-  >
     <View
       style={
         Array [
+          undefined,
+          Object {
+            "opacity": mockConstructor {},
+            "transform": Array [
+              Object {
+                "translateX": mockConstructor {},
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <View
+        style={
           Object {
             "display": "flex",
             "flexDirection": "row",
-          },
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "transform": Array [
+                Object {
+                  "scale": mockConstructor {},
+                },
+              ],
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F3F3F3",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 40,
+                "justifyContent": "center",
+                "margin": 5,
+                "opacity": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 40,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontFamily": "Raleway_400Regular",
+                  "fontSize": 24,
+                }
+              }
+            >
+              F
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "transform": Array [
+                Object {
+                  "scale": mockConstructor {},
+                },
+              ],
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F3F3F3",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 40,
+                "justifyContent": "center",
+                "margin": 5,
+                "opacity": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 40,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontFamily": "Raleway_400Regular",
+                  "fontSize": 24,
+                }
+              }
+            >
+              O
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "transform": Array [
+                Object {
+                  "scale": mockConstructor {},
+                },
+              ],
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F3F3F3",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 40,
+                "justifyContent": "center",
+                "margin": 5,
+                "opacity": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 40,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontFamily": "Raleway_400Regular",
+                  "fontSize": 24,
+                }
+              }
+            >
+              R
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "transform": Array [
+                Object {
+                  "scale": mockConstructor {},
+                },
+              ],
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F3F3F3",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 40,
+                "justifyContent": "center",
+                "margin": 5,
+                "opacity": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 40,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontFamily": "Raleway_400Regular",
+                  "fontSize": 24,
+                }
+              }
+            >
+              T
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "transform": Array [
+                Object {
+                  "scale": mockConstructor {},
+                },
+              ],
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F3F3F3",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 40,
+                "justifyContent": "center",
+                "margin": 5,
+                "opacity": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 40,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontFamily": "Raleway_400Regular",
+                  "fontSize": 24,
+                }
+              }
+            >
+              Y
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
           undefined,
+          Object {
+            "opacity": mockConstructor {},
+            "transform": Array [
+              Object {
+                "translateX": mockConstructor {},
+              },
+            ],
+          },
         ]
       }
     >
@@ -820,193 +906,209 @@ exports[`<Game /> matches snapshot 1`] = `
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
               "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
+              "flexDirection": "row",
             },
-            Object {
-              "backgroundColor": "#40BAFF",
-            },
+            undefined,
           ]
         }
       >
-        <Text
+        <View
           style={
-            Object {
-              "fontFamily": "Raleway_400Regular",
-              "fontSize": 24,
-            }
-          }
-        >
-          F
-        </Text>
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F3F3F3",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 40,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 40,
               },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            },
-            Object {
-              "backgroundColor": "#40BAFF",
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            Object {
-              "fontFamily": "Raleway_400Regular",
-              "fontSize": 24,
-            }
-          }
-        >
-          I
-        </Text>
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
+              Object {
+                "backgroundColor": "#40BAFF",
               },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            },
-            Object {
-              "backgroundColor": "#40BAFF",
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            Object {
-              "fontFamily": "Raleway_400Regular",
-              "fontSize": 24,
-            }
+            ]
           }
         >
-          F
-        </Text>
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
+          <Text
+            style={
+              Object {
+                "fontFamily": "Raleway_400Regular",
+                "fontSize": 24,
+              }
+            }
+          >
+            F
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F3F3F3",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 40,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 40,
               },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            },
-            Object {
-              "backgroundColor": "#40BAFF",
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            Object {
-              "fontFamily": "Raleway_400Regular",
-              "fontSize": 24,
-            }
-          }
-        >
-          T
-        </Text>
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 40,
-              "justifyContent": "center",
-              "margin": 5,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
+              Object {
+                "backgroundColor": "#40BAFF",
               },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 40,
-            },
-            Object {
-              "backgroundColor": "#40BAFF",
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            Object {
-              "fontFamily": "Raleway_400Regular",
-              "fontSize": 24,
-            }
+            ]
           }
         >
-          Y
-        </Text>
+          <Text
+            style={
+              Object {
+                "fontFamily": "Raleway_400Regular",
+                "fontSize": 24,
+              }
+            }
+          >
+            I
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F3F3F3",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 40,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 40,
+              },
+              Object {
+                "backgroundColor": "#40BAFF",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "Raleway_400Regular",
+                "fontSize": 24,
+              }
+            }
+          >
+            F
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F3F3F3",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 40,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 40,
+              },
+              Object {
+                "backgroundColor": "#40BAFF",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "Raleway_400Regular",
+                "fontSize": 24,
+              }
+            }
+          >
+            T
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F3F3F3",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 40,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 40,
+              },
+              Object {
+                "backgroundColor": "#40BAFF",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "Raleway_400Regular",
+                "fontSize": 24,
+              }
+            }
+          >
+            Y
+          </Text>
+        </View>
       </View>
     </View>
   </View>
   <View
     style={
       Array [
-        undefined,
+        Object {
+          "bottom": 150,
+          "height": 150,
+          "position": "absolute",
+        },
         Object {
           "opacity": mockConstructor {},
           "transform": Array [
@@ -1025,7 +1127,6 @@ exports[`<Game /> matches snapshot 1`] = `
           "flexDirection": "row",
           "flexWrap": "wrap",
           "justifyContent": "center",
-          "marginTop": 60,
           "paddingLeft": 40,
           "paddingRight": 40,
           "width": "100%",

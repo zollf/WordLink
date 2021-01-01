@@ -5,6 +5,7 @@ const GameMocks: GameStore = {
   loaded: false,
   error: false,
   game: {},
+  gameTitle: '',
 
   currentWord: '',
   selectedLetter: '',

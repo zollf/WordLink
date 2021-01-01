@@ -11,7 +11,8 @@ import {
   ControlButtons, 
   Path,
   Completed,
-  ExitModal
+  ExitModal,
+  Information
 } from './components';
 
 import { ElasticSlideIn, FadeSlideIn, Animate } from '../../animations';
@@ -22,6 +23,7 @@ const Game = () => {
   const { setCurrentPage } = useStore('global');
   const [exitModal, setExitModal] = useState(false);
 
+  const [infoT, infoO] = useAnimate(-100, 0);
   const [word1T, word1O] = useAnimate(-100, 0);
   const [pathT, pathO] = useAnimate(-100, 0);
   const [currentT, currentO] = useAnimate(-100, 0);
@@ -31,6 +33,7 @@ const Game = () => {
   useEffect(() => {
     Animated.parallel([
       Animated.stagger(20, [
+        ElasticSlideIn(infoT),
         ElasticSlideIn(word1T),
         ElasticSlideIn(pathT),
         ElasticSlideIn(currentT),
@@ -38,6 +41,7 @@ const Game = () => {
         ElasticSlideIn(lettersT),
       ]),
       Animated.stagger(20, [
+        FadeSlideIn(infoO),
         FadeSlideIn(word1O),
         FadeSlideIn(pathO),
         FadeSlideIn(currentO),
@@ -58,27 +62,39 @@ const Game = () => {
 
       <BackButton color="blue" overrideCallback={() => setExitModal(true)}/>
       
-      <Animate transform={word1T} opacity={word1O}>
-        <Word color="primary" word={game.start} />
-      </Animate>
-      
-      <Animate transform={pathT} opacity={pathO}>
-        <Path />
-      </Animate>
-      
-      <Animate transform={currentT} opacity={currentO}>
-        <CurrentWord />
+      <Animate style={styles.information} transform={infoT} opacity={infoO}>
+        <Information/>
       </Animate>
 
-      <Animate transform={word2T} opacity={word2O}>
-        <Word color="secondary" word={game.end} />
-      </Animate>
+      <View style={styles.content}>
+        <Animate transform={word1T} opacity={word1O}>
+          <Word color="primary" word={game.start} />
+        </Animate>
+        
+        <Animate transform={pathT} opacity={pathO}>
+          <Path />
+        </Animate>
+        
+        <Animate transform={currentT} opacity={currentO}>
+          <CurrentWord />
+        </Animate>
 
-      <Animate transform={lettersT} opacity={lettersO}>
+        <Animate transform={word2T} opacity={word2O}>
+          <Word color="secondary" word={game.end} />
+        </Animate>
+      </View>
+
+      <Animate style={styles.letterSelection} transform={lettersT} opacity={lettersO}>
         <LetterSelection />
       </Animate>
 
-      {!completed ? <ControlButtons /> : <Completed />}
+      {!completed ? (
+        <ControlButtons /> 
+      ) : ( 
+        <View style={styles.completed}>
+          <Completed />
+        </View>
+      )}
     </View>
   );
 };

@@ -8,6 +8,7 @@ class GameStore {
   loaded = false;
   error = false;
   game?: Game;
+  gameTitle = '';
   
   currentWord = '';
   selectedLetter = '';
@@ -28,6 +29,7 @@ class GameStore {
       loaded:             observable,
       error:              observable,
       completed:          observable,
+      gameTitle:          observable,
 
       getNewLetters:      action,
       isWord:             action,
@@ -54,6 +56,7 @@ class GameStore {
 
     if (gameLevel) {
       this.game = gameLevel[gameId].game;
+      this.gameTitle = gameLevel[gameId].title;
     } else {
       this.error = true;
     }
@@ -90,7 +93,7 @@ class GameStore {
         const newLetter = String.fromCharCode(j + 65);
         const temp = wordArr[i];
         wordArr[i] = newLetter;
-        if (this.isWord(wordArr.join('')) && !letters.includes(newLetter)) {
+        if (this.isWord(wordArr.join('')) && !letters.includes(newLetter) && !this.visited[wordArr.join("")]) {
           letters.push(newLetter.toUpperCase());
         }
         wordArr[i] = temp;

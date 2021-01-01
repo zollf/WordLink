@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
-    marginTop: 60,
     width: "100%",
     paddingLeft: 40,
     paddingRight: 40,

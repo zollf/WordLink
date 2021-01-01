@@ -14,15 +14,13 @@ const PreGameMenu = () => {
   const { setCurrentPage } = useStore('global');
 
   const [textT, textO] = useAnimate(-100, 0);
-  const [wordsT, wordsO] = useAnimate(-100, 0);
-  const [buttonT, buttonO] = useAnimate(-100, 0);
+  const [wordsO] = useAnimate(0);
+  const [buttonO] = useAnimate(0);
   
   useEffect(() => {
     Animated.parallel([
       Animated.stagger(50, [
         ElasticSlideIn(textT),
-        ElasticSlideIn(wordsT),
-        ElasticSlideIn(buttonT),
       ]),
       Animated.stagger(50, [
         FadeSlideIn(textO),
@@ -46,11 +44,11 @@ const PreGameMenu = () => {
           <Text style={styles.text}>Link the two words</Text>
         </Animate>
 
-        <Animate transform={wordsT} opacity={wordsO}>
+        <Animate opacity={wordsO}>
           <PreGameWords start={game.start} end={game.end}/>
         </Animate>
 
-        <Animate transform={buttonT} opacity={buttonO}>
+        <Animate opacity={buttonO}>
           <Button color="primary" text="START" onPress={() => startGame()}/>
         </Animate>
 
