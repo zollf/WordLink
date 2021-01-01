@@ -15,7 +15,7 @@ const GameMocks: GameStore = {
 
   loadGame: jest.fn(),
   startGame: jest.fn(),
-  getNewLetters: jest.fn(),
+  getNewLetters: jest.fn(() => ['C', 'B', 'C']),
   isWord: jest.fn(),
   setSelectedLetter: jest.fn(),
   changeLetter: jest.fn(),

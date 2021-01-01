@@ -9,11 +9,11 @@ import styles from './styles';
 
 const Levels = () => {
   const { currentDifficultyOpen } = useStore('global');
-
+  const level = getLevel(currentDifficultyOpen);
   return (
     <View style={styles.levels}>
       <View style={styles.group}>
-        {Object.keys(getLevel(currentDifficultyOpen)).map((key: string) => (
+        {level && Object.keys(level).map((key: string) => (
           <LevelCard key={key} difficulty={currentDifficultyOpen} number={key}/>
         ))}
       </View>

@@ -1,6 +1,7 @@
 import React from 'react';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, Image } from 'react-native';
 import { useStore } from '../../hooks';
+import arrow from '../../images/left-arrow.png';
 
 import AppStyle from '../../styles';
 import styles from './styles';
@@ -25,6 +26,7 @@ const Button = ({ color, overrideCallback }: Props) => {
     <TouchableOpacity data-test-id="button" onPress={handleClick} style={[styles.button, {
       backgroundColor: AppStyle[color],
     }]}>
+      <Image style={styles.arrow} source={arrow} />
     </TouchableOpacity>
   );
 };

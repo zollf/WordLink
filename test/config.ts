@@ -7,6 +7,8 @@ jest.mock('@expo-google-fonts/raleway', () => ({
 }));
 
 const animationMock = {
+  end: jest.fn(),
+  reset: jest.fn(),
   start: jest.fn(),
 };
 
@@ -24,6 +26,8 @@ jest.doMock('react-native', () => {
         View: ReactNative.View,
         stagger: jest.fn(() => animationMock),
         parallel: jest.fn(() => animationMock),
+        spring: jest.fn(() => animationMock),
+        sequence: jest.fn(() => animationMock),
         timing: jest.fn(() => animationMock),
         start: jest.fn(() => animationMock),
       }

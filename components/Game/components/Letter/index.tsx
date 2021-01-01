@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Animated, TouchableOpacity, View, Text } from 'react-native';
+import { useAnimate } from '../../../../hooks';
 
 import AppStyle from '../../../../styles';
 import styles from './styles';
@@ -7,15 +8,48 @@ import styles from './styles';
 interface Props {
   letter: string;
   color?: string;
+  onPress?: () => void;
 }
 
-const Letter = ({ letter, color }: Props) => {
+const Letter = ({ letter, color, onPress }: Props) => {
+  const [spring] = useAnimate(1);
+
+  const handlePress = () => {
+    if (onPress) {
+      Animated.sequence([
+        Animated.timing(spring, {
+          toValue: 0.8,
+          duration: 1,
+          useNativeDriver: true,
+        }),
+        Animated.spring(spring, {
+          toValue: 1,
+          friction: 3,
+          useNativeDriver: true,
+        })
+      ]).start();
+      onPress();  
+    }
+  };
+
   return (
-    <View style={[styles.box, color ? {
-      backgroundColor: AppStyle[color]
-    } : null]}>
-      <Text style={styles.text}>{letter}</Text>
-    </View>
+    !onPress ? (
+      <View style={[styles.box, color ? {
+        backgroundColor: AppStyle[color]
+      } : null]}>
+        <Text style={styles.text}>{letter}</Text>
+      </View>
+    ) : (
+      <Animated.View style={{
+        transform: [{scale: spring}]
+      }}>
+        <TouchableOpacity onPress={handlePress} style={[styles.box, color ? {
+          backgroundColor: AppStyle[color]
+        } : null]}>
+          <Text style={styles.text}>{letter}</Text>
+        </TouchableOpacity>
+      </Animated.View>
+    )
   );
 };
 

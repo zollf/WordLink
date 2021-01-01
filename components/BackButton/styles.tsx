@@ -2,8 +2,8 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   button: {
-    width: 28,
-    height: 28,
+    width: 35,
+    height: 35,
     borderRadius: 100,
     display: "flex",
     justifyContent: "center",
@@ -15,7 +15,11 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 60,
     left: 20,
-  }
+  },
+  arrow: {
+    width: 20,
+    height: 20,
+  },
 });
 
 export default styles;

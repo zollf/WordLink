@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, TouchableOpacity, Text } from 'react-native';
+import { View } from 'react-native';
 import { useStore } from '../../../../hooks';
+import Button from '../../../Button';
 
 import styles from './styles';
 
@@ -9,13 +10,12 @@ const ControlButtons = () => {
   
   return (
     <View style={styles.buttons}>
-      <TouchableOpacity style={styles.button} onPress={() => resetCurrentWord()}>
-        <Text style={styles.text}>RESET</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity style={styles.button} onPress={() => undo()}>
-        <Text style={styles.text}>UNDO</Text>
-      </TouchableOpacity>
+      <View style={styles.button}>
+        <Button color="primary" onPress={() => resetCurrentWord()} text="RESET"/>
+      </View>
+      <View style={styles.button}>
+        <Button color="secondary" onPress={() => undo()} text="UNDO"/>
+      </View>
     </View>
   );
 };

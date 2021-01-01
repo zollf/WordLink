@@ -2,8 +2,8 @@ const medium: Levels = {
   1: {
     title: "Level 1",
     game: {
-      start: 'forty',
-      end: 'fifty',
+      start: 'FORTY',
+      end: 'FIFTY',
       path: 5,
     },
   },

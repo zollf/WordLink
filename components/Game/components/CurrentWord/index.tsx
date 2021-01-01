@@ -12,9 +12,7 @@ const CurrentWord = () => {
   return (
     <View style={styles.box}>
       {!completed && currentWord.split("").map((letter: string, i: number) => (
-        <TouchableOpacity onPress={() => changeLetter(i)} key={`currentWord-${letter}-${i}`}>
-          <Letter letter={letter} />
-        </TouchableOpacity>
+        <Letter onPress={() => changeLetter(i)} letter={letter} key={`currentWord-${letter}-${i}`}/>
       ))}
     </View>
   );

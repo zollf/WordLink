@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { TouchableOpacity, View } from 'react-native';
+import { LayoutAnimation, View } from 'react-native';
 import { observer } from 'mobx-react';
 import { useStore } from '../../../../hooks';
 import Letter from '../Letter';
@@ -11,16 +11,17 @@ const LetterSelection = () => {
   const [letters, setLetters] = useState(getNewLetters());
 
   useEffect(() => { 
+    LayoutAnimation.configureNext({ 
+      duration: 200, 
+      update: { type: 'spring', springDamping: 0.9 }, 
+    });
     setLetters(getNewLetters());
   }, [currentWord]);
-
 
   return (
     <View style={styles.letterSelection}>
       {!completed && letters.map((letter: string, i: number) => (
-        <TouchableOpacity onPress={() => setSelectedLetter(letter)} key={`letterSelection-${letter}-${i}`}>
-          <Letter color={selectedLetter === letter ? "green" : ""} letter={letter} />
-        </TouchableOpacity>
+        <Letter onPress={() => setSelectedLetter(letter)} color={selectedLetter === letter ? "green" : ""} letter={letter} key={`letterSelection-${letter}-${i}`}/>
       ))}
     </View>
   );
