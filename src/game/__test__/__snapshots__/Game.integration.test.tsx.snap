@@ -50,7 +50,7 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
           },
           "shadowOpacity": 0.1,
           "shadowRadius": 4,
-          "top": 60,
+          "top": 120,
           "width": 35,
         }
       }
@@ -126,7 +126,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
             },
             "shadowOpacity": 0.1,
             "shadowRadius": 4,
-            "width": 200,
           }
         }
       >
@@ -157,7 +156,7 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   },
                   "shadowOpacity": 0.1,
                   "shadowRadius": 4,
-                  "width": 180,
+                  "width": 300,
                 },
                 Object {
                   "backgroundColor": "#FF9C40",
@@ -169,7 +168,7 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
               style={
                 Object {
                   "fontFamily": "Raleway_400Regular",
-                  "fontSize": 18,
+                  "fontSize": 26.5,
                 }
               }
             >
@@ -224,7 +223,7 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   },
                   "shadowOpacity": 0.1,
                   "shadowRadius": 4,
-                  "width": 180,
+                  "width": 300,
                 },
                 Object {
                   "backgroundColor": "#40BAFF",
@@ -236,7 +235,7 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
               style={
                 Object {
                   "fontFamily": "Raleway_400Regular",
-                  "fontSize": 18,
+                  "fontSize": 26.5,
                 }
               }
             >
@@ -288,7 +287,7 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
               "backgroundColor": "#FF9C40",
               "borderRadius": 5,
               "display": "flex",
-              "height": 76,
+              "height": 133.5,
               "justifyContent": "center",
               "opacity": 1,
               "shadowColor": "#000",
@@ -298,7 +297,7 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
               },
               "shadowOpacity": 0.1,
               "shadowRadius": 4,
-              "width": 175,
+              "width": 300,
             }
           }
         >
@@ -306,7 +305,7 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
             style={
               Object {
                 "fontFamily": "Raleway_400Regular",
-                "fontSize": 18,
+                "fontSize": 26.5,
               }
             }
           >

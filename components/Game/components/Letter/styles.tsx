@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
+import { widthPercentageToDP, heightPercentageToDP } from 'react-native-responsive-screen';
 
 import AppStyle from "../../../../styles";
 
 const styles = StyleSheet.create({
   box: {
-    width: 40,
-    height: 40,
+    width: widthPercentageToDP('10%'),
+    height: widthPercentageToDP('10%'),
     backgroundColor: AppStyle.lightGrey,
     margin: 5,
     display: "flex",
@@ -19,7 +20,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontFamily: AppStyle.font,
-    fontSize: 24,
+    fontSize: heightPercentageToDP('3%'),
   },
 });
 

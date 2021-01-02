@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
+import { widthPercentageToDP, heightPercentageToDP } from 'react-native-responsive-screen';
 
 import AppStyle from '../../styles';
 
 const styles = StyleSheet.create({
   preGameWords: {
-    width: 200,
     backgroundColor: AppStyle.lightGrey,
     display: 'flex',
     justifyContent: "space-between",
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     margin: 24,
   },
   block: {
-    width: 180,
+    width: widthPercentageToDP('40%'),
     height: 60,
     borderRadius: 5,
     shadowColor: '#000',
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   text: {
-    fontSize: 18,
+    fontSize: heightPercentageToDP('2%'),
     fontFamily: AppStyle.font
   },
   image: {

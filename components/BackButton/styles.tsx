@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { heightPercentageToDP } from 'react-native-responsive-screen';
 
 const styles = StyleSheet.create({
   button: {
@@ -13,7 +14,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 2, height: 2},
     shadowOpacity: 0.1,
     position: "absolute",
-    top: 60,
+    top: heightPercentageToDP('9%'),
     left: 20,
   },
   arrow: {

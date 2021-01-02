@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { heightPercentageToDP } from 'react-native-responsive-screen';
 
 import AppStyle from '../../styles';
 
@@ -20,7 +21,7 @@ const styles = StyleSheet.create({
   },
   wrapper: {
     position: "absolute",
-    bottom: 80,
+    bottom: heightPercentageToDP('8%'),
     width: "100%",
     display: "flex",
     justifyContent: "center",

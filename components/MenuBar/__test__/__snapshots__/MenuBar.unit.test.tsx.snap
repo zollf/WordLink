@@ -6,7 +6,7 @@ exports[`<MenuBar/> matches snapshot 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "bottom": 80,
+      "bottom": 106.5,
       "display": "flex",
       "justifyContent": "center",
       "position": "absolute",
