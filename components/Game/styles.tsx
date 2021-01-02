@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { heightPercentageToDP } from 'react-native-responsive-screen';
+import { heightPercentageToDP, widthPercentageToDP } from 'react-native-responsive-screen';
 
 const styles = StyleSheet.create({
   game: {
@@ -28,6 +28,13 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: heightPercentageToDP('15%'),
   },
+  back: {
+    position: "absolute",
+    top: heightPercentageToDP('9%'),
+    left: widthPercentageToDP('5%'),
+    width: "100%",
+    height: "100%",
+  }
 });
 
 export default styles;

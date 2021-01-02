@@ -4,7 +4,7 @@ import { observer } from 'mobx-react';
 import { useStore, useAnimate } from '../../hooks';
 import PreGameWords from '../PreGameWords';
 import Button from '../Button';
-import BackButton from '../BackButton';
+import CircleButton from '../CircleButton';
 
 import { ElasticSlideIn, FadeSlideIn, Animate } from '../../animations';
 import styles from './styles';
@@ -38,7 +38,9 @@ const PreGameMenu = () => {
   return (
     (loaded) ? (
       <View style={styles.preGameMenu}>
-        <BackButton color="blue" overrideCallback={handleExit}/>
+        <View style={styles.back}>
+          <CircleButton color="blue" overrideCallback={handleExit}/>
+        </View>
         
         <Animate transform={textT} opacity={textO}>
           <Text style={styles.text}>Link the two words</Text>
@@ -55,7 +57,9 @@ const PreGameMenu = () => {
       </View>
     ) : error ? (
       <View style={styles.preGameMenu}>
-        <BackButton color="blue" overrideCallback={handleExit}/>
+        <View style={styles.back}>
+          <CircleButton color="blue" overrideCallback={handleExit}/>
+        </View>
         <Text style={styles.text}>Error level not found</Text>
         <Button color="primary" text="BACK" onPress={handleExit} />
       </View>

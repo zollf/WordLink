@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Animated } from 'react-native';
 import { observer } from 'mobx-react';
 import { useStore, useAnimate } from '../../hooks';
-import BackButton from '../BackButton';
+import CircleButton from '../CircleButton';
 
 import { 
   Word, 
@@ -59,8 +59,10 @@ const Game = () => {
   return (
     <View style={styles.game}>
       {exitModal && <ExitModal close={() => setExitModal(false)} exit={handleExit}/>}
-
-      <BackButton color="blue" overrideCallback={() => setExitModal(true)}/>
+      <View style={styles.back}>
+        <CircleButton color="blue" overrideCallback={() => setExitModal(true)}/>
+      </View>
+      
       
       <Animate style={styles.information} transform={infoT} opacity={infoO}>
         <Information/>
