@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
+import { widthPercentageToDP, heightPercentageToDP } from 'react-native-responsive-screen';
 
 import AppStyle from "../../styles";
 
 const styles = StyleSheet.create({
   levelCard: {
-    width: 60,
-    height: 60,
+    width: widthPercentageToDP('15%'),
+    height: widthPercentageToDP('15%'),
     backgroundColor: AppStyle.grey,
     borderRadius: 5,
     shadowColor: '#000',
@@ -18,7 +19,7 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   text: {
-    fontSize: 24,
+    fontSize: heightPercentageToDP('3%'),
   }
 });
 

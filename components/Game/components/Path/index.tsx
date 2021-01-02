@@ -4,8 +4,6 @@ import { observer } from 'mobx-react';
 import { useStore } from '../../../../hooks';
 import Word from '../Word';
 
-import styles from './styles';
-
 const Path = () => {
   const { path, stepNumber, completed } = useStore('gameStore');
   const maxOnScreen = 2;

@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { widthPercentageToDP, heightPercentageToDP } from 'react-native-responsive-screen';
 
 import AppStyle from "../../../../styles";
 
@@ -14,7 +15,7 @@ const styles = StyleSheet.create({
   },
   exitModal: {
     backgroundColor: AppStyle.lightGrey,
-    padding: 30,
+    padding: widthPercentageToDP('7%'),
     borderRadius: 5,
     marginBottom: 40,
   },
@@ -32,10 +33,10 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   text: {
-    width: 170,
+    width: widthPercentageToDP('40%'),
     textAlign: "center",
     fontFamily: AppStyle.font,
-    fontSize: 24,
+    fontSize: heightPercentageToDP('3%'),
     marginBottom: 10,
   }
 });

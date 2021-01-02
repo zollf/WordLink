@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
+import { widthPercentageToDP, heightPercentageToDP } from 'react-native-responsive-screen';
 
 import AppStyle from "../../styles";
 
 const styles = StyleSheet.create({
   button: {
-    width: 175,
-    height: 76,
+    width: widthPercentageToDP('40%'),
+    height: heightPercentageToDP('10%'),
     borderRadius: 5,
     display: "flex",
     justifyContent: "center",
@@ -16,7 +17,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
   },
   text: {
-    fontSize: 18,
+    fontSize: heightPercentageToDP('2%'),
     fontFamily: AppStyle.font,
   }
 });

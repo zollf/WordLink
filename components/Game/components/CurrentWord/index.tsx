@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, TouchableOpacity } from 'react-native';
+import { View } from 'react-native';
 import { observer } from 'mobx-react';
 import { useStore } from '../../../../hooks';
 import Letter from '../Letter';

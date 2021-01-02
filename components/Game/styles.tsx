@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { heightPercentageToDP } from 'react-native-responsive-screen';
 
 const styles = StyleSheet.create({
   game: {
@@ -10,7 +11,7 @@ const styles = StyleSheet.create({
   },
   information: {
     position: "absolute",
-    top: 150,
+    top: heightPercentageToDP('8%'),
   },
   content: {
     display: "flex",
@@ -21,11 +22,11 @@ const styles = StyleSheet.create({
   letterSelection: {
     height: 150,
     position: "absolute",
-    bottom: 150,
+    bottom: heightPercentageToDP('15%'),
   },
   completed: {
     position: "absolute",
-    bottom: 150,
+    bottom: heightPercentageToDP('15%'),
   },
 });
 

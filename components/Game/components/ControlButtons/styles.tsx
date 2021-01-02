@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
-
-import AppStyle from "../../../../styles";
+import { heightPercentageToDP } from 'react-native-responsive-screen';
 
 const styles = StyleSheet.create({
   buttons: {
@@ -11,12 +10,8 @@ const styles = StyleSheet.create({
   },
   button: {
     margin: 10,
-    bottom: 50,
+    bottom: heightPercentageToDP('2%'),
   },
-  text: {
-    fontSize: 16,
-    fontFamily: AppStyle.font,
-  }
 });
 
 export default styles;
