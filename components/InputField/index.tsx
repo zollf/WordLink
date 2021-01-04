@@ -4,23 +4,36 @@ import {
   NativeSyntheticEvent,
   TextInputChangeEventData,
 } from "react-native";
+
+import { widthPercentageToDP } from "react-native-responsive-screen";
+
 import InputFieldStyles from "./styles";
 import AppStyle from "../../styles";
 
 interface Props {
   color: "orange" | "blue";
   input: boolean;
-  value: string | null;
+  value?: string | null;
+  size?: "small" | "full";
 }
 
-const InputField = ({ color, input, value = null }: Props) => {
+interface SizeSelector {
+  [element: string]: string;
+}
+
+const InputField = ({ color, input, value = null, size = "full" }: Props) => {
   const [user, setUser] = useState("SampleUsername");
+
   const handleChange = (
     event: NativeSyntheticEvent<TextInputChangeEventData>
   ) => {
     setUser(event.nativeEvent?.text);
   };
 
+  const sizes: SizeSelector = {
+    full: "60%",
+    small: "27.5%",
+  };
   return (
     <TextInput
       data-test-id="text-input"
@@ -31,6 +44,7 @@ const InputField = ({ color, input, value = null }: Props) => {
       style={[
         InputFieldStyles.input,
         {
+          width: widthPercentageToDP(sizes[size]),
           backgroundColor: AppStyle[color],
         },
       ]}

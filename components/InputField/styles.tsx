@@ -1,16 +1,17 @@
 import { StyleSheet } from "react-native";
+
+import {
+  heightPercentageToDP,
+  widthPercentageToDP,
+} from "react-native-responsive-screen";
+
 import AppStyle from "../../styles";
 
 const InputFieldStyles = StyleSheet.create({
   input: {
-    width: 229,
-    height: 39,
+    height: heightPercentageToDP("7%"),
     borderRadius: 5,
     textAlign: "center",
-    shadowColor: "#000",
-    shadowRadius: 4,
-    shadowOffset: { width: 2, height: 2 },
-    shadowOpacity: 0.1,
   },
 });
 
