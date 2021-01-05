@@ -47,7 +47,7 @@ exports[`<Welcome/> matches snapshot 1`] = `
         style={
           Object {
             "fontSize": 12,
-            "width": 229,
+            "width": 450,
           }
         }
       >
@@ -64,19 +64,12 @@ exports[`<Welcome/> matches snapshot 1`] = `
           Array [
             Object {
               "borderRadius": 5,
-              "height": 39,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
+              "height": 93.5,
               "textAlign": "center",
-              "width": 229,
             },
             Object {
               "backgroundColor": "#40BAFF",
+              "width": 450,
             },
           ]
         }
