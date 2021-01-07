@@ -8,7 +8,7 @@ export { default as InputField } from "./InputField";
 export { default as NewUserPage } from "./NewUserPage";
 export { default as PreGameMenu } from "./PreGameMenu";
 export { default as PreGameWords } from "./PreGameWords";
-export { default as BackButton } from "./BackButton";
+export { default as CircleButton } from "./CircleButton";
 export { default as Game } from "./Game";
 export { default as RegisteredUserPage } from "./RegisteredUserPage";
 export { default as UserStats} from "./UserStats";

@@ -13,7 +13,7 @@ const animationMock = {
 };
 
 jest.doMock('react-native', () => {
-  // Extend ReactNative
+  // Changes ReactNative Animations to Mocks
   return Object.setPrototypeOf(
     {
       // Mock out properties of an already mocked export
@@ -24,6 +24,7 @@ jest.doMock('react-native', () => {
       Animated: {
         Value: jest.fn(),
         View: ReactNative.View,
+        delay: jest.fn(),
         stagger: jest.fn(() => animationMock),
         parallel: jest.fn(() => animationMock),
         spring: jest.fn(() => animationMock),

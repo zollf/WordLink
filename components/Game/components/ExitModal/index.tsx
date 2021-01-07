@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, LayoutAnimation } from 'react-native';
 import Button from '../../../Button';
+import CircleButton from '../../../CircleButton';
+
 import styles from './styles';
 
 interface Props {
@@ -17,12 +19,12 @@ const ExitModal = ({ close, exit }: Props) => {
     <>
       <View style={styles.wrapper}>
         <View style={styles.exitModal}>
+          <View style={styles.quit}>
+            <CircleButton color="blue" symbol="exit" overrideCallback={close}/>
+          </View>
           <Text style={styles.text}>Are you sure you want to quit?</Text>
           <View style={styles.button}>
             <Button color="primary" onPress={exit} text="QUIT" />
-          </View>
-          <View style={styles.button}>
-            <Button color="secondary" onPress={close} text="BACK" />
           </View>
         </View>
       </View>
