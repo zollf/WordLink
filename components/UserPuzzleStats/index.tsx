@@ -14,9 +14,9 @@ const UserPuzzleStats = () => {
     <View>
       <Text>Puzzles Completed</Text>
       <View style={styles.PuzzleStats}>
-        <PuzzleShowCase difficulty={"easy"} />
-        <PuzzleShowCase difficulty={"medium"} />
-        <PuzzleShowCase difficulty={"hard"} />
+        <PuzzleShowCase difficulty="easy" />
+        <PuzzleShowCase difficulty="medium" />
+        <PuzzleShowCase difficulty="hard" />
       </View>
     </View>
   );

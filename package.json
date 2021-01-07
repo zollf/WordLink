@@ -10,7 +10,6 @@
         "lint": "eslint --ext .ts,.tsx"
     },
     "pre-commit": [
-        "test",
         "lint"
     ],
     "dependencies": {

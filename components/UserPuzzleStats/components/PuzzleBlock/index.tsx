@@ -12,7 +12,7 @@ interface Props {
 }
 
 const PuzzleBlock = ({ number, stars }: Props) => {
-  const color = number % 2 == 0 ? AppStyles["orange"] : AppStyles["blue"];
+  const color = number % 2 == 0 ? AppStyles.primary : AppStyles.secondary;
   const starCount = {
     1: "*",
     2: "* *",

@@ -12,6 +12,8 @@ const InputFieldStyles = StyleSheet.create({
     height: heightPercentageToDP("7%"),
     borderRadius: 5,
     textAlign: "center",
+    shadowColor: "#000",
+    shadowRadius: 4,
   },
 });
 
