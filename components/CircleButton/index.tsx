@@ -1,7 +1,8 @@
 import React from 'react';
-import { TouchableOpacity, Image } from 'react-native';
+import { TouchableOpacity, Image, ImageSourcePropType } from 'react-native';
 import { useStore } from '../../hooks';
 import arrow from '../../images/left-arrow.png';
+import close from '../../images/close.png';
 
 import AppStyle from '../../styles';
 import styles from './styles';
@@ -9,9 +10,10 @@ import styles from './styles';
 interface Props {
   color: string;
   overrideCallback?: () => void;
+  symbol?: 'exit' | 'arrow'
 }
 
-const Button = ({ color, overrideCallback }: Props) => {
+const Button = ({ color, overrideCallback, symbol }: Props) => {
   const { setCurrentPage } = useStore('global');
 
   const handleClick = () => {
@@ -22,11 +24,23 @@ const Button = ({ color, overrideCallback }: Props) => {
     }
   };
 
+  const image = () => {
+    if (symbol) {
+      if (symbol === 'exit') {
+        return close;
+      } else if (symbol === 'arrow') {
+        return arrow;
+      }
+    } else {
+      return arrow;
+    }
+  };
+
   return (
     <TouchableOpacity data-test-id="button" onPress={handleClick} style={[styles.button, {
       backgroundColor: AppStyle[color],
     }]}>
-      <Image style={styles.arrow} source={arrow} />
+      <Image style={styles.arrow} source={image()} />
     </TouchableOpacity>
   );
 };

@@ -1,6 +1,6 @@
 interface Level {
   title: string,
-  game: any, //TODO
+  game: Game;
 }
 
 interface Levels {

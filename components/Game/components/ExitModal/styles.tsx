@@ -14,10 +14,15 @@ const styles = StyleSheet.create({
     zIndex: 3,
   },
   exitModal: {
+    width: widthPercentageToDP('60%'),
     backgroundColor: AppStyle.lightGrey,
-    padding: widthPercentageToDP('7%'),
+    paddingBottom: widthPercentageToDP('4%'),
+    paddingTop: heightPercentageToDP('8%'),
     borderRadius: 5,
     marginBottom: 40,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
   backing: {
     left: 0,
@@ -33,11 +38,18 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   text: {
-    width: widthPercentageToDP('40%'),
+    width: widthPercentageToDP('50%'),
     textAlign: "center",
     fontFamily: AppStyle.font,
     fontSize: heightPercentageToDP('3%'),
-    marginBottom: 10,
+    marginBottom: 20,
+  },
+  quit: {
+    left: 10,
+    top: 10,
+    position: "absolute",
+    height: "100%",
+    width: "100%",
   }
 });
 
