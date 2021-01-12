@@ -56,15 +56,17 @@ exports[`<Welcome/> matches snapshot 1`] = `
       <TextInput
         allowFontScaling={true}
         data-test-id="text-input"
-        editable={false}
+        editable={true}
         onChange={[Function]}
         rejectResponderTermination={true}
-        selectTextOnFocus={false}
+        selectTextOnFocus={true}
         style={
           Array [
             Object {
               "borderRadius": 5,
               "height": 93.5,
+              "shadowColor": "#000",
+              "shadowRadius": 4,
               "textAlign": "center",
             },
             Object {
@@ -74,7 +76,7 @@ exports[`<Welcome/> matches snapshot 1`] = `
           ]
         }
         underlineColorAndroid="transparent"
-        value="testBitch"
+        value=""
       />
     </View>
     <View
