@@ -1,16 +1,17 @@
-import React from 'react';
-import { Text, View } from 'react-native';
-import { observer } from 'mobx-react';
+import React from "react";
+import { Text, View } from "react-native";
+import { observer } from "mobx-react";
 
-import { MenuBar } from '../../components';
+import { MenuBar, Button, UserStats, UserPuzzleStats } from "../../components";
 
-import styles from './styles';
+import styles from "./styles";
 
 const Profile = () => {
   return (
-    <View style={styles.profile}>
-      <View style={styles.content}>
-        <Text>Profile</Text>
+    <View style={styles.container}>
+      <View style={styles.stats}>
+        <UserStats />
+        <UserPuzzleStats />
       </View>
       <MenuBar />
     </View>

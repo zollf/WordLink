@@ -66,24 +66,19 @@ exports[`<NewUserPage /> matches snapshot 1`] = `
         Array [
           Object {
             "borderRadius": 5,
-            "height": 39,
+            "height": 93.5,
             "shadowColor": "#000",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 2,
-            },
-            "shadowOpacity": 0.1,
             "shadowRadius": 4,
             "textAlign": "center",
-            "width": 229,
           },
           Object {
             "backgroundColor": "#40BAFF",
+            "width": 450,
           },
         ]
       }
       underlineColorAndroid="transparent"
-      value="SampleUsername"
+      value=""
     />
   </View>
   <View

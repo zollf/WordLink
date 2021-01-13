@@ -11,3 +11,5 @@ export { default as PreGameWords } from "./PreGameWords";
 export { default as CircleButton } from "./CircleButton";
 export { default as Game } from "./Game";
 export { default as RegisteredUserPage } from "./RegisteredUserPage";
+export { default as UserStats} from "./UserStats";
+export { default as UserPuzzleStats} from "./UserPuzzleStats";

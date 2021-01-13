@@ -1,36 +1,35 @@
 import React, { useState } from "react";
-import {
-  TextInput,
-  NativeSyntheticEvent,
-  TextInputChangeEventData,
-} from "react-native";
+import { TextInput } from "react-native";
+
+import { widthPercentageToDP } from "react-native-responsive-screen";
+
 import InputFieldStyles from "./styles";
 import AppStyle from "../../styles";
 
 interface Props {
   color: "orange" | "blue";
-  input: boolean;
-  value: string | null;
+  staticValue: string;
+  size?: "small" | "full";
 }
 
-const InputField = ({ color, input, value = null }: Props) => {
-  const [user, setUser] = useState("SampleUsername");
-  const handleChange = (
-    event: NativeSyntheticEvent<TextInputChangeEventData>
-  ) => {
-    setUser(event.nativeEvent?.text);
-  };
+const InputField = ({ color, staticValue = "", size = "full" }: Props) => {
+  const [value, setValue] = useState("");
 
+  const sizes = {
+    full: "60%",
+    small: "27.5%",
+  };
   return (
     <TextInput
       data-test-id="text-input"
-      editable={input}
-      selectTextOnFocus={input}
-      onChange={handleChange}
-      value={value ? value : user}
+      editable={!staticValue}
+      selectTextOnFocus={!staticValue}
+      onChange={(e) => setValue(e.nativeEvent?.text)}
+      value={staticValue || value}
       style={[
         InputFieldStyles.input,
         {
+          width: widthPercentageToDP(sizes[size]),
           backgroundColor: AppStyle[color],
         },
       ]}

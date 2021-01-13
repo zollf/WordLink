@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
-import { heightPercentageToDP } from 'react-native-responsive-screen';
+import { heightPercentageToDP } from "react-native-responsive-screen";
 
-import AppStyle from '../../styles';
+import AppStyle from "../../styles";
 
 const styles = StyleSheet.create({
   menuBar: {
@@ -9,19 +9,19 @@ const styles = StyleSheet.create({
     width: 212,
     backgroundColor: AppStyle.grey,
     borderRadius: 5,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-    shadowColor: '#000',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+    shadowColor: "#000",
     shadowRadius: 4,
-    shadowOffset: { width: 2, height: 2},
+    shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.1,
     zIndex: -1,
   },
   wrapper: {
     position: "absolute",
-    bottom: heightPercentageToDP('8%'),
+    bottom: heightPercentageToDP("8%"),
     width: "100%",
     display: "flex",
     justifyContent: "center",

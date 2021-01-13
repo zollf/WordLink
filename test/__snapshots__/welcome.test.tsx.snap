@@ -47,7 +47,7 @@ exports[`<Welcome/> matches snapshot 1`] = `
         style={
           Object {
             "fontSize": 12,
-            "width": 229,
+            "width": 450,
           }
         }
       >
@@ -56,32 +56,27 @@ exports[`<Welcome/> matches snapshot 1`] = `
       <TextInput
         allowFontScaling={true}
         data-test-id="text-input"
-        editable={false}
+        editable={true}
         onChange={[Function]}
         rejectResponderTermination={true}
-        selectTextOnFocus={false}
+        selectTextOnFocus={true}
         style={
           Array [
             Object {
               "borderRadius": 5,
-              "height": 39,
+              "height": 93.5,
               "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
               "shadowRadius": 4,
               "textAlign": "center",
-              "width": 229,
             },
             Object {
               "backgroundColor": "#40BAFF",
+              "width": 450,
             },
           ]
         }
         underlineColorAndroid="transparent"
-        value="testBitch"
+        value=""
       />
     </View>
     <View
