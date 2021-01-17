@@ -18,7 +18,7 @@ exports[`<InputField /> matches snapshot 1`] = `
         "textAlign": "center",
       },
       Object {
-        "backgroundColor": "#FF9C40",
+        "backgroundColor": "#FFBE40",
         "width": 450,
       },
     ]
