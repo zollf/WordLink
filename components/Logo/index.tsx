@@ -1,9 +1,7 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { Text } from "react-native";
 
 import { LinearGradient } from "expo-linear-gradient";
-
-import { widthPercentageToDP } from "react-native-responsive-screen";
 
 import Styles from "./styles";
 import AppStyle from "../../styles";
