@@ -37,21 +37,34 @@ exports[`<Profile/> matches snapshot 1`] = `
         <Text>
           Username
         </Text>
-        <TextInput
-          allowFontScaling={true}
-          data-test-id="text-input"
-          editable={true}
-          onChange={[Function]}
-          rejectResponderTermination={true}
-          selectTextOnFocus={true}
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4284860671,
+                4282432255,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.4,
+                0.4,
+              ],
+              "startPoint": Array [
+                0.2,
+                0.2,
+              ],
+            }
+          }
           style={
             Array [
               Object {
+                "alignItems": "center",
                 "borderRadius": 5,
+                "display": "flex",
                 "height": 93.5,
+                "justifyContent": "center",
                 "shadowColor": "#000",
                 "shadowRadius": 4,
-                "textAlign": "center",
               },
               Object {
                 "backgroundColor": "#40BAFF",
@@ -59,9 +72,25 @@ exports[`<Profile/> matches snapshot 1`] = `
               },
             ]
           }
-          underlineColorAndroid="transparent"
-          value=""
-        />
+        >
+          <TextInput
+            allowFontScaling={true}
+            data-test-id="text-input"
+            editable={true}
+            onChange={[Function]}
+            rejectResponderTermination={true}
+            selectTextOnFocus={true}
+            style={
+              Object {
+                "color": "white",
+                "fontFamily": "Raleway_700Bold",
+                "fontSize": 53.5,
+              }
+            }
+            underlineColorAndroid="transparent"
+            value=""
+          />
+        </ViewManagerAdapter_ExpoLinearGradient>
       </View>
       <View
         style={
@@ -85,21 +114,34 @@ exports[`<Profile/> matches snapshot 1`] = `
           <Text>
             Points
           </Text>
-          <TextInput
-            allowFontScaling={true}
-            data-test-id="text-input"
-            editable={true}
-            onChange={[Function]}
-            rejectResponderTermination={true}
-            selectTextOnFocus={true}
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4284860671,
+                  4282432255,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  0,
+                  0.5,
+                ],
+              }
+            }
             style={
               Array [
                 Object {
+                  "alignItems": "center",
                   "borderRadius": 5,
+                  "display": "flex",
                   "height": 93.5,
+                  "justifyContent": "center",
                   "shadowColor": "#000",
                   "shadowRadius": 4,
-                  "textAlign": "center",
                 },
                 Object {
                   "backgroundColor": "#FFBE40",
@@ -107,29 +149,58 @@ exports[`<Profile/> matches snapshot 1`] = `
                 },
               ]
             }
-            underlineColorAndroid="transparent"
-            value=""
-          />
+          >
+            <TextInput
+              allowFontScaling={true}
+              data-test-id="text-input"
+              editable={true}
+              onChange={[Function]}
+              rejectResponderTermination={true}
+              selectTextOnFocus={true}
+              style={
+                Object {
+                  "color": "white",
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 53.5,
+                }
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+          </ViewManagerAdapter_ExpoLinearGradient>
         </View>
         <View>
           <Text>
             Completed
           </Text>
-          <TextInput
-            allowFontScaling={true}
-            data-test-id="text-input"
-            editable={true}
-            onChange={[Function]}
-            rejectResponderTermination={true}
-            selectTextOnFocus={true}
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4284860671,
+                  4282432255,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  0,
+                  0.5,
+                ],
+              }
+            }
             style={
               Array [
                 Object {
+                  "alignItems": "center",
                   "borderRadius": 5,
+                  "display": "flex",
                   "height": 93.5,
+                  "justifyContent": "center",
                   "shadowColor": "#000",
                   "shadowRadius": 4,
-                  "textAlign": "center",
                 },
                 Object {
                   "backgroundColor": "#FFBE40",
@@ -137,9 +208,25 @@ exports[`<Profile/> matches snapshot 1`] = `
                 },
               ]
             }
-            underlineColorAndroid="transparent"
-            value=""
-          />
+          >
+            <TextInput
+              allowFontScaling={true}
+              data-test-id="text-input"
+              editable={true}
+              onChange={[Function]}
+              rejectResponderTermination={true}
+              selectTextOnFocus={true}
+              style={
+                Object {
+                  "color": "white",
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 53.5,
+                }
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+          </ViewManagerAdapter_ExpoLinearGradient>
         </View>
       </View>
     </View>
