@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Animated } from 'react-native';
+import { View, Animated, ScrollView } from 'react-native';
 import { observer } from 'mobx-react';
 import { useStore, useMultiAnimate } from '../../hooks';
 import { getLevel } from '../../data';
@@ -11,7 +11,7 @@ import styles from './styles';
 const Levels = () => {
   const { currentDifficultyOpen } = useStore('global');
   const level = getLevel(currentDifficultyOpen);
-  const animations = useMultiAnimate(0, Object.keys(level || {}).length);
+  const animations = useMultiAnimate(0.8, Object.keys(level || {}).length);
 
   useEffect(() => {
     Animated.sequence([
@@ -24,13 +24,13 @@ const Levels = () => {
 
   return (
     <View style={styles.levels}>
-      <View style={styles.group}>
+      <ScrollView style={styles.group}>
         {level && Object.keys(level).map((key: string, i: number) => (
           <Animate scale={animations[i]} key={key}>
-            <LevelCard difficulty={currentDifficultyOpen} number={key}/>
+            <LevelCard level={level[key]} difficulty={currentDifficultyOpen} number={key}/>
           </Animate>
         ))}
-      </View>
+      </ScrollView>
     </View>
   );
 };

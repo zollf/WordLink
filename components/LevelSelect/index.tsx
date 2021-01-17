@@ -32,15 +32,15 @@ const LevelSelect = () => {
   });
 
   return (
-    <View data-test-id="level-select">
-      <Animate style={styles.levelSelect} transform={transitionTranslate} opacity={transitionOpacity}>
+    <View style={styles.levelSelect} data-test-id="level-select">
+      <Animate transform={transitionTranslate} opacity={transitionOpacity}>
         <Button 
           text={currentDifficultyOpen.toUpperCase()} 
           color={getDifficultyColor(currentDifficultyOpen)} 
           onPress={() => setCurrentDifficultyOpen('')}
         />
       </Animate>
-      <Animate style={styles.levelSelect} transform={levelTranslate} opacity={levelOpacity}>
+      <Animate transform={levelTranslate} opacity={levelOpacity}>
         <Levels />
       </Animate>
     </View>
