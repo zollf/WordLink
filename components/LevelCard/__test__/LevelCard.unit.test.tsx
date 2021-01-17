@@ -7,10 +7,18 @@ import LevelCard from '../';
 import renderer from 'react-test-renderer';
 
 const number = "1";
+const level: Level = {
+  title: 'hello',
+  game: {
+    start: 'FORTY',
+    end: 'FIFTY',
+    path: 5,
+  }
+}
 
 const component = (
   <Provider global={GlobalMock}>
-    <LevelCard number={number} difficulty="easy"/>
+    <LevelCard level={level} number={number} difficulty="easy"/>
   </Provider>
 );
 

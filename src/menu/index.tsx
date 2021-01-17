@@ -15,9 +15,9 @@ const Menu = () => {
 
   return (
     <View style={styles.menu}>
-      <Text style={styles.text}>Level Select</Text>
       {!currentDifficultyOpen ? (
         <>
+          <Text style={styles.text}>Level Select</Text>
           <LevelButtons />
           <MenuBar />
         </>
