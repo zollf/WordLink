@@ -14,7 +14,7 @@ const level: Level = {
     end: 'FIFTY',
     path: 5,
   }
-}
+};
 
 const component = (
   <Provider global={GlobalMock}>

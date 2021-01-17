@@ -23,15 +23,15 @@ const LevelCard = ({ level, number, difficulty }: Props) => {
       case 'hard'   : return [AppStyle.lightRed, AppStyle.red];
       default       : return [AppStyle.lightGreen, AppStyle.green];
     }
-  }
+  };
 
   const renderStars = () => {
-    let starsArr = [];
+    const starsArr = [];
     for(let i = 0; i < 3; i++) {
-      starsArr.push(<Image key={i} source={stars} style={styles.star}/>)
+      starsArr.push(<Image key={i} source={stars} style={styles.star}/>);
     }
     return starsArr;
-  }
+  };
 
   return (
     <TouchableOpacity 
@@ -44,23 +44,23 @@ const LevelCard = ({ level, number, difficulty }: Props) => {
         locations={[0.5, 0.5]}
         start={[-0.1, 0.1]}
       >
-          <LinearGradient 
-            colors={getColors()} 
-            start={[-0.25, 0.25]}
-            style={styles.circle}
-          >
-            <Text style={styles.circleText}>{number}</Text> 
-          </LinearGradient>
-          <View style={styles.words}>
-            <Text style={styles.text}>{level.game.start}</Text> 
-            <Text style={styles.text}>{level.game.end}</Text> 
-          </View>
-          <View style={[styles.quarterCircle, {
-            backgroundColor: getColors()[1],
-          }]} />
-          <View style={styles.stars}>
-            {renderStars()}
-          </View>
+        <LinearGradient 
+          colors={getColors()} 
+          start={[-0.25, 0.25]}
+          style={styles.circle}
+        >
+          <Text style={styles.circleText}>{number}</Text> 
+        </LinearGradient>
+        <View style={styles.words}>
+          <Text style={styles.text}>{level.game.start}</Text> 
+          <Text style={styles.text}>{level.game.end}</Text> 
+        </View>
+        <View style={[styles.quarterCircle, {
+          backgroundColor: getColors()[1],
+        }]} />
+        <View style={styles.stars}>
+          {renderStars()}
+        </View>
       </LinearGradient>
     </TouchableOpacity>
   );

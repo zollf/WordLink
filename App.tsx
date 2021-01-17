@@ -15,7 +15,7 @@ import styles from './styles/main';
 configure({ enforceActions: 'observed' });
 
 const App = () => {
-  const [data, setData] = useState({});
+  const [, setData] = useState({});
 
   const [fontsLoaded] = useFonts({
     Raleway_400Regular,

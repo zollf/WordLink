@@ -7,7 +7,8 @@
         "web": "expo start --web",
         "eject": "expo eject",
         "test": "jest",
-        "lint": "eslint --ext .ts,.tsx"
+        "lint": "eslint . --ext .ts,.tsx",
+        "fix": "eslint . --ext .ts,.tsx --fix"
     },
     "pre-commit": [
         "lint"

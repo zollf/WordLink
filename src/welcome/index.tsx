@@ -5,7 +5,7 @@ import { NewUserPage, MenuBar, RegisteredUserPage } from "../../components";
 import styles from "./styles";
 
 const Welcome = () => {
-  const registered: boolean = true;
+  const registered = true;
 
   return (
     <View style={styles.welcome}>

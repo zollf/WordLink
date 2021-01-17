@@ -10,7 +10,7 @@ const _getData = async () => {
     return { 
       value: e,
       success: false 
-    }
+    };
   }
 };
 
