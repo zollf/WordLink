@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
     zIndex: -1,
     height: 50,
     width: 50,
-    backgroundColor: AppStyle.lightGrey,
     borderRadius: 5,
     shadowColor: '#000',
     shadowRadius: 4,

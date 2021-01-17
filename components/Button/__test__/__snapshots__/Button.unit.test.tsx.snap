@@ -32,8 +32,8 @@ exports[`<MenuBar/> matches snapshot 1`] = `
       proxiedProperties={
         Object {
           "colors": Array [
-            4294956160,
-            4294950464,
+            4282711882,
+            4280928549,
           ],
           "endPoint": undefined,
           "locations": Array [
@@ -67,8 +67,9 @@ exports[`<MenuBar/> matches snapshot 1`] = `
       <Text
         style={
           Object {
-            "fontFamily": "Raleway_400Regular",
-            "fontSize": 26.5,
+            "color": "white",
+            "fontFamily": "Raleway_700Bold",
+            "fontSize": 33.5,
           }
         }
       >

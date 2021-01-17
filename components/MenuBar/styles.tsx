@@ -1,13 +1,10 @@
 import { StyleSheet } from "react-native";
 import { heightPercentageToDP } from "react-native-responsive-screen";
 
-import AppStyle from "../../styles";
-
 const styles = StyleSheet.create({
   menuBar: {
     height: 75,
     width: 212,
-    backgroundColor: AppStyle.grey,
     borderRadius: 5,
     display: "flex",
     justifyContent: "center",
