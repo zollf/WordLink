@@ -1,16 +1,11 @@
 import React from 'react';
-import { Provider } from 'mobx-react';
-import GlobalMock from '../stores/mocks/GlobalMock';
+import useWithStores from './useWithStores';
 
 import { Welcome } from '../src';
 
 import renderer from 'react-test-renderer';
 
-const component = (
-  <Provider global={GlobalMock}>
-    <Welcome />
-  </Provider>
-);
+const component = useWithStores(<Welcome />);
 
 describe('<Welcome/>', () => {
   it('matches snapshot', () => {

@@ -2,16 +2,11 @@ import React from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore there are two app file names [json, tsx], todo: work-around 
 import App from '../App.tsx';
-import { Provider } from 'mobx-react';
-import GlobalMock from '../stores/mocks/GlobalMock';
+import useWithStores from './useWithStores';
 
 import renderer from 'react-test-renderer';
 
-const component = (
-  <Provider global={GlobalMock}>
-    <App />
-  </Provider>
-);
+const component = useWithStores(<App />);
 
 describe('<App/>', () => {
   const wrapper = renderer.create(component);

@@ -1,16 +1,11 @@
 import React from 'react';
-import { Provider } from 'mobx-react';
-import GlobalMock from '../stores/mocks/GlobalMock';
+import useWithStores from './useWithStores';
 
 import { Profile } from '../src';
 
 import renderer from 'react-test-renderer';
 
-const component = (
-  <Provider global={GlobalMock}>
-    <Profile />
-  </Provider>
-);
+const component = useWithStores(<Profile />);
 
 describe('<Profile/>', () => {
   it('matches snapshot', () => {

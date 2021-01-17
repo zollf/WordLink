@@ -1,10 +1,9 @@
 import { observable, action, makeObservable } from "mobx";
-import { dictionary, getLevel } from '../../data';
+import { dictionary } from '../../data';
 
 class GameStore {
   gameId = 0;
   difficulty = '';
-  inGame = false;
   loaded = false;
   error = false;
   game?: Game;
@@ -19,7 +18,6 @@ class GameStore {
 
   constructor() {
     makeObservable(this, {
-      inGame:             observable,
       gameId:             observable,
       path:               observable,
       difficulty:         observable,
@@ -34,7 +32,6 @@ class GameStore {
       getNewLetters:      action,
       isWord:             action,
       loadGame:           action,
-      startGame:          action,
       setSelectedLetter:  action,
       changeLetter:       action,
       resetCurrentWord:   action,
@@ -45,38 +42,20 @@ class GameStore {
 
   /**
    * Loads the game file into the store
-   * @param gameId 
-   * @param difficulty 
+   * @param Level
    */
-  loadGame = (gameId: number, difficulty: string) => {
-    this.gameId = gameId;
-    this.difficulty = difficulty;
+  loadGame = (level: Level) => {
+    this.game = level.game;
+    this.gameTitle = level.title;
+    this.difficulty = level.difficulty;
+    this.completed = false;
 
-    const gameLevel = getLevel(difficulty);
-
-    if (gameLevel) {
-      this.game = gameLevel[gameId].game;
-      this.gameTitle = gameLevel[gameId].title;
-    } else {
-      this.error = true;
-    }
+    this.currentWord = level.game.start;
+    this.path.push(this.currentWord);
+    this.visited[this.currentWord] = true;
 
     if (this.game && this.game.start && this.game.end) {
       this.loaded = true;
-    }
-  };
-
-  /**
-   * Starts the game
-   */
-  startGame = () => {
-    if (this.game) {
-      this.inGame = true;
-      this.currentWord = this.game.start;
-      this.path.push(this.currentWord);
-      this.visited[this.currentWord] = true;
-    } else {
-      // log error
     }
   };
 
@@ -179,7 +158,6 @@ class GameStore {
    * Clears the game, force reset
    */
   clearGame = () => {
-    this.inGame = false;
     this.loaded = false;
     this.error = false;
     this.completed = false;

@@ -1,16 +1,12 @@
 import React from 'react';
-import { Provider } from 'mobx-react';
+import useWithStores from '../../../test/useWithStores';
 import GlobalMock from '../../../stores/mocks/GlobalMock';
 
 import Menu from '../';
 
 import renderer from 'react-test-renderer';
 
-const component = (
-  <Provider global={GlobalMock}>
-    <Menu />
-  </Provider>
-);
+const component = useWithStores(<Menu />);
 
 describe('<Menu />', () => {
   let wrapper = renderer.create(component);

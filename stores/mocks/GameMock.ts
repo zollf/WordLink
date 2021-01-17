@@ -1,17 +1,27 @@
+const level: Level = {
+  title: 'hello',
+  difficulty: 'easy',
+  game: {
+    start: 'FORTY',
+    end: 'FIFTY',
+    path: 5,
+  }
+};
+
 const GameMocks: GameStore = {
   gameId: 0,
-  difficulty: '',
+  difficulty: 'EASY',
   inGame: false,
   loaded: false,
   error: false,
-  game: {},
-  gameTitle: '',
+  game: level.game,
+  gameTitle: 'hello',
 
-  currentWord: '',
+  currentWord: level.game.start,
   selectedLetter: '',
   stepNumber: 0,
-  path: [],
-  visited: {},
+  path: [level.game.start],
+  visited: {'FORTY': true},
   completed: false,
 
   loadGame: jest.fn(),
@@ -26,3 +36,4 @@ const GameMocks: GameStore = {
 };
 
 export default GameMocks;
+

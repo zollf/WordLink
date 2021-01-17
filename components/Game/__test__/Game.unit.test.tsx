@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'mobx-react';
 import GlobalMock from '../../../stores/mocks/GlobalMock';
-import GameMock from '../../../stores/mocks/GameMocks';
+import GameMock from '../../../stores/mocks/GameMock';
 import { getLevel } from '../../../data';
 
 import Game from '../';
