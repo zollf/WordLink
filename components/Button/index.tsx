@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, TouchableOpacity, Animated } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 import { useAnimate } from '../../hooks';
 
 import AppStyle from '../../styles';
@@ -33,10 +34,10 @@ const Button = ({ onPress, text, color }: Props) => {
     <Animated.View style={{
       transform: [{scale: spring}]
     }}>
-      <TouchableOpacity data-test-id="button" onPress={handlePress} style={[styles.button, {
-        backgroundColor: AppStyle[color],
-      }]}>
-        <Text style={styles.text}>{text}</Text>
+      <TouchableOpacity data-test-id="button" onPress={handlePress}>
+        <LinearGradient colors={[AppStyle.lightOrange, AppStyle.orange]} style={styles.button} start={[-0.1, 0.1]} locations={[0.5, 0.5]}>
+          <Text style={styles.text}>{text}</Text>
+          </LinearGradient>
       </TouchableOpacity>
     </Animated.View>
   );
