@@ -1,15 +1,22 @@
 import { StyleSheet } from "react-native";
 
 import { heightPercentageToDP } from "react-native-responsive-screen";
+import AppStyle from "../../styles";
 
 const InputFieldStyles = StyleSheet.create({
-  input: {
+  gradient: {
     height: heightPercentageToDP("7%"),
     borderRadius: 5,
-    textAlign: "center",
     shadowColor: "#000",
     shadowRadius: 4,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  text: {
+    color: "white",
+    fontSize: heightPercentageToDP("4%"),
+    fontFamily: AppStyle.fontBold,
   },
 });
-
 export default InputFieldStyles;
