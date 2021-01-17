@@ -1,6 +1,6 @@
 interface UserData {
-    username: string,
-    // add image later
+  username: string,
+  // add image later
 }
 
 export default UserData;

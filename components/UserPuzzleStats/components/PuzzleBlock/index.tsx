@@ -1,5 +1,3 @@
-import App from "@/App";
-import { startBatch } from "mobx/dist/internal";
 import React from "react";
 import { Text, View } from "react-native";
 
