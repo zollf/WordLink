@@ -217,191 +217,271 @@ exports[`<Game /> matches snapshot 1`] = `
           ]
         }
       >
-        <View
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4294956160,
+                4294950464,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.5,
+                0.5,
+              ],
+              "startPoint": Array [
+                -0.1,
+                0.6,
+              ],
+            }
+          }
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
+            Object {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "display": "flex",
+              "height": 75,
+              "justifyContent": "center",
+              "margin": 5,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
               },
-              Object {
-                "backgroundColor": "#FF9C40",
-              },
-            ]
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 75,
+            }
           }
         >
           <Text
             style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
-              }
+              Array [
+                Object {
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 40,
+                },
+                Object {
+                  "color": "white",
+                },
+              ]
             }
           >
             F
           </Text>
-        </View>
-        <View
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4294956160,
+                4294950464,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.5,
+                0.5,
+              ],
+              "startPoint": Array [
+                -0.1,
+                0.6,
+              ],
+            }
+          }
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
+            Object {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "display": "flex",
+              "height": 75,
+              "justifyContent": "center",
+              "margin": 5,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
               },
-              Object {
-                "backgroundColor": "#FF9C40",
-              },
-            ]
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 75,
+            }
           }
         >
           <Text
             style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
-              }
+              Array [
+                Object {
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 40,
+                },
+                Object {
+                  "color": "white",
+                },
+              ]
             }
           >
             O
           </Text>
-        </View>
-        <View
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4294956160,
+                4294950464,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.5,
+                0.5,
+              ],
+              "startPoint": Array [
+                -0.1,
+                0.6,
+              ],
+            }
+          }
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
+            Object {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "display": "flex",
+              "height": 75,
+              "justifyContent": "center",
+              "margin": 5,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
               },
-              Object {
-                "backgroundColor": "#FF9C40",
-              },
-            ]
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 75,
+            }
           }
         >
           <Text
             style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
-              }
+              Array [
+                Object {
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 40,
+                },
+                Object {
+                  "color": "white",
+                },
+              ]
             }
           >
             R
           </Text>
-        </View>
-        <View
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4294956160,
+                4294950464,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.5,
+                0.5,
+              ],
+              "startPoint": Array [
+                -0.1,
+                0.6,
+              ],
+            }
+          }
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
+            Object {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "display": "flex",
+              "height": 75,
+              "justifyContent": "center",
+              "margin": 5,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
               },
-              Object {
-                "backgroundColor": "#FF9C40",
-              },
-            ]
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 75,
+            }
           }
         >
           <Text
             style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
-              }
+              Array [
+                Object {
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 40,
+                },
+                Object {
+                  "color": "white",
+                },
+              ]
             }
           >
             T
           </Text>
-        </View>
-        <View
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4294956160,
+                4294950464,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.5,
+                0.5,
+              ],
+              "startPoint": Array [
+                -0.1,
+                0.6,
+              ],
+            }
+          }
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
+            Object {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "display": "flex",
+              "height": 75,
+              "justifyContent": "center",
+              "margin": 5,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
               },
-              Object {
-                "backgroundColor": "#FF9C40",
-              },
-            ]
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 75,
+            }
           }
         >
           <Text
             style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
-              }
+              Array [
+                Object {
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 40,
+                },
+                Object {
+                  "color": "white",
+                },
+              ]
             }
           >
             Y
           </Text>
-        </View>
+        </ViewManagerAdapter_ExpoLinearGradient>
       </View>
     </View>
     <View
@@ -442,191 +522,271 @@ exports[`<Game /> matches snapshot 1`] = `
             ]
           }
         >
-          <View
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4294177779,
+                  4293125091,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  -0.1,
+                  0.6,
+                ],
+              }
+            }
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#F3F3F3",
-                  "borderRadius": 5,
-                  "display": "flex",
-                  "height": 75,
-                  "justifyContent": "center",
-                  "margin": 5,
-                  "shadowColor": "#000",
-                  "shadowOffset": Object {
-                    "height": 2,
-                    "width": 2,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 4,
-                  "width": 75,
+              Object {
+                "alignItems": "center",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 75,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
                 },
-                Object {
-                  "backgroundColor": "#F3F3F3",
-                },
-              ]
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 75,
+              }
             }
           >
             <Text
               style={
-                Object {
-                  "fontFamily": "Raleway_400Regular",
-                  "fontSize": 40,
-                }
+                Array [
+                  Object {
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 40,
+                  },
+                  Object {
+                    "color": "black",
+                  },
+                ]
               }
             >
               F
             </Text>
-          </View>
-          <View
+          </ViewManagerAdapter_ExpoLinearGradient>
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4294177779,
+                  4293125091,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  -0.1,
+                  0.6,
+                ],
+              }
+            }
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#F3F3F3",
-                  "borderRadius": 5,
-                  "display": "flex",
-                  "height": 75,
-                  "justifyContent": "center",
-                  "margin": 5,
-                  "shadowColor": "#000",
-                  "shadowOffset": Object {
-                    "height": 2,
-                    "width": 2,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 4,
-                  "width": 75,
+              Object {
+                "alignItems": "center",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 75,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
                 },
-                Object {
-                  "backgroundColor": "#F3F3F3",
-                },
-              ]
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 75,
+              }
             }
           >
             <Text
               style={
-                Object {
-                  "fontFamily": "Raleway_400Regular",
-                  "fontSize": 40,
-                }
+                Array [
+                  Object {
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 40,
+                  },
+                  Object {
+                    "color": "black",
+                  },
+                ]
               }
             >
               O
             </Text>
-          </View>
-          <View
+          </ViewManagerAdapter_ExpoLinearGradient>
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4294177779,
+                  4293125091,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  -0.1,
+                  0.6,
+                ],
+              }
+            }
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#F3F3F3",
-                  "borderRadius": 5,
-                  "display": "flex",
-                  "height": 75,
-                  "justifyContent": "center",
-                  "margin": 5,
-                  "shadowColor": "#000",
-                  "shadowOffset": Object {
-                    "height": 2,
-                    "width": 2,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 4,
-                  "width": 75,
+              Object {
+                "alignItems": "center",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 75,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
                 },
-                Object {
-                  "backgroundColor": "#F3F3F3",
-                },
-              ]
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 75,
+              }
             }
           >
             <Text
               style={
-                Object {
-                  "fontFamily": "Raleway_400Regular",
-                  "fontSize": 40,
-                }
+                Array [
+                  Object {
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 40,
+                  },
+                  Object {
+                    "color": "black",
+                  },
+                ]
               }
             >
               R
             </Text>
-          </View>
-          <View
+          </ViewManagerAdapter_ExpoLinearGradient>
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4294177779,
+                  4293125091,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  -0.1,
+                  0.6,
+                ],
+              }
+            }
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#F3F3F3",
-                  "borderRadius": 5,
-                  "display": "flex",
-                  "height": 75,
-                  "justifyContent": "center",
-                  "margin": 5,
-                  "shadowColor": "#000",
-                  "shadowOffset": Object {
-                    "height": 2,
-                    "width": 2,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 4,
-                  "width": 75,
+              Object {
+                "alignItems": "center",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 75,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
                 },
-                Object {
-                  "backgroundColor": "#F3F3F3",
-                },
-              ]
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 75,
+              }
             }
           >
             <Text
               style={
-                Object {
-                  "fontFamily": "Raleway_400Regular",
-                  "fontSize": 40,
-                }
+                Array [
+                  Object {
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 40,
+                  },
+                  Object {
+                    "color": "black",
+                  },
+                ]
               }
             >
               T
             </Text>
-          </View>
-          <View
+          </ViewManagerAdapter_ExpoLinearGradient>
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4294177779,
+                  4293125091,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  -0.1,
+                  0.6,
+                ],
+              }
+            }
             style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#F3F3F3",
-                  "borderRadius": 5,
-                  "display": "flex",
-                  "height": 75,
-                  "justifyContent": "center",
-                  "margin": 5,
-                  "shadowColor": "#000",
-                  "shadowOffset": Object {
-                    "height": 2,
-                    "width": 2,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 4,
-                  "width": 75,
+              Object {
+                "alignItems": "center",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 75,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
                 },
-                Object {
-                  "backgroundColor": "#F3F3F3",
-                },
-              ]
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 75,
+              }
             }
           >
             <Text
               style={
-                Object {
-                  "fontFamily": "Raleway_400Regular",
-                  "fontSize": 40,
-                }
+                Array [
+                  Object {
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 40,
+                  },
+                  Object {
+                    "color": "black",
+                  },
+                ]
               }
             >
               Y
             </Text>
-          </View>
+          </ViewManagerAdapter_ExpoLinearGradient>
         </View>
       </View>
     </View>
@@ -679,35 +839,63 @@ exports[`<Game /> matches snapshot 1`] = `
             onStartShouldSetResponder={[Function]}
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
                 "opacity": 1,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
               }
             }
           >
-            <Text
+            <ViewManagerAdapter_ExpoLinearGradient
+              proxiedProperties={
+                Object {
+                  "colors": Array [
+                    4294177779,
+                    4293125091,
+                  ],
+                  "endPoint": undefined,
+                  "locations": Array [
+                    0.5,
+                    0.5,
+                  ],
+                  "startPoint": Array [
+                    -0.1,
+                    0.6,
+                  ],
+                }
+              }
               style={
                 Object {
-                  "fontFamily": "Raleway_400Regular",
-                  "fontSize": 40,
+                  "alignItems": "center",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 75,
+                  "justifyContent": "center",
+                  "margin": 5,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 0.1,
+                  "shadowRadius": 4,
+                  "width": 75,
                 }
               }
             >
-              F
-            </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Raleway_700Bold",
+                      "fontSize": 40,
+                    },
+                    Object {
+                      "color": "black",
+                    },
+                  ]
+                }
+              >
+                F
+              </Text>
+            </ViewManagerAdapter_ExpoLinearGradient>
           </View>
         </View>
         <View
@@ -733,35 +921,63 @@ exports[`<Game /> matches snapshot 1`] = `
             onStartShouldSetResponder={[Function]}
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
                 "opacity": 1,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
               }
             }
           >
-            <Text
+            <ViewManagerAdapter_ExpoLinearGradient
+              proxiedProperties={
+                Object {
+                  "colors": Array [
+                    4294177779,
+                    4293125091,
+                  ],
+                  "endPoint": undefined,
+                  "locations": Array [
+                    0.5,
+                    0.5,
+                  ],
+                  "startPoint": Array [
+                    -0.1,
+                    0.6,
+                  ],
+                }
+              }
               style={
                 Object {
-                  "fontFamily": "Raleway_400Regular",
-                  "fontSize": 40,
+                  "alignItems": "center",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 75,
+                  "justifyContent": "center",
+                  "margin": 5,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 0.1,
+                  "shadowRadius": 4,
+                  "width": 75,
                 }
               }
             >
-              O
-            </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Raleway_700Bold",
+                      "fontSize": 40,
+                    },
+                    Object {
+                      "color": "black",
+                    },
+                  ]
+                }
+              >
+                O
+              </Text>
+            </ViewManagerAdapter_ExpoLinearGradient>
           </View>
         </View>
         <View
@@ -787,35 +1003,63 @@ exports[`<Game /> matches snapshot 1`] = `
             onStartShouldSetResponder={[Function]}
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
                 "opacity": 1,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
               }
             }
           >
-            <Text
+            <ViewManagerAdapter_ExpoLinearGradient
+              proxiedProperties={
+                Object {
+                  "colors": Array [
+                    4294177779,
+                    4293125091,
+                  ],
+                  "endPoint": undefined,
+                  "locations": Array [
+                    0.5,
+                    0.5,
+                  ],
+                  "startPoint": Array [
+                    -0.1,
+                    0.6,
+                  ],
+                }
+              }
               style={
                 Object {
-                  "fontFamily": "Raleway_400Regular",
-                  "fontSize": 40,
+                  "alignItems": "center",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 75,
+                  "justifyContent": "center",
+                  "margin": 5,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 0.1,
+                  "shadowRadius": 4,
+                  "width": 75,
                 }
               }
             >
-              R
-            </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Raleway_700Bold",
+                      "fontSize": 40,
+                    },
+                    Object {
+                      "color": "black",
+                    },
+                  ]
+                }
+              >
+                R
+              </Text>
+            </ViewManagerAdapter_ExpoLinearGradient>
           </View>
         </View>
         <View
@@ -841,35 +1085,63 @@ exports[`<Game /> matches snapshot 1`] = `
             onStartShouldSetResponder={[Function]}
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
                 "opacity": 1,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
               }
             }
           >
-            <Text
+            <ViewManagerAdapter_ExpoLinearGradient
+              proxiedProperties={
+                Object {
+                  "colors": Array [
+                    4294177779,
+                    4293125091,
+                  ],
+                  "endPoint": undefined,
+                  "locations": Array [
+                    0.5,
+                    0.5,
+                  ],
+                  "startPoint": Array [
+                    -0.1,
+                    0.6,
+                  ],
+                }
+              }
               style={
                 Object {
-                  "fontFamily": "Raleway_400Regular",
-                  "fontSize": 40,
+                  "alignItems": "center",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 75,
+                  "justifyContent": "center",
+                  "margin": 5,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 0.1,
+                  "shadowRadius": 4,
+                  "width": 75,
                 }
               }
             >
-              T
-            </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Raleway_700Bold",
+                      "fontSize": 40,
+                    },
+                    Object {
+                      "color": "black",
+                    },
+                  ]
+                }
+              >
+                T
+              </Text>
+            </ViewManagerAdapter_ExpoLinearGradient>
           </View>
         </View>
         <View
@@ -895,35 +1167,63 @@ exports[`<Game /> matches snapshot 1`] = `
             onStartShouldSetResponder={[Function]}
             style={
               Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
                 "opacity": 1,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
               }
             }
           >
-            <Text
+            <ViewManagerAdapter_ExpoLinearGradient
+              proxiedProperties={
+                Object {
+                  "colors": Array [
+                    4294177779,
+                    4293125091,
+                  ],
+                  "endPoint": undefined,
+                  "locations": Array [
+                    0.5,
+                    0.5,
+                  ],
+                  "startPoint": Array [
+                    -0.1,
+                    0.6,
+                  ],
+                }
+              }
               style={
                 Object {
-                  "fontFamily": "Raleway_400Regular",
-                  "fontSize": 40,
+                  "alignItems": "center",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 75,
+                  "justifyContent": "center",
+                  "margin": 5,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 0.1,
+                  "shadowRadius": 4,
+                  "width": 75,
                 }
               }
             >
-              Y
-            </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Raleway_700Bold",
+                      "fontSize": 40,
+                    },
+                    Object {
+                      "color": "black",
+                    },
+                  ]
+                }
+              >
+                Y
+              </Text>
+            </ViewManagerAdapter_ExpoLinearGradient>
           </View>
         </View>
       </View>
@@ -957,191 +1257,271 @@ exports[`<Game /> matches snapshot 1`] = `
           ]
         }
       >
-        <View
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4284860671,
+                4282432255,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.5,
+                0.5,
+              ],
+              "startPoint": Array [
+                -0.1,
+                0.6,
+              ],
+            }
+          }
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
+            Object {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "display": "flex",
+              "height": 75,
+              "justifyContent": "center",
+              "margin": 5,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
               },
-              Object {
-                "backgroundColor": "#40BAFF",
-              },
-            ]
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 75,
+            }
           }
         >
           <Text
             style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
-              }
+              Array [
+                Object {
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 40,
+                },
+                Object {
+                  "color": "white",
+                },
+              ]
             }
           >
             F
           </Text>
-        </View>
-        <View
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4284860671,
+                4282432255,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.5,
+                0.5,
+              ],
+              "startPoint": Array [
+                -0.1,
+                0.6,
+              ],
+            }
+          }
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
+            Object {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "display": "flex",
+              "height": 75,
+              "justifyContent": "center",
+              "margin": 5,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
               },
-              Object {
-                "backgroundColor": "#40BAFF",
-              },
-            ]
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 75,
+            }
           }
         >
           <Text
             style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
-              }
+              Array [
+                Object {
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 40,
+                },
+                Object {
+                  "color": "white",
+                },
+              ]
             }
           >
             I
           </Text>
-        </View>
-        <View
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4284860671,
+                4282432255,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.5,
+                0.5,
+              ],
+              "startPoint": Array [
+                -0.1,
+                0.6,
+              ],
+            }
+          }
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
+            Object {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "display": "flex",
+              "height": 75,
+              "justifyContent": "center",
+              "margin": 5,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
               },
-              Object {
-                "backgroundColor": "#40BAFF",
-              },
-            ]
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 75,
+            }
           }
         >
           <Text
             style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
-              }
+              Array [
+                Object {
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 40,
+                },
+                Object {
+                  "color": "white",
+                },
+              ]
             }
           >
             F
           </Text>
-        </View>
-        <View
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4284860671,
+                4282432255,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.5,
+                0.5,
+              ],
+              "startPoint": Array [
+                -0.1,
+                0.6,
+              ],
+            }
+          }
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
+            Object {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "display": "flex",
+              "height": 75,
+              "justifyContent": "center",
+              "margin": 5,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
               },
-              Object {
-                "backgroundColor": "#40BAFF",
-              },
-            ]
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 75,
+            }
           }
         >
           <Text
             style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
-              }
+              Array [
+                Object {
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 40,
+                },
+                Object {
+                  "color": "white",
+                },
+              ]
             }
           >
             T
           </Text>
-        </View>
-        <View
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4284860671,
+                4282432255,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.5,
+                0.5,
+              ],
+              "startPoint": Array [
+                -0.1,
+                0.6,
+              ],
+            }
+          }
           style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#F3F3F3",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 75,
-                "justifyContent": "center",
-                "margin": 5,
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 75,
+            Object {
+              "alignItems": "center",
+              "borderRadius": 5,
+              "display": "flex",
+              "height": 75,
+              "justifyContent": "center",
+              "margin": 5,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
               },
-              Object {
-                "backgroundColor": "#40BAFF",
-              },
-            ]
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 75,
+            }
           }
         >
           <Text
             style={
-              Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
-              }
+              Array [
+                Object {
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 40,
+                },
+                Object {
+                  "color": "white",
+                },
+              ]
             }
           >
             Y
           </Text>
-        </View>
+        </ViewManagerAdapter_ExpoLinearGradient>
       </View>
     </View>
   </View>
@@ -1203,35 +1583,63 @@ exports[`<Game /> matches snapshot 1`] = `
           onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 75,
-              "justifyContent": "center",
-              "margin": 5,
               "opacity": 1,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 75,
             }
           }
         >
-          <Text
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4294177779,
+                  4293125091,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  -0.1,
+                  0.6,
+                ],
+              }
+            }
             style={
               Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
+                "alignItems": "center",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 75,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 75,
               }
             }
           >
-            C
-          </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 40,
+                  },
+                  Object {
+                    "color": "black",
+                  },
+                ]
+              }
+            >
+              C
+            </Text>
+          </ViewManagerAdapter_ExpoLinearGradient>
         </View>
       </View>
       <View
@@ -1257,35 +1665,63 @@ exports[`<Game /> matches snapshot 1`] = `
           onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 75,
-              "justifyContent": "center",
-              "margin": 5,
               "opacity": 1,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 75,
             }
           }
         >
-          <Text
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4294177779,
+                  4293125091,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  -0.1,
+                  0.6,
+                ],
+              }
+            }
             style={
               Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
+                "alignItems": "center",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 75,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 75,
               }
             }
           >
-            B
-          </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 40,
+                  },
+                  Object {
+                    "color": "black",
+                  },
+                ]
+              }
+            >
+              B
+            </Text>
+          </ViewManagerAdapter_ExpoLinearGradient>
         </View>
       </View>
       <View
@@ -1311,35 +1747,63 @@ exports[`<Game /> matches snapshot 1`] = `
           onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#F3F3F3",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 75,
-              "justifyContent": "center",
-              "margin": 5,
               "opacity": 1,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 75,
             }
           }
         >
-          <Text
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4294177779,
+                  4293125091,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  -0.1,
+                  0.6,
+                ],
+              }
+            }
             style={
               Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 40,
+                "alignItems": "center",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 75,
+                "justifyContent": "center",
+                "margin": 5,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 75,
               }
             }
           >
-            C
-          </Text>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 40,
+                  },
+                  Object {
+                    "color": "black",
+                  },
+                ]
+              }
+            >
+              C
+            </Text>
+          </ViewManagerAdapter_ExpoLinearGradient>
         </View>
       </View>
     </View>
