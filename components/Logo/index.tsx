@@ -5,7 +5,7 @@ import { LinearGradient } from "expo-linear-gradient";
 
 import { widthPercentageToDP } from "react-native-responsive-screen";
 
-import LogoStyles from "./styles";
+import Styles from "./styles";
 import AppStyle from "../../styles";
 
 const Logo = () => {
@@ -14,10 +14,10 @@ const Logo = () => {
       colors={[AppStyle.orange, AppStyle.blue]}
       start={[0, 0.4]}
       locations={[0.5, 0.5]}
-      style={LogoStyles.logo}
+      style={Styles.logo}
     >
-      <Text style={[LogoStyles.text, { marginRight: "10%" }]}>WORD</Text>
-      <Text style={[LogoStyles.text, { marginLeft: "25%" }]}>LINK</Text>
+      <Text style={[Styles.text, { marginRight: "10%" }]}>WORD</Text>
+      <Text style={[Styles.text, { marginLeft: "25%" }]}>LINK</Text>
     </LinearGradient>
   );
 };
