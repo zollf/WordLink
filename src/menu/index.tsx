@@ -3,12 +3,13 @@ import { View, Text } from 'react-native';
 import { observer } from 'mobx-react';
 import { useStore } from '../../hooks';
 
-import { MenuBar, LevelButtons, LevelSelect } from '../../components';
+import { MenuBar, LevelButtons, LevelSelect, CircleButton } from '../../components';
 
 import styles from './styles';
 
 const Menu = () => {
   const { 
+    setCurrentDifficultyOpen,
     currentDifficultyOpen, 
   } = useStore('global');
 
@@ -16,11 +17,18 @@ const Menu = () => {
     <View style={styles.menu}>
       <Text style={styles.text}>Level Select</Text>
       {!currentDifficultyOpen ? (
-        <LevelButtons />
+        <>
+          <LevelButtons />
+          <MenuBar />
+        </>
       ) : (
-        <LevelSelect />
+        <>
+          <LevelSelect />
+          <View style={styles.back}>
+            <CircleButton overrideCallback={() => setCurrentDifficultyOpen('')}/>
+          </View>
+        </>
       )}
-      <MenuBar />
     </View>
   );
 };

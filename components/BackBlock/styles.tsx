@@ -1,7 +1,5 @@
 import { StyleSheet } from "react-native";
 
-import AppStyle from '../../styles';
-
 const styles = StyleSheet.create({
   block: {
     position: "absolute",

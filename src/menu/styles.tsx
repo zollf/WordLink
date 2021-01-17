@@ -19,7 +19,13 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginBottom: 24,
     fontFamily: AppStyle.font,
+  },
+  back: {
+    position: 'absolute',
+    top: 50,
+    left: 20,
   }
+
 });
 
 export default styles;
