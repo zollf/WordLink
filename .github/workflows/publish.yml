@@ -22,7 +22,9 @@ jobs:
       - run: yarn test
       - run: yarn lint
       - run: yarn run expo doctor 
-
+      - run: expo publish
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
 
 
        
