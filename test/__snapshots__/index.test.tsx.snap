@@ -79,7 +79,7 @@ exports[`<Index/> matches snapshot 1`] = `
             "justifyContent": "center",
             "marginLeft": 10,
             "marginRight": 10,
-            "opacity": 0.1,
+            "opacity": 0.5,
             "shadowColor": "#000",
             "shadowOffset": Object {
               "height": 2,
@@ -120,7 +120,7 @@ exports[`<Index/> matches snapshot 1`] = `
             "justifyContent": "center",
             "marginLeft": 10,
             "marginRight": 10,
-            "opacity": 0.1,
+            "opacity": 0.5,
             "shadowColor": "#000",
             "shadowOffset": Object {
               "height": 2,
@@ -161,7 +161,7 @@ exports[`<Index/> matches snapshot 1`] = `
             "justifyContent": "center",
             "marginLeft": 10,
             "marginRight": 10,
-            "opacity": 0.1,
+            "opacity": 0.5,
             "shadowColor": "#000",
             "shadowOffset": Object {
               "height": 2,

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ImageBackground } from 'react-native';
 import { Provider, observer } from 'mobx-react';
 import { configure } from "mobx";
-import { global } from './stores';
+import { global, gameStore } from './stores';
 
 import _getData from './lib/getData';
 import { Index, Menu, Welcome, Profile, Game } from './src';
@@ -39,7 +39,7 @@ const App = () => {
   };
 
   return (
-    <Provider global={global}>
+    <Provider global={global} gameStore={gameStore}>
       <ImageBackground source={image} style={styles.image}>
         {fontsLoaded && pages[global.currentPage]}
       </ImageBackground>

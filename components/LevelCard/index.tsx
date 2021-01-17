@@ -14,7 +14,8 @@ interface Props {
 }
 
 const LevelCard = ({ level, number, difficulty }: Props) => {
-  const { loadGame } = useStore('global');
+  const { setCurrentPage } = useStore('global');
+  const { loadGame } = useStore('gameStore');
 
   const getColors = () => {
     switch(difficulty) {
@@ -33,9 +34,14 @@ const LevelCard = ({ level, number, difficulty }: Props) => {
     return starsArr;
   };
 
+  const handleClick = () => {
+    loadGame(level);
+    setCurrentPage('game');
+  }
+
   return (
     <TouchableOpacity 
-      onPress={() => loadGame(number, difficulty)} 
+      onPress={handleClick} 
       data-test-id={`card-${number}`} 
     >
       <LinearGradient 

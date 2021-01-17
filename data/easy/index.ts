@@ -1,6 +1,7 @@
 const easy: Levels = {
   1: {
     title: "Level 1",
+    difficulty: "EASY",
     game: {
       start: 'FORTY',
       end: 'FIFTY',
@@ -9,6 +10,7 @@ const easy: Levels = {
   },
   2: {
     title: "Level 2",
+    difficulty: "EASY",
     game: {
       start: 'SICK',
       end: 'WELL',
@@ -17,6 +19,7 @@ const easy: Levels = {
   },
   3: {
     title: "Level 3",
+    difficulty: "EASY",
     game: {
       start: 'RICH',
       end: 'POOR',
@@ -25,6 +28,7 @@ const easy: Levels = {
   },
   4: {
     title: "Level 4",
+    difficulty: "EASY",
     game: {
       start: "CENT",
       end: "DIME",
@@ -33,6 +37,7 @@ const easy: Levels = {
   },
   5: {
     title: "Level 5",
+    difficulty: "EASY",
     game: {
       start: "DRY",
       end: "WET",

@@ -15,12 +15,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: 'center',
   },
-  
+
   active: {
   },
 
   notActive: {
-    opacity: 0.1,
+    opacity: 0.5,
   },
 
   image: {

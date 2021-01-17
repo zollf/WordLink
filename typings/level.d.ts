@@ -1,5 +1,6 @@
 interface Level {
   title: string,
+  difficulty: string,
   game: Game;
 }
 
