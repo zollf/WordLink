@@ -102,7 +102,7 @@ exports[`<Profile/> matches snapshot 1`] = `
                   "textAlign": "center",
                 },
                 Object {
-                  "backgroundColor": "#FF9C40",
+                  "backgroundColor": "#FFBE40",
                   "width": 206.5,
                 },
               ]
@@ -132,7 +132,7 @@ exports[`<Profile/> matches snapshot 1`] = `
                   "textAlign": "center",
                 },
                 Object {
-                  "backgroundColor": "#FF9C40",
+                  "backgroundColor": "#FFBE40",
                   "width": 206.5,
                 },
               ]
@@ -523,11 +523,7 @@ exports[`<Profile/> matches snapshot 1`] = `
         }
       >
         <Image
-          source={
-            Object {
-              "testUri": "../../../images/home.png",
-            }
-          }
+          source={1}
           style={
             Object {
               "height": 40,
@@ -568,11 +564,7 @@ exports[`<Profile/> matches snapshot 1`] = `
         }
       >
         <Image
-          source={
-            Object {
-              "testUri": "../../../images/gamepad.png",
-            }
-          }
+          source={1}
           style={
             Object {
               "height": 40,
@@ -613,11 +605,7 @@ exports[`<Profile/> matches snapshot 1`] = `
         }
       >
         <Image
-          source={
-            Object {
-              "testUri": "../../../images/avatar.png",
-            }
-          }
+          source={1}
           style={
             Object {
               "height": 40,

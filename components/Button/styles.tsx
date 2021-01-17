@@ -6,7 +6,7 @@ import AppStyle from "../../styles";
 const styles = StyleSheet.create({
   button: {
     width: widthPercentageToDP('40%'),
-    height: heightPercentageToDP('10%'),
+    height: heightPercentageToDP('8%'),
     borderRadius: 5,
     display: "flex",
     justifyContent: "center",

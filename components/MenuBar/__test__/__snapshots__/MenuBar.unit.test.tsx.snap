@@ -69,11 +69,7 @@ exports[`<MenuBar/> matches snapshot 1`] = `
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../images/home.png",
-          }
-        }
+        source={1}
         style={
           Object {
             "height": 40,
@@ -114,11 +110,7 @@ exports[`<MenuBar/> matches snapshot 1`] = `
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../images/gamepad.png",
-          }
-        }
+        source={1}
         style={
           Object {
             "height": 40,
@@ -159,11 +151,7 @@ exports[`<MenuBar/> matches snapshot 1`] = `
       }
     >
       <Image
-        source={
-          Object {
-            "testUri": "../../../images/avatar.png",
-          }
-        }
+        source={1}
         style={
           Object {
             "height": 40,
