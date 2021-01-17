@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   button: {
     width: widthPercentageToDP('8%'),
     height: widthPercentageToDP('8%'),
-    borderRadius: 17,
+    borderRadius: widthPercentageToDP('8%') / 2,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

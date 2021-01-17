@@ -60,7 +60,7 @@ exports[`<Game /> matches snapshot 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "borderRadius": 17,
+            "borderRadius": 30,
             "display": "flex",
             "height": 60,
             "justifyContent": "center",

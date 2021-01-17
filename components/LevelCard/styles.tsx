@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     position: 'absolute',
     left: '8%',
-    bottom: '25%',
+    bottom: '22%',
     borderRadius: widthPercentageToDP('12.5%'),
     display: "flex",
     justifyContent: "center",
