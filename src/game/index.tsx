@@ -1,33 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { View } from 'react-native';
-import { Provider, observer } from 'mobx-react';
-import { useStore } from '../../hooks';
-import { gameStore } from '../../stores';
+import { observer } from 'mobx-react';
 
-import { PreGameMenu, Game as WordLink } from '../../components';
+import { Game as WordLink } from '../../components';
 
 import styles from './styles';
 
-const Game = () => {
-  const { currentGameNumber, currentGameDifficulty } = useStore('global');
-
-  useEffect(() => {
-    if (!gameStore.inGame) {
-      gameStore.loadGame(currentGameNumber, currentGameDifficulty);
-    }
-  });
-  
-  return (
-    <Provider gameStore={gameStore}>
-      <View style={styles.game}>
-        {!gameStore.inGame ? (
-          <PreGameMenu />
-        ) : (
-          <WordLink />
-        )}
-      </View>
-    </Provider>
-  );
-};
+const Game = () => (
+  <View style={styles.game}>
+    <WordLink />
+  </View>
+);
 
 export default observer(Game);

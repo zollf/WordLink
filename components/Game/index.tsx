@@ -29,7 +29,6 @@ const Game = () => {
   const [currentT, currentO] = useAnimate(-100, 0);
   const [word2T, word2O] = useAnimate(-100, 0);
   const [lettersT, lettersO] = useAnimate(-100, 0);
-
   useEffect(() => {
     Animated.parallel([
       Animated.stagger(20, [
@@ -60,7 +59,7 @@ const Game = () => {
     <View style={styles.game}>
       {exitModal && <ExitModal close={() => setExitModal(false)} exit={handleExit}/>}
       <View style={styles.back}>
-        <CircleButton color="blue" overrideCallback={() => setExitModal(true)}/>
+        <CircleButton overrideCallback={() => setExitModal(true)}/>
       </View>
       
       
