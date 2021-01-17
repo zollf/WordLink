@@ -37,7 +37,7 @@ const LevelCard = ({ level, number, difficulty }: Props) => {
   const handleClick = () => {
     loadGame(level);
     setCurrentPage('game');
-  }
+  };
 
   return (
     <TouchableOpacity 
