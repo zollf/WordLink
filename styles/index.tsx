@@ -15,7 +15,7 @@ const AppStyle = {
 
   // BLUE
   blue: '#40BAFF',
-  lightBlue: '#E5E5E5',
+  lightBlue: '#65C8FF',
 
   // RED
   red: "#BB1919",
