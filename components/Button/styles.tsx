@@ -17,8 +17,9 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
   },
   text: {
-    fontSize: heightPercentageToDP('2%'),
-    fontFamily: AppStyle.font,
+    color: 'white',
+    fontSize: heightPercentageToDP('2.5%'),
+    fontFamily: AppStyle.fontBold,
   }
 });
 

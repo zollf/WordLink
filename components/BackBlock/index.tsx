@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Animated, LayoutAnimation } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 import { observer } from 'mobx-react';
 
 import { useStore } from '../../hooks';
 
+import AppStyle from '../../styles';
 import styles from './styles';
 
 interface Pages {
@@ -32,7 +34,12 @@ const BackBlock = () => {
   return (
     <Animated.View style={[styles.block, {
       left: posX
-    }]} />
+    }]}>
+      <LinearGradient 
+        colors={[AppStyle.lightGreen, AppStyle.green]} 
+        style={styles.block}
+      />
+    </Animated.View>
   );
 };
 

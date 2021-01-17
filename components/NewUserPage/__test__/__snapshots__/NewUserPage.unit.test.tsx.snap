@@ -155,8 +155,9 @@ exports[`<NewUserPage /> matches snapshot 1`] = `
           <Text
             style={
               Object {
-                "fontFamily": "Raleway_400Regular",
-                "fontSize": 26.5,
+                "color": "white",
+                "fontFamily": "Raleway_700Bold",
+                "fontSize": 33.5,
               }
             }
           >

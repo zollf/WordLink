@@ -100,8 +100,8 @@ exports[`<App/> matches snapshot 1`] = `
               proxiedProperties={
                 Object {
                   "colors": Array [
-                    4294956160,
-                    4294950464,
+                    4282711882,
+                    4280928549,
                   ],
                   "endPoint": undefined,
                   "locations": Array [
@@ -135,8 +135,9 @@ exports[`<App/> matches snapshot 1`] = `
               <Text
                 style={
                   Object {
-                    "fontFamily": "Raleway_400Regular",
-                    "fontSize": 26.5,
+                    "color": "white",
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 33.5,
                   }
                 }
               >
@@ -229,8 +230,9 @@ exports[`<App/> matches snapshot 1`] = `
               <Text
                 style={
                   Object {
-                    "fontFamily": "Raleway_400Regular",
-                    "fontSize": 26.5,
+                    "color": "white",
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 33.5,
                   }
                 }
               >
@@ -288,8 +290,8 @@ exports[`<App/> matches snapshot 1`] = `
               proxiedProperties={
                 Object {
                   "colors": Array [
-                    4294956160,
-                    4294950464,
+                    4294918208,
+                    4290451737,
                   ],
                   "endPoint": undefined,
                   "locations": Array [
@@ -323,8 +325,9 @@ exports[`<App/> matches snapshot 1`] = `
               <Text
                 style={
                   Object {
-                    "fontFamily": "Raleway_400Regular",
-                    "fontSize": 26.5,
+                    "color": "white",
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 33.5,
                   }
                 }
               >
@@ -348,12 +351,28 @@ exports[`<App/> matches snapshot 1`] = `
         }
       }
     >
-      <View
-        data-test-id="menu-bar"
+      <ViewManagerAdapter_ExpoLinearGradient
+        proxiedProperties={
+          Object {
+            "colors": Array [
+              4294177779,
+              4293125091,
+            ],
+            "data-test-id": "menu-bar",
+            "endPoint": undefined,
+            "locations": Array [
+              0.5,
+              0.5,
+            ],
+            "startPoint": Array [
+              -0.1,
+              0.1,
+            ],
+          }
+        }
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": "#C8C8C8",
             "borderRadius": 5,
             "display": "flex",
             "flexDirection": "row",
@@ -498,7 +517,6 @@ exports[`<App/> matches snapshot 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "#F3F3F3",
                 "borderRadius": 5,
                 "height": 50,
                 "position": "absolute",
@@ -517,8 +535,38 @@ exports[`<App/> matches snapshot 1`] = `
               },
             ]
           }
-        />
-      </View>
+        >
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4282711882,
+                  4280928549,
+                ],
+                "endPoint": undefined,
+                "locations": undefined,
+                "startPoint": undefined,
+              }
+            }
+            style={
+              Object {
+                "borderRadius": 5,
+                "height": 50,
+                "position": "absolute",
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 50,
+                "zIndex": -1,
+              }
+            }
+          />
+        </View>
+      </ViewManagerAdapter_ExpoLinearGradient>
     </View>
   </View>
 </View>

@@ -6,7 +6,7 @@ import { global } from './stores';
 
 import _getData from './lib/getData';
 import { Index, Menu, Welcome, Profile, Game } from './src';
-import { useFonts, Raleway_400Regular } from '@expo-google-fonts/raleway';
+import { useFonts, Raleway_400Regular, Raleway_700Bold } from '@expo-google-fonts/raleway';
 
 import image from './images/background.png';
 
@@ -19,6 +19,7 @@ const App = () => {
 
   const [fontsLoaded] = useFonts({
     Raleway_400Regular,
+    Raleway_700Bold,
   });
 
   useEffect(() => {
