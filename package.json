@@ -11,6 +11,7 @@
         "fix": "eslint . --ext .ts,.tsx --fix"
     },
     "pre-commit": [
+        "test",
         "lint"
     ],
     "dependencies": {

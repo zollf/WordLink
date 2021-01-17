@@ -59,7 +59,6 @@ const Path = () => {
               opacity: calcOpacity(i),
             }} 
             word={word}
-            color="lightGrey" 
             key={`path-${word}`}
             />
           )

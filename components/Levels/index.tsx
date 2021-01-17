@@ -24,7 +24,10 @@ const Levels = () => {
 
   return (
     <View style={styles.levels}>
-      <ScrollView style={styles.group}>
+      <ScrollView 
+        style={styles.group}
+        showsVerticalScrollIndicator={false}
+      >
         {level && Object.keys(level).map((key: string, i: number) => (
           <Animate scale={animations[i]} key={key}>
             <LevelCard level={level[key]} difficulty={currentDifficultyOpen} number={key}/>

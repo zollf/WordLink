@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
   box: {
     width: widthPercentageToDP('10%'),
     height: widthPercentageToDP('10%'),
-    backgroundColor: AppStyle.lightGrey,
     margin: 5,
     display: "flex",
     justifyContent: "center",
@@ -19,7 +18,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   text: {
-    fontFamily: AppStyle.font,
+    fontFamily: AppStyle.fontBold,
     fontSize: heightPercentageToDP('3%'),
   },
 });

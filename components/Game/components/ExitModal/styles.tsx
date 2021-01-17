@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     width: widthPercentageToDP('60%'),
     backgroundColor: AppStyle.lightGrey,
     paddingBottom: widthPercentageToDP('4%'),
-    paddingTop: heightPercentageToDP('8%'),
+    paddingTop: heightPercentageToDP('5%'),
     borderRadius: 5,
     marginBottom: 40,
     display: "flex",
@@ -40,9 +40,10 @@ const styles = StyleSheet.create({
   text: {
     width: widthPercentageToDP('50%'),
     textAlign: "center",
-    fontFamily: AppStyle.font,
+    color: 'white',
+    fontFamily: AppStyle.fontBold,
     fontSize: heightPercentageToDP('3%'),
-    marginBottom: 20,
+    marginBottom: 5,
   },
   quit: {
     left: 10,
