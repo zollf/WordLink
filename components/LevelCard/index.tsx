@@ -46,8 +46,7 @@ const LevelCard = ({ level, number, difficulty }: Props) => {
       >
           <LinearGradient 
             colors={getColors()} 
-            locations={[0.5, 0.5]}
-            start={[-0.3, 0.35]}
+            start={[-0.25, 0.25]}
             style={styles.circle}
           >
             <Text style={styles.circleText}>{number}</Text> 

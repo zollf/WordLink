@@ -63,13 +63,10 @@ exports[`<LevelCard/> matches snapshot 1`] = `
             4280928549,
           ],
           "endPoint": undefined,
-          "locations": Array [
-            0.5,
-            0.5,
-          ],
+          "locations": undefined,
           "startPoint": Array [
-            -0.3,
-            0.35,
+            -0.25,
+            0.25,
           ],
         }
       }
@@ -78,7 +75,7 @@ exports[`<LevelCard/> matches snapshot 1`] = `
           "alignItems": "center",
           "backgroundColor": "black",
           "borderRadius": 94,
-          "bottom": "25%",
+          "bottom": "22%",
           "display": "flex",
           "height": 187.5,
           "justifyContent": "center",
