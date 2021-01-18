@@ -8,11 +8,11 @@ const Logo = () => {
   return (
     <LinearGradient
       colors={[AppStyle.orange, AppStyle.blue]}
-      start={[0, 0.4]}
-      locations={[0.5, 0.5]}
+      start={[-0.2, 0.1]}
+      locations={[0.7, 0.7]}
       style={styles.logo}
     >
-      <Text style={[styles.text, { marginRight: "10%" }]}>WORD</Text>
+      <Text style={[styles.text, { marginRight: "2.5%" }]}>WORD</Text>
       <Text style={[styles.text, { marginLeft: "25%" }]}>LINK</Text>
     </LinearGradient>
   );

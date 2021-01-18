@@ -19,6 +19,8 @@ const LogoStyles = StyleSheet.create({
     fontSize: heightPercentageToDP("7.5%"),
     fontFamily: AppStyle.fontBold,
     fontStyle: "italic",
+    lineHeight: heightPercentageToDP("7.5%"),
+    height: heightPercentageToDP("6%"),
   },
 });
 
