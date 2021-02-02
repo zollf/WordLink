@@ -8,7 +8,7 @@ import {
 
 const LogoStyles = StyleSheet.create({
   logo: {
-    width: widthPercentageToDP("80%"),
+    width: widthPercentageToDP("75%"),
     height: heightPercentageToDP("20"),
     justifyContent: "center",
     alignItems: "center",
