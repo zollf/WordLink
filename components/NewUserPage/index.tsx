@@ -1,21 +1,43 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, Image } from "react-native";
 import Button from "../Button";
 import InputField from "../InputField";
+import Logo from "../Logo";
 import styles from "./styles";
+import {
+  heightPercentageToDP,
+  widthPercentageToDP,
+} from "react-native-responsive-screen";
 
 const NewUserPage = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.font}>Welcome Back!</Text>
-        <Text style={styles.font}>Create a Username</Text>
+        <Logo />
+        <Text
+          style={[
+            styles.text,
+            {
+              fontSize: heightPercentageToDP("4%"),
+              width: widthPercentageToDP("60%"),
+              textAlign: "center",
+              marginLeft: widthPercentageToDP("7.5%"),
+              marginTop: heightPercentageToDP("5%"),
+            },
+          ]}
+        >
+          TO GET LINKING ENTER A USERNAME
+        </Text>
       </View>
-      <View style={styles.input}>
-        <Text style={styles.username}>Username</Text>
-        <InputField color="blue" input={true} />
+      <Image
+        source={require("../../images/left-arrow.png")}
+        style={styles.image}
+      />
+      <View style={{ marginBottom: heightPercentageToDP("12.5%") }}>
+        <Text>Username</Text>
+        <InputField color="blue" staticValue="" />
       </View>
-      <View style={styles.button}>
+      <View>
         <Button text="Continue" color="orange" onPress={() => ({})} />
       </View>
     </View>
