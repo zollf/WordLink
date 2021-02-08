@@ -45,11 +45,17 @@ exports[`<InputField /> matches snapshot 1`] = `
     rejectResponderTermination={true}
     selectTextOnFocus={true}
     style={
-      Object {
-        "color": "white",
-        "fontFamily": "Raleway_700Bold",
-        "fontSize": 53.5,
-      }
+      Array [
+        Object {
+          "color": "white",
+          "fontFamily": "Raleway_700Bold",
+          "fontSize": 53.5,
+          "textAlign": "center",
+        },
+        Object {
+          "width": 450,
+        },
+      ]
     }
     underlineColorAndroid="transparent"
     value=""
