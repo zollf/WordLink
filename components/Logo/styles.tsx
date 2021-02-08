@@ -9,18 +9,18 @@ import {
 const LogoStyles = StyleSheet.create({
   logo: {
     width: widthPercentageToDP("75%"),
-    height: heightPercentageToDP("20"),
+    height: heightPercentageToDP("21.25"),
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 10,
   },
   text: {
     color: "white",
-    fontSize: heightPercentageToDP("7.5%"),
+    fontSize: heightPercentageToDP("7%"),
     fontFamily: AppStyle.fontBold,
     fontStyle: "italic",
-    lineHeight: heightPercentageToDP("7.5%"),
-    height: heightPercentageToDP("6%"),
+    lineHeight: heightPercentageToDP("7%"),
+    height: heightPercentageToDP("5%"),
   },
 });
 
