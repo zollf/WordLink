@@ -14,18 +14,7 @@ const NewUserPage = () => {
     <View style={styles.container}>
       <View style={styles.header}>
         <Logo />
-        <Text
-          style={[
-            styles.text,
-            {
-              fontSize: heightPercentageToDP("4%"),
-              width: widthPercentageToDP("60%"),
-              textAlign: "center",
-              marginLeft: widthPercentageToDP("7.5%"),
-              marginTop: heightPercentageToDP("5%"),
-            },
-          ]}
-        >
+        <Text style={[styles.text, styles.logotext]}>
           TO GET LINKING ENTER A USERNAME
         </Text>
       </View>

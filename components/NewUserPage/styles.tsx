@@ -24,6 +24,13 @@ const styles = StyleSheet.create({
     color: "black",
     fontFamily: AppStyle.fontBold,
   },
+  logotext: {
+    fontSize: heightPercentageToDP("4%"),
+    width: widthPercentageToDP("60%"),
+    textAlign: "center",
+    marginLeft: widthPercentageToDP("7.5%"),
+    marginTop: heightPercentageToDP("5%"),
+  },
   image: {
     height: heightPercentageToDP("5%"),
     width: widthPercentageToDP("10%"),
