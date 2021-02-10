@@ -69,7 +69,7 @@ const Game = () => {
 
       <View style={styles.content}>
         <Animate transform={word1T} opacity={word1O}>
-          <Word color="primary" word={game.start} />
+          <Word color="orange" word={game.start} />
         </Animate>
         
         <Animate transform={pathT} opacity={pathO}>
@@ -81,7 +81,7 @@ const Game = () => {
         </Animate>
 
         <Animate transform={word2T} opacity={word2O}>
-          <Word color="secondary" word={game.end} />
+          <Word color="blue" word={game.end} />
         </Animate>
       </View>
 
