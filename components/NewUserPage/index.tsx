@@ -4,10 +4,7 @@ import Button from "../Button";
 import InputField from "../InputField";
 import Logo from "../Logo";
 import styles from "./styles";
-import {
-  heightPercentageToDP,
-  widthPercentageToDP,
-} from "react-native-responsive-screen";
+import { heightPercentageToDP } from "react-native-responsive-screen";
 
 const NewUserPage = () => {
   return (
