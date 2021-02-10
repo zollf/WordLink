@@ -4,55 +4,131 @@ exports[`<NewUserPage /> matches snapshot 1`] = `
 <View
   style={
     Object {
+      "alignItems": "center",
       "flex": 1,
       "flexDirection": "column",
+      "justifyContent": "center",
     }
   }
 >
   <View
     style={
       Object {
-        "alignItems": "center",
-        "flex": 1.5,
-        "justifyContent": "center",
+        "marginBottom": 66.5,
+        "marginTop": -66.5,
       }
     }
   >
-    <Text
+    <ViewManagerAdapter_ExpoLinearGradient
+      proxiedProperties={
+        Object {
+          "colors": Array [
+            4294950464,
+            4282432255,
+          ],
+          "endPoint": undefined,
+          "locations": Array [
+            0.5,
+            0.5,
+          ],
+          "startPoint": Array [
+            0.025,
+            0.2,
+          ],
+        }
+      }
       style={
         Object {
-          "fontSize": 24,
+          "alignItems": "center",
+          "borderRadius": 10,
+          "height": 283.5,
+          "justifyContent": "center",
+          "width": 562.5,
         }
       }
     >
-      Welcome Back!
-    </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Raleway_700Bold",
+              "fontSize": 93.5,
+              "fontStyle": "italic",
+              "height": 66.5,
+              "lineHeight": 93.5,
+            },
+            Object {
+              "marginRight": "10%",
+            },
+          ]
+        }
+      >
+        WORD
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Raleway_700Bold",
+              "fontSize": 93.5,
+              "fontStyle": "italic",
+              "height": 66.5,
+              "lineHeight": 93.5,
+            },
+            Object {
+              "marginLeft": "27.5%",
+            },
+          ]
+        }
+      >
+        LINK
+      </Text>
+    </ViewManagerAdapter_ExpoLinearGradient>
     <Text
       style={
-        Object {
-          "fontSize": 24,
-        }
+        Array [
+          Object {
+            "color": "black",
+            "fontFamily": "Raleway_700Bold",
+          },
+          Object {
+            "fontSize": 53.5,
+            "marginLeft": 56.5,
+            "marginTop": 66.5,
+            "textAlign": "center",
+            "width": 450,
+          },
+        ]
       }
     >
-      Create a Username
+      TO GET LINKING ENTER A USERNAME
     </Text>
   </View>
+  <Image
+    source={1}
+    style={
+      Object {
+        "height": 66.5,
+        "marginBottom": 66.5,
+        "transform": Array [
+          Object {
+            "rotate": "-90deg",
+          },
+        ],
+        "width": 75,
+      }
+    }
+  />
   <View
     style={
       Object {
-        "alignItems": "center",
-        "flex": 1,
+        "marginBottom": 167,
       }
     }
   >
-    <Text
-      style={
-        Object {
-          "fontSize": 12,
-          "width": 229,
-        }
-      }
-    >
+    <Text>
       Username
     </Text>
     <ViewManagerAdapter_ExpoLinearGradient
@@ -99,25 +175,24 @@ exports[`<NewUserPage /> matches snapshot 1`] = `
         rejectResponderTermination={true}
         selectTextOnFocus={true}
         style={
-          Object {
-            "color": "white",
-            "fontFamily": "Raleway_700Bold",
-            "fontSize": 53.5,
-          }
+          Array [
+            Object {
+              "color": "white",
+              "fontFamily": "Raleway_700Bold",
+              "fontSize": 53.5,
+              "textAlign": "center",
+            },
+            Object {
+              "width": 450,
+            },
+          ]
         }
         underlineColorAndroid="transparent"
         value=""
       />
     </ViewManagerAdapter_ExpoLinearGradient>
   </View>
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "flex": 2.5,
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {

@@ -17,6 +17,7 @@ const InputFieldStyles = StyleSheet.create({
     color: "white",
     fontSize: heightPercentageToDP("4%"),
     fontFamily: AppStyle.fontBold,
+    textAlign: "center",
   },
 });
 export default InputFieldStyles;

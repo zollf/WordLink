@@ -1,29 +1,41 @@
 import { StyleSheet } from "react-native";
+import {
+  heightPercentageToDP,
+  widthPercentageToDP,
+} from "react-native-responsive-screen";
+import AppStyle from "../../styles";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "column",
-  },
-  header: {
-    flex: 1.5,
     justifyContent: "center",
     alignItems: "center",
   },
-  input: {
-    flex: 1,
-    alignItems: "center",
-  },
-  button: {
-    flex: 2.5,
-    alignItems: "center",
+  header: {
+    marginTop: heightPercentageToDP("-5%"),
+    marginBottom: heightPercentageToDP("5%"),
   },
   username: {
     width: 229,
     fontSize: 12,
   },
-  font: {
-    fontSize: 24,
+  text: {
+    color: "black",
+    fontFamily: AppStyle.fontBold,
+  },
+  logotext: {
+    fontSize: heightPercentageToDP("4%"),
+    width: widthPercentageToDP("60%"),
+    textAlign: "center",
+    marginLeft: widthPercentageToDP("7.5%"),
+    marginTop: heightPercentageToDP("5%"),
+  },
+  image: {
+    height: heightPercentageToDP("5%"),
+    width: widthPercentageToDP("10%"),
+    transform: [{ rotate: "-90deg" }],
+    marginBottom: heightPercentageToDP("5%"),
   },
 });
 

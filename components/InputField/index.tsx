@@ -47,7 +47,12 @@ const InputField = ({ color, staticValue = "", size = "full" }: Props) => {
         selectTextOnFocus={!staticValue}
         onChange={(e) => setValue(e.nativeEvent?.text)}
         value={staticValue || value}
-        style={InputFieldStyles.text}
+        style={[
+          InputFieldStyles.text,
+          {
+            width: widthPercentageToDP(sizes[size]),
+          },
+        ]}
       />
     </LinearGradient>
   );

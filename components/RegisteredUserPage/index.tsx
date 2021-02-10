@@ -3,20 +3,23 @@ import { Text, View } from "react-native";
 import Button from "../Button";
 import InputField from "../InputField";
 import styles from "./styles";
+import Logo from "../Logo";
+import { heightPercentageToDP } from "react-native-responsive-screen";
 
 const NewUserPage = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.font}>Welcome Back!</Text>
+      <View style={styles.logo}>
+        <Logo />
+        <Text style={[styles.text, { fontSize: heightPercentageToDP("4%") }]}>
+          CHALLENGE YOUR WORD LINKING SKILLS
+        </Text>
       </View>
-      <View style={styles.input}>
-        <Text style={styles.username}>Username</Text>
-        <InputField color="blue" input={false} value={"testBitch"} />
+      <View style={{ marginBottom: heightPercentageToDP("10%") }}>
+        <Text style={styles.text}>Welcome Back!</Text>
+        <InputField color="blue" staticValue={"Username"} />
       </View>
-      <View style={styles.button}>
-        <Button text="START" color="orange" onPress={() => ({})} />
-      </View>
+      <Button text="START" color="orange" onPress={() => ({})} />
     </View>
   );
 };

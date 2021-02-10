@@ -1,31 +1,27 @@
 import { StyleSheet } from "react-native";
-
-import { widthPercentageToDP } from "react-native-responsive-screen";
+import {
+  heightPercentageToDP,
+  widthPercentageToDP,
+} from "react-native-responsive-screen";
+import AppStyle from "../../styles";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "column",
-  },
-  header: {
-    flex: 1.5,
     justifyContent: "center",
     alignItems: "center",
   },
-  input: {
-    flex: 1,
+  text: {
+    color: "black",
+    fontFamily: AppStyle.fontBold,
+  },
+  logo: {
+    marginBottom: heightPercentageToDP("10%"),
+    // marginTop: heightPercentageToDP("-10%"),
+    flexDirection: "column",
     alignItems: "center",
-  },
-  button: {
-    flex: 2.5,
-    alignItems: "center",
-  },
-  username: {
-    width: widthPercentageToDP("60%"),
-    fontSize: 12,
-  },
-  font: {
-    fontSize: 24,
+    width: widthPercentageToDP("75%"),
   },
 });
 
