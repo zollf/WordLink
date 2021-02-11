@@ -10,9 +10,14 @@ const Information = () => {
   return (
     <View style={styles.information}>
       <Text style={styles.text}>{gameTitle}</Text>
-      <View style={[styles.block, {
-        backgroundColor: AppStyle[difficulty]
-      }]}>
+      <View
+        style={[
+          styles.block,
+          {
+            backgroundColor: AppStyle[difficulty],
+          },
+        ]}
+      >
         <Text style={styles.difficulty}>{difficulty.toUpperCase()}</Text>
       </View>
     </View>

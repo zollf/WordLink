@@ -1,12 +1,12 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 import { heightPercentageToDP } from 'react-native-responsive-screen';
 
 const styles = StyleSheet.create({
   buttons: {
-    position: "absolute",
+    position: 'absolute',
     bottom: 0,
-    display: "flex",
-    flexDirection: "row",
+    display: 'flex',
+    flexDirection: 'row',
   },
   button: {
     margin: 10,

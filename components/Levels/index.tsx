@@ -16,23 +16,22 @@ const Levels = () => {
   useEffect(() => {
     Animated.sequence([
       Animated.delay(100),
-      Animated.stagger(50, 
-        animations.map((a: Animated.Value) => ScaleSlideIn(a))
+      Animated.stagger(
+        50,
+        animations.map((a: Animated.Value) => ScaleSlideIn(a)),
       ),
     ]).start();
   });
 
   return (
     <View style={styles.levels}>
-      <ScrollView 
-        style={styles.group}
-        showsVerticalScrollIndicator={false}
-      >
-        {level && Object.keys(level).map((key: string, i: number) => (
-          <Animate scale={animations[i]} key={key}>
-            <LevelCard level={level[key]} difficulty={currentDifficultyOpen} number={key}/>
-          </Animate>
-        ))}
+      <ScrollView style={styles.group} showsVerticalScrollIndicator={false}>
+        {level &&
+          Object.keys(level).map((key: string, i: number) => (
+            <Animate scale={animations[i]} key={key}>
+              <LevelCard level={level[key]} difficulty={currentDifficultyOpen} number={key} />
+            </Animate>
+          ))}
       </ScrollView>
     </View>
   );

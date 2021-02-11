@@ -6,7 +6,6 @@ import LevelButtons from '../';
 
 import renderer from 'react-test-renderer';
 
-
 const component = (
   <Provider global={GlobalMock}>
     <LevelButtons />

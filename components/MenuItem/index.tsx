@@ -10,10 +10,10 @@ interface Props {
   icon: ImageSourcePropType;
 }
 
-const MenuItem = ({ onPress, active, icon }: Props ) => {
+const MenuItem = ({ onPress, active, icon }: Props) => {
   return (
     <TouchableOpacity onPress={onPress} style={[styles.menuItem, active ? styles.active : styles.notActive]}>
-      <Image source={icon} style={styles.image}/>
+      <Image source={icon} style={styles.image} />
     </TouchableOpacity>
   );
 };

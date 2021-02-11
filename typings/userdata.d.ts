@@ -1,5 +1,5 @@
 interface UserData {
-  username: string,
+  username: string;
   // add image later
 }
 

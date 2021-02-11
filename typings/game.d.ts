@@ -8,5 +8,5 @@ interface Games {
   [key: number]: {
     title: string;
     game: Game;
-  }
+  };
 }

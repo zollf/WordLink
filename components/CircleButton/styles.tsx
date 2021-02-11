@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 import { widthPercentageToDP } from 'react-native-responsive-screen';
 
 const styles = StyleSheet.create({
@@ -6,12 +6,12 @@ const styles = StyleSheet.create({
     width: widthPercentageToDP('8%'),
     height: widthPercentageToDP('8%'),
     borderRadius: widthPercentageToDP('8%') / 2,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     shadowColor: '#000',
     shadowRadius: 4,
-    shadowOffset: { width: 2, height: 2},
+    shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.1,
   },
   arrow: {

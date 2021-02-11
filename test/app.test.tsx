@@ -1,6 +1,6 @@
 import React from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-//@ts-ignore there are two app file names [json, tsx], todo: work-around 
+//@ts-ignore there are two app file names [json, tsx], todo: work-around
 import App from '../App.tsx';
 import useWithStores from './useWithStores';
 

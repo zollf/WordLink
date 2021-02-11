@@ -11,13 +11,15 @@ interface Props {
 
 const Animate = ({ children, transform, opacity, scale, style }: Props) => {
   return (
-    <Animated.View style={[style, {
-      transform: [
-        { translateX: transform || 0 },
-        { scale: scale || 1 },
-      ],
-      opacity: opacity || 1,
-    }]}>
+    <Animated.View
+      style={[
+        style,
+        {
+          transform: [{ translateX: transform || 0 }, { scale: scale || 1 }],
+          opacity: opacity || 1,
+        },
+      ]}
+    >
       {children}
     </Animated.View>
   );

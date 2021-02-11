@@ -1,13 +1,13 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 import { widthPercentageToDP, heightPercentageToDP } from 'react-native-responsive-screen';
 
 import AppStyle from '../../../../styles';
 
 const styles = StyleSheet.create({
   information: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: AppStyle.lightGrey,
     paddingTop: heightPercentageToDP('1%'),
     paddingBottom: heightPercentageToDP('1%'),
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     shadowColor: '#000',
     shadowRadius: 4,
-    shadowOffset: { width: 2, height: 2},
+    shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.1,
   },
   text: {
@@ -28,12 +28,12 @@ const styles = StyleSheet.create({
     height: 20,
     borderRadius: 4,
     marginTop: 5,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     shadowColor: '#000',
     shadowRadius: 4,
-    shadowOffset: { width: 2, height: 2},
+    shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.1,
   },
   difficulty: {
