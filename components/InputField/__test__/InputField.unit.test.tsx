@@ -8,7 +8,7 @@ import renderer, { act } from 'react-test-renderer';
 
 const component = (
   <Provider global={GlobalMock}>
-    <InputField color="orange"/>
+    <InputField color="orange" />
   </Provider>
 );
 
@@ -20,10 +20,10 @@ describe('<InputField />', () => {
 
   it('handles change correctly', async () => {
     await act(async () => {
-      wrapper.root.findByProps({ "data-test-id": "text-input" }).props.onChange('event', {
-        nativeElement : {
-          text: 'test'
-        }
+      wrapper.root.findByProps({ 'data-test-id': 'text-input' }).props.onChange('event', {
+        nativeElement: {
+          text: 'test',
+        },
       });
     });
     //todo testing

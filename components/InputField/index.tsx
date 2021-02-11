@@ -1,30 +1,30 @@
-import React, { useState } from "react";
-import { TextInput } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
+import React, { useState } from 'react';
+import { TextInput } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 
-import { widthPercentageToDP } from "react-native-responsive-screen";
+import { widthPercentageToDP } from 'react-native-responsive-screen';
 
-import InputFieldStyles from "./styles";
-import AppStyle from "../../styles";
+import InputFieldStyles from './styles';
+import AppStyle from '../../styles';
 
 interface Props {
-  color: "orange" | "blue";
+  color: 'orange' | 'blue';
   staticValue: string;
-  size?: "small" | "full";
+  size?: 'small' | 'full';
 }
 
-const InputField = ({ color, staticValue = "", size = "full" }: Props) => {
-  const [value, setValue] = useState("");
+const InputField = ({ color, staticValue = '', size = 'full' }: Props) => {
+  const [value, setValue] = useState('');
 
   const sizes = {
-    full: "60%",
-    small: "27.5%",
+    full: '60%',
+    small: '27.5%',
   };
   const getGradientProps = () => {
     switch (size) {
-      case "full":
+      case 'full':
         return { start: [0.2, 0.2], locations: [0.4, 0.4] };
-      case "small":
+      case 'small':
         return { start: [0, 0.5], locations: [0.5, 0.5] };
     }
   };

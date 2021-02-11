@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   menuItem: {
@@ -9,15 +9,14 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     shadowColor: '#000',
     shadowRadius: 4,
-    shadowOffset: { width: 2, height: 2},
+    shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.1,
-    display: "flex",
-    justifyContent: "center",
+    display: 'flex',
+    justifyContent: 'center',
     alignItems: 'center',
   },
 
-  active: {
-  },
+  active: {},
 
   notActive: {
     opacity: 0.5,
@@ -26,8 +25,7 @@ const styles = StyleSheet.create({
   image: {
     height: 40,
     width: 40,
-  }
-  
+  },
 });
 
 export default styles;

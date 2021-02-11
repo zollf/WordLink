@@ -8,10 +8,7 @@ import { MenuBar, LevelButtons, LevelSelect, CircleButton } from '../../componen
 import styles from './styles';
 
 const Menu = () => {
-  const { 
-    setCurrentDifficultyOpen,
-    currentDifficultyOpen, 
-  } = useStore('global');
+  const { setCurrentDifficultyOpen, currentDifficultyOpen } = useStore('global');
 
   return (
     <View style={styles.menu}>
@@ -25,7 +22,7 @@ const Menu = () => {
         <>
           <LevelSelect />
           <View style={styles.back}>
-            <CircleButton overrideCallback={() => setCurrentDifficultyOpen('')}/>
+            <CircleButton overrideCallback={() => setCurrentDifficultyOpen('')} />
           </View>
         </>
       )}

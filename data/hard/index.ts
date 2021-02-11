@@ -1,7 +1,7 @@
 const hard: Levels = {
   1: {
-    title: "Level 1",
-    difficulty: "HARD",
+    title: 'Level 1',
+    difficulty: 'HARD',
     game: {
       start: 'FORTY',
       end: 'FIFTY',

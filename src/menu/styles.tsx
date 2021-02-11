@@ -1,13 +1,13 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 import AppStyle from '../../styles';
 
 const styles = StyleSheet.create({
   menu: {
-    height: "100%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     paddingBottom: 100,
     width: '100%',
   },
@@ -23,8 +23,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 50,
     left: 20,
-  }
-
+  },
 });
 
 export default styles;

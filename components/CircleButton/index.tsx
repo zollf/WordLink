@@ -11,7 +11,7 @@ import styles from './styles';
 
 interface Props {
   overrideCallback?: () => void;
-  symbol?: 'exit' | 'arrow'
+  symbol?: 'exit' | 'arrow';
 }
 
 const Button = ({ overrideCallback, symbol }: Props) => {
@@ -27,16 +27,19 @@ const Button = ({ overrideCallback, symbol }: Props) => {
 
   const image = () => {
     switch (symbol) {
-      case 'exit' : return close;
-      case 'arrow': return arrow;
-      default     : return arrow;
+      case 'exit':
+        return close;
+      case 'arrow':
+        return arrow;
+      default:
+        return arrow;
     }
   };
 
   return (
     <TouchableOpacity data-test-id="button" onPress={handleClick}>
-      <LinearGradient 
-        colors={[AppStyle.lightBlue, AppStyle.blue]} 
+      <LinearGradient
+        colors={[AppStyle.lightBlue, AppStyle.blue]}
         style={styles.button}
         locations={[0.5, 0.5]}
         start={[-0.1, 0.1]}

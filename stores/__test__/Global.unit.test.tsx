@@ -6,4 +6,3 @@ describe('Global Store', () => {
     expect(global.currentPage).toBe('index');
   });
 });
-

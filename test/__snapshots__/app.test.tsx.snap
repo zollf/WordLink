@@ -32,362 +32,199 @@ exports[`<App/> matches snapshot 1`] = `
   <View
     style={
       Object {
-        "alignItems": "center",
-        "display": "flex",
         "height": "100%",
-        "justifyContent": "center",
-        "paddingBottom": 100,
-        "width": "100%",
       }
     }
   >
-    <Text
-      style={
-        Object {
-          "fontFamily": "Raleway_400Regular",
-          "fontSize": 24,
-          "marginBottom": 24,
-        }
-      }
-    >
-      Level Select
-    </Text>
-    <View>
-      <View
-        style={
-          Array [
-            Object {
-              "marginBottom": 24,
-            },
-            Object {
-              "opacity": mockConstructor {},
-              "transform": Array [
-                Object {
-                  "translateX": mockConstructor {},
-                },
-              ],
-            },
-          ]
-        }
-      >
-        <View
-          style={
-            Object {
-              "transform": Array [
-                Object {
-                  "scale": mockConstructor {},
-                },
-              ],
-            }
-          }
-        >
-          <View
-            accessible={true}
-            focusable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-          >
-            <ViewManagerAdapter_ExpoLinearGradient
-              proxiedProperties={
-                Object {
-                  "colors": Array [
-                    4282711882,
-                    4280928549,
-                  ],
-                  "endPoint": undefined,
-                  "locations": Array [
-                    0.5,
-                    0.5,
-                  ],
-                  "startPoint": Array [
-                    -0.1,
-                    0.1,
-                  ],
-                }
-              }
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderRadius": 5,
-                  "display": "flex",
-                  "height": 106.5,
-                  "justifyContent": "center",
-                  "shadowColor": "#000",
-                  "shadowOffset": Object {
-                    "height": 2,
-                    "width": 2,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 4,
-                  "width": 300,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "white",
-                    "fontFamily": "Raleway_700Bold",
-                    "fontSize": 33.5,
-                  }
-                }
-              >
-                EASY
-              </Text>
-            </ViewManagerAdapter_ExpoLinearGradient>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "marginBottom": 24,
-            },
-            Object {
-              "opacity": mockConstructor {},
-              "transform": Array [
-                Object {
-                  "translateX": mockConstructor {},
-                },
-              ],
-            },
-          ]
-        }
-      >
-        <View
-          style={
-            Object {
-              "transform": Array [
-                Object {
-                  "scale": mockConstructor {},
-                },
-              ],
-            }
-          }
-        >
-          <View
-            accessible={true}
-            focusable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-          >
-            <ViewManagerAdapter_ExpoLinearGradient
-              proxiedProperties={
-                Object {
-                  "colors": Array [
-                    4294956160,
-                    4294950464,
-                  ],
-                  "endPoint": undefined,
-                  "locations": Array [
-                    0.5,
-                    0.5,
-                  ],
-                  "startPoint": Array [
-                    -0.1,
-                    0.1,
-                  ],
-                }
-              }
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderRadius": 5,
-                  "display": "flex",
-                  "height": 106.5,
-                  "justifyContent": "center",
-                  "shadowColor": "#000",
-                  "shadowOffset": Object {
-                    "height": 2,
-                    "width": 2,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 4,
-                  "width": 300,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "white",
-                    "fontFamily": "Raleway_700Bold",
-                    "fontSize": 33.5,
-                  }
-                }
-              >
-                MEDIUM
-              </Text>
-            </ViewManagerAdapter_ExpoLinearGradient>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "marginBottom": 24,
-            },
-            Object {
-              "opacity": mockConstructor {},
-              "transform": Array [
-                Object {
-                  "translateX": mockConstructor {},
-                },
-              ],
-            },
-          ]
-        }
-      >
-        <View
-          style={
-            Object {
-              "transform": Array [
-                Object {
-                  "scale": mockConstructor {},
-                },
-              ],
-            }
-          }
-        >
-          <View
-            accessible={true}
-            focusable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "opacity": 1,
-              }
-            }
-          >
-            <ViewManagerAdapter_ExpoLinearGradient
-              proxiedProperties={
-                Object {
-                  "colors": Array [
-                    4294918208,
-                    4290451737,
-                  ],
-                  "endPoint": undefined,
-                  "locations": Array [
-                    0.5,
-                    0.5,
-                  ],
-                  "startPoint": Array [
-                    -0.1,
-                    0.1,
-                  ],
-                }
-              }
-              style={
-                Object {
-                  "alignItems": "center",
-                  "borderRadius": 5,
-                  "display": "flex",
-                  "height": 106.5,
-                  "justifyContent": "center",
-                  "shadowColor": "#000",
-                  "shadowOffset": Object {
-                    "height": 2,
-                    "width": 2,
-                  },
-                  "shadowOpacity": 0.1,
-                  "shadowRadius": 4,
-                  "width": 300,
-                }
-              }
-            >
-              <Text
-                style={
-                  Object {
-                    "color": "white",
-                    "fontFamily": "Raleway_700Bold",
-                    "fontSize": 33.5,
-                  }
-                }
-              >
-                HARD
-              </Text>
-            </ViewManagerAdapter_ExpoLinearGradient>
-          </View>
-        </View>
-      </View>
-    </View>
     <View
-      data-test-id="wrapper"
       style={
         Object {
           "alignItems": "center",
-          "bottom": 106.5,
-          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
           "justifyContent": "center",
-          "position": "absolute",
-          "width": "100%",
         }
       }
     >
-      <ViewManagerAdapter_ExpoLinearGradient
-        proxiedProperties={
-          Object {
-            "colors": Array [
-              4294177779,
-              4293125091,
-            ],
-            "data-test-id": "menu-bar",
-            "endPoint": undefined,
-            "locations": Array [
-              0.5,
-              0.5,
-            ],
-            "startPoint": Array [
-              -0.1,
-              0.1,
-            ],
-          }
-        }
+      <View
         style={
           Object {
             "alignItems": "center",
-            "borderRadius": 5,
-            "display": "flex",
-            "flexDirection": "row",
-            "height": 75,
-            "justifyContent": "center",
-            "shadowColor": "#000",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 2,
-            },
-            "shadowOpacity": 0.1,
-            "shadowRadius": 4,
-            "width": 212,
-            "zIndex": -1,
+            "flexDirection": "column",
+            "marginBottom": 133.5,
+            "width": 562.5,
+          }
+        }
+      >
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4294950464,
+                4282432255,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.5,
+                0.5,
+              ],
+              "startPoint": Array [
+                0.025,
+                0.2,
+              ],
+            }
+          }
+          style={
+            Object {
+              "alignItems": "center",
+              "borderRadius": 10,
+              "height": 283.5,
+              "justifyContent": "center",
+              "width": 562.5,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "white",
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 93.5,
+                  "fontStyle": "italic",
+                  "height": 66.5,
+                  "lineHeight": 93.5,
+                },
+                Object {
+                  "marginRight": "10%",
+                },
+              ]
+            }
+          >
+            WORD
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "white",
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 93.5,
+                  "fontStyle": "italic",
+                  "height": 66.5,
+                  "lineHeight": 93.5,
+                },
+                Object {
+                  "marginLeft": "27.5%",
+                },
+              ]
+            }
+          >
+            LINK
+          </Text>
+        </ViewManagerAdapter_ExpoLinearGradient>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "black",
+                "fontFamily": "Raleway_700Bold",
+              },
+              Object {
+                "fontSize": 53.5,
+              },
+            ]
+          }
+        >
+          CHALLENGE YOUR WORD LINKING SKILLS
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "marginBottom": 133.5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "black",
+              "fontFamily": "Raleway_700Bold",
+            }
+          }
+        >
+          Welcome Back!
+        </Text>
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4284860671,
+                4282432255,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.4,
+                0.4,
+              ],
+              "startPoint": Array [
+                0.2,
+                0.2,
+              ],
+            }
+          }
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 93.5,
+                "justifyContent": "center",
+                "shadowColor": "#000",
+                "shadowRadius": 4,
+              },
+              Object {
+                "backgroundColor": "#40BAFF",
+                "width": 450,
+              },
+            ]
+          }
+        >
+          <TextInput
+            allowFontScaling={true}
+            data-test-id="text-input"
+            editable={false}
+            onChange={[Function]}
+            rejectResponderTermination={true}
+            selectTextOnFocus={false}
+            style={
+              Array [
+                Object {
+                  "color": "white",
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 53.5,
+                  "textAlign": "center",
+                },
+                Object {
+                  "width": 450,
+                },
+              ]
+            }
+            underlineColorAndroid="transparent"
+            value="Username"
+          />
+        </ViewManagerAdapter_ExpoLinearGradient>
+      </View>
+      <View
+        style={
+          Object {
+            "transform": Array [
+              Object {
+                "scale": mockConstructor {},
+              },
+            ],
           }
         }
       >
@@ -403,157 +240,35 @@ exports[`<App/> matches snapshot 1`] = `
           onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "alignItems": "center",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 50,
-              "justifyContent": "center",
-              "marginLeft": 10,
-              "marginRight": 10,
-              "opacity": 0.5,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 50,
-            }
-          }
-        >
-          <Image
-            source={1}
-            style={
-              Object {
-                "height": 40,
-                "width": 40,
-              }
-            }
-          />
-        </View>
-        <View
-          accessible={true}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            Object {
-              "alignItems": "center",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 50,
-              "justifyContent": "center",
-              "marginLeft": 10,
-              "marginRight": 10,
               "opacity": 1,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 50,
             }
-          }
-        >
-          <Image
-            source={1}
-            style={
-              Object {
-                "height": 40,
-                "width": 40,
-              }
-            }
-          />
-        </View>
-        <View
-          accessible={true}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            Object {
-              "alignItems": "center",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 50,
-              "justifyContent": "center",
-              "marginLeft": 10,
-              "marginRight": 10,
-              "opacity": 0.5,
-              "shadowColor": "#000",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 2,
-              },
-              "shadowOpacity": 0.1,
-              "shadowRadius": 4,
-              "width": 50,
-            }
-          }
-        >
-          <Image
-            source={1}
-            style={
-              Object {
-                "height": 40,
-                "width": 40,
-              }
-            }
-          />
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "borderRadius": 5,
-                "height": 50,
-                "position": "absolute",
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 50,
-                "zIndex": -1,
-              },
-              Object {
-                "left": 80.5,
-              },
-            ]
           }
         >
           <ViewManagerAdapter_ExpoLinearGradient
             proxiedProperties={
               Object {
                 "colors": Array [
-                  4282711882,
-                  4280928549,
+                  4294956160,
+                  4294950464,
                 ],
                 "endPoint": undefined,
-                "locations": undefined,
-                "startPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  -0.1,
+                  0.1,
+                ],
               }
             }
             style={
               Object {
+                "alignItems": "center",
                 "borderRadius": 5,
-                "height": 50,
-                "position": "absolute",
+                "display": "flex",
+                "height": 106.5,
+                "justifyContent": "center",
                 "shadowColor": "#000",
                 "shadowOffset": Object {
                   "height": 2,
@@ -561,13 +276,24 @@ exports[`<App/> matches snapshot 1`] = `
                 },
                 "shadowOpacity": 0.1,
                 "shadowRadius": 4,
-                "width": 50,
-                "zIndex": -1,
+                "width": 300,
               }
             }
-          />
+          >
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 33.5,
+                }
+              }
+            >
+              START
+            </Text>
+          </ViewManagerAdapter_ExpoLinearGradient>
         </View>
-      </ViewManagerAdapter_ExpoLinearGradient>
+      </View>
     </View>
   </View>
 </View>

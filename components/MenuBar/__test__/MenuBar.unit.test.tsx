@@ -19,11 +19,11 @@ describe('<MenuBar/>', () => {
   });
 
   it('menu click works correctly', () => {
-    wrapper.root.findByProps({"data-test-id": "menu-index"}).props.onPress();
+    wrapper.root.findByProps({ 'data-test-id': 'menu-index' }).props.onPress();
     expect(GlobalMock.setCurrentPage).toBeCalled;
-    wrapper.root.findByProps({"data-test-id": "menu-menu"}).props.onPress();
+    wrapper.root.findByProps({ 'data-test-id': 'menu-menu' }).props.onPress();
     expect(GlobalMock.setCurrentPage).toBeCalled;
-    wrapper.root.findByProps({"data-test-id": "menu-profile"}).props.onPress();
+    wrapper.root.findByProps({ 'data-test-id': 'menu-profile' }).props.onPress();
     expect(GlobalMock.setCurrentPage).toBeCalled;
   });
 });

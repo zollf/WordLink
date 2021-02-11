@@ -1,20 +1,17 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
-import {
-  heightPercentageToDP,
-  widthPercentageToDP,
-} from "react-native-responsive-screen";
+import { heightPercentageToDP, widthPercentageToDP } from 'react-native-responsive-screen';
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: heightPercentageToDP("3%"),
-    width: widthPercentageToDP("85%"),
+    marginBottom: heightPercentageToDP('3%'),
+    width: widthPercentageToDP('85%'),
   },
   stats: {
-    marginBottom: heightPercentageToDP("2%"),
+    marginBottom: heightPercentageToDP('2%'),
   },
   statsContainer: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
 });
 

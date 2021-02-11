@@ -5,7 +5,7 @@ const level: Level = {
     start: 'FORTY',
     end: 'FIFTY',
     path: 5,
-  }
+  },
 };
 
 const GameMocks: GameStore = {
@@ -21,7 +21,7 @@ const GameMocks: GameStore = {
   selectedLetter: '',
   stepNumber: 0,
   path: [level.game.start],
-  visited: {'FORTY': true},
+  visited: { FORTY: true },
   completed: false,
 
   loadGame: jest.fn(),
@@ -36,4 +36,3 @@ const GameMocks: GameStore = {
 };
 
 export default GameMocks;
-

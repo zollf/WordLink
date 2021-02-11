@@ -19,7 +19,7 @@ describe('<NewUserPage />', () => {
   });
 
   it('clicks button works correctly', () => {
-    wrapper.root.findByProps({"data-test-id": "button"}).props.onPress();
+    wrapper.root.findByProps({ 'data-test-id': 'button' }).props.onPress();
     //todo test
   });
 });

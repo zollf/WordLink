@@ -1,0 +1,11 @@
+/.vscode
+/coverage
+/assets
+/animation
+/.github
+/node_modules
+/.expo
+/.expo-shared
+/data/dictionary/index.ts
+
+tsconfig.json

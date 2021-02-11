@@ -9,36 +9,38 @@ import AppStyle from '../../styles';
 import styles from './styles';
 
 interface Pages {
-  [key: string] : number,
+  [key: string]: number;
 }
 
 const BackBlock = () => {
   const { currentPage, previousPage } = useStore('global');
 
   const pages: Pages = {
-    'welcome': 10,
-    'menu': (212/2)-25.5,
-    'profile': 150,
+    profile: 10,
+    menu: 212 / 2 - 25.5,
+    settings: 150,
   };
 
   const [posX, setPosX] = useState(pages[previousPage]);
 
   useEffect(() => {
-    LayoutAnimation.configureNext({ 
-      duration: 200, 
-      update: { type: 'spring', springDamping: 0.9 }, 
+    LayoutAnimation.configureNext({
+      duration: 200,
+      update: { type: 'spring', springDamping: 0.9 },
     });
     setPosX(pages[currentPage]);
   }, [currentPage]);
 
   return (
-    <Animated.View style={[styles.block, {
-      left: posX
-    }]}>
-      <LinearGradient 
-        colors={[AppStyle.lightGreen, AppStyle.green]} 
-        style={styles.block}
-      />
+    <Animated.View
+      style={[
+        styles.block,
+        {
+          left: posX,
+        },
+      ]}
+    >
+      <LinearGradient colors={[AppStyle.lightGreen, AppStyle.green]} style={styles.block} />
     </Animated.View>
   );
 };
