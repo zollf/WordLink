@@ -4,15 +4,15 @@ import { observer } from 'mobx-react';
 import { useStore, useAnimate } from '../../hooks';
 import CircleButton from '../CircleButton';
 
-import { 
-  Word, 
-  LetterSelection, 
-  CurrentWord, 
-  ControlButtons, 
+import {
+  Word,
+  LetterSelection,
+  CurrentWord,
+  ControlButtons,
   Path,
   Completed,
   ExitModal,
-  Information
+  Information,
 } from './components';
 
 import { ElasticSlideIn, FadeSlideIn, Animate } from '../../animations';
@@ -57,25 +57,24 @@ const Game = () => {
 
   return (
     <View style={styles.game}>
-      {exitModal && <ExitModal close={() => setExitModal(false)} exit={handleExit}/>}
+      {exitModal && <ExitModal close={() => setExitModal(false)} exit={handleExit} />}
       <View style={styles.back}>
-        <CircleButton overrideCallback={() => setExitModal(true)}/>
+        <CircleButton overrideCallback={() => setExitModal(true)} />
       </View>
-      
-      
+
       <Animate style={styles.information} transform={infoT} opacity={infoO}>
-        <Information/>
+        <Information />
       </Animate>
 
       <View style={styles.content}>
         <Animate transform={word1T} opacity={word1O}>
           <Word color="orange" word={game.start} />
         </Animate>
-        
+
         <Animate transform={pathT} opacity={pathO}>
           <Path />
         </Animate>
-        
+
         <Animate transform={currentT} opacity={currentO}>
           <CurrentWord />
         </Animate>
@@ -90,8 +89,8 @@ const Game = () => {
       </Animate>
 
       {!completed ? (
-        <ControlButtons /> 
-      ) : ( 
+        <ControlButtons />
+      ) : (
         <View style={styles.completed}>
           <Completed />
         </View>

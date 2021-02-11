@@ -1,13 +1,13 @@
-import React from "react";
-import { Text, View } from "react-native";
+import React from 'react';
+import { Text, View } from 'react-native';
 
-import PuzzleBlock from "../PuzzleBlock";
+import PuzzleBlock from '../PuzzleBlock';
 
-import AppStyle from "../../../../styles";
-import styles from "./styles";
+import AppStyle from '../../../../styles';
+import styles from './styles';
 
 interface Props {
-  difficulty: "easy" | "medium" | "hard";
+  difficulty: 'easy' | 'medium' | 'hard';
 }
 
 const PuzzleShowCase = ({ difficulty }: Props) => {
@@ -26,11 +26,9 @@ const PuzzleShowCase = ({ difficulty }: Props) => {
   return (
     <View style={styles.ShowCase}>
       <Text>{difficulty}</Text>
-      <View
-        style={[styles.PuzzleList, { backgroundColor: AppStyle[difficulty] }]}
-      >
+      <View style={[styles.PuzzleList, { backgroundColor: AppStyle[difficulty] }]}>
         {completedPuzzles.map((puzzle) => (
-          <PuzzleBlock key={puzzle.number + ":" + puzzle.stars} {...puzzle} />
+          <PuzzleBlock key={puzzle.number + ':' + puzzle.stars} {...puzzle} />
         ))}
       </View>
     </View>

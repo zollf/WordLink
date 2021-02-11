@@ -1,6 +1,6 @@
 const AppStyle = {
-  white: "#fff",
-  
+  white: '#fff',
+
   // ORANGES
   orange: '#FFBE40',
   lightOrange: '#FFD480',
@@ -18,11 +18,11 @@ const AppStyle = {
   lightBlue: '#65C8FF',
 
   // RED
-  red: "#BB1919",
+  red: '#BB1919',
   lightRed: '#FF4040',
-  
-  orange_2: "#FFBE40",
-  
+
+  orange_2: '#FFBE40',
+
   primary: '#FF9C40',
   secondary: '#40BAFF',
 
@@ -34,7 +34,6 @@ const AppStyle = {
   font: 'Raleway_400Regular',
   // FONT BOLD
   fontBold: 'Raleway_700Bold',
-
 };
 
 export default AppStyle;

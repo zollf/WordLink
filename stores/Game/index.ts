@@ -1,4 +1,4 @@
-import { observable, action, makeObservable } from "mobx";
+import { observable, action, makeObservable } from 'mobx';
 import { dictionary } from '../../data';
 
 class GameStore {
@@ -8,7 +8,7 @@ class GameStore {
   error = false;
   game?: Game;
   gameTitle = '';
-  
+
   currentWord = '';
   selectedLetter = '';
   stepNumber = 0;
@@ -17,6 +17,7 @@ class GameStore {
   completed = false;
 
   constructor() {
+    // prettier-ignore
     makeObservable(this, {
       gameId:             observable,
       path:               observable,
@@ -72,7 +73,7 @@ class GameStore {
         const newLetter = String.fromCharCode(j + 65);
         const temp = wordArr[i];
         wordArr[i] = newLetter;
-        if (this.isWord(wordArr.join('')) && !letters.includes(newLetter) && !this.visited[wordArr.join("")]) {
+        if (this.isWord(wordArr.join('')) && !letters.includes(newLetter) && !this.visited[wordArr.join('')]) {
           letters.push(newLetter.toUpperCase());
         }
         wordArr[i] = temp;
@@ -83,7 +84,7 @@ class GameStore {
 
   /**
    * Checks if a word is a valid word
-   * @param word , word to check if it is within the dictionary 
+   * @param word , word to check if it is within the dictionary
    * @return if the word is included in the dictionary
    */
   isWord = (word: string): boolean => {
@@ -98,16 +99,15 @@ class GameStore {
     }
   };
 
-
   /**
    * Change the letter from the current selected letter
-   * @param index 
+   * @param index
    */
   changeLetter = (index: number) => {
     if (this.selectedLetter && this.game) {
-      const newWordArr = this.currentWord.split("");
+      const newWordArr = this.currentWord.split('');
       newWordArr[index] = this.selectedLetter;
-      const newWord = newWordArr.join("");
+      const newWord = newWordArr.join('');
 
       // The new word is a valid word and has not been visited
       if (this.isWord(newWord) && !this.visited[newWord]) {
@@ -119,7 +119,7 @@ class GameStore {
         this.currentWord = newWord;
 
         // Reset current selected letter
-        this.selectedLetter =  '';
+        this.selectedLetter = '';
 
         // Add to visited
         this.visited[newWord] = true;
@@ -147,7 +147,7 @@ class GameStore {
    */
   undo = () => {
     if (this.stepNumber > 0) {
-      this.visited[this.path[this.stepNumber]] = false; 
+      this.visited[this.path[this.stepNumber]] = false;
       this.stepNumber--;
       this.currentWord = this.path[this.stepNumber];
       this.path.pop();
@@ -165,7 +165,6 @@ class GameStore {
     this.path = [];
     this.stepNumber = 0;
     this.visited = {};
-   
   };
 }
 

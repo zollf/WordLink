@@ -9,7 +9,7 @@ const component = useWithStores(<Game />);
 
 describe('<Game />', () => {
   const wrapper = renderer.create(component);
-  
+
   it('matches snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });

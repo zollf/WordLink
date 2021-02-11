@@ -1,14 +1,14 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
-import AppStyle from "../../../../styles";
+import AppStyle from '../../../../styles';
 
 const styles = StyleSheet.create({
   box: {
-    display: "flex",
-    flexDirection: "row",
+    display: 'flex',
+    flexDirection: 'row',
   },
   buttons: {
-    position: "absolute",
+    position: 'absolute',
     bottom: 0,
   },
   button: {

@@ -1,11 +1,11 @@
-import React from "react";
-import { View } from "react-native";
+import React from 'react';
+import { View } from 'react-native';
 
 import { observer } from 'mobx-react';
 
 import { MenuBar } from '../../components';
 
-import styles from "./styles";
+import styles from './styles';
 
 const Index = () => {
   return (

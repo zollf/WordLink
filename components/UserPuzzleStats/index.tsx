@@ -1,9 +1,9 @@
-import React from "react";
-import { Text, View } from "react-native";
+import React from 'react';
+import { Text, View } from 'react-native';
 
-import { PuzzleShowCase } from "./components";
+import { PuzzleShowCase } from './components';
 
-import styles from "./styles";
+import styles from './styles';
 
 const UserPuzzleStats = () => {
   // ToDo:

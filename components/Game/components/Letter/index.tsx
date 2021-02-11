@@ -16,12 +16,17 @@ const Letter = ({ letter, color, onPress }: Props) => {
   const [spring] = useAnimate(1);
 
   const getColor = () => {
-    switch(color) {
-      case 'orange' : return [AppStyle.lightOrange, AppStyle.orange];
-      case 'blue'   : return [AppStyle.lightBlue, AppStyle.blue];
-      case 'grey'   : return [AppStyle.lightGrey, AppStyle.grey];
-      case 'green'  : return [AppStyle.lightGreen, AppStyle.green];
-      default       : return [AppStyle.lightGrey, AppStyle.grey];
+    switch (color) {
+      case 'orange':
+        return [AppStyle.lightOrange, AppStyle.orange];
+      case 'blue':
+        return [AppStyle.lightBlue, AppStyle.blue];
+      case 'grey':
+        return [AppStyle.lightGrey, AppStyle.grey];
+      case 'green':
+        return [AppStyle.lightGreen, AppStyle.green];
+      default:
+        return [AppStyle.lightGrey, AppStyle.grey];
     }
   };
 
@@ -37,42 +42,46 @@ const Letter = ({ letter, color, onPress }: Props) => {
           toValue: 1,
           friction: 3,
           useNativeDriver: true,
-        })
+        }),
       ]).start();
-      onPress();  
+      onPress();
     }
   };
 
-  return (
-    !onPress ? (
-      <LinearGradient 
-        colors={getColor()} 
-        style={styles.box}
-        locations={[0.5, 0.5]}
-        start={[-0.1, 0.6]}
+  return !onPress ? (
+    <LinearGradient colors={getColor()} style={styles.box} locations={[0.5, 0.5]} start={[-0.1, 0.6]}>
+      <Text
+        style={[
+          styles.text,
+          {
+            color: color ? 'white' : 'black',
+          },
+        ]}
       >
-        <Text style={[styles.text, {
-          color: color ? 'white' : 'black'
-        }]}>{letter}</Text>
-      </LinearGradient>
-    ) : (
-      <Animated.View style={{
-        transform: [{scale: spring}]
-      }}>
-        <TouchableOpacity onPress={handlePress}>
-          <LinearGradient 
-            colors={getColor()} 
-            style={styles.box}
-            locations={[0.5, 0.5]}
-            start={[-0.1, 0.6]}
+        {letter}
+      </Text>
+    </LinearGradient>
+  ) : (
+    <Animated.View
+      style={{
+        transform: [{ scale: spring }],
+      }}
+    >
+      <TouchableOpacity onPress={handlePress}>
+        <LinearGradient colors={getColor()} style={styles.box} locations={[0.5, 0.5]} start={[-0.1, 0.6]}>
+          <Text
+            style={[
+              styles.text,
+              {
+                color: color ? 'white' : 'black',
+              },
+            ]}
           >
-            <Text style={[styles.text, {
-              color: color ? 'white' : 'black'
-            }]}>{letter}</Text>
-          </LinearGradient>
-        </TouchableOpacity>
-      </Animated.View>
-    )
+            {letter}
+          </Text>
+        </LinearGradient>
+      </TouchableOpacity>
+    </Animated.View>
   );
 };
 

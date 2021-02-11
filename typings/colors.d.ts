@@ -1,3 +1,3 @@
 interface Colors {
-  [difficulty: string] : string
+  [difficulty: string]: string;
 }

@@ -1,15 +1,15 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const _getData = async () => {
   try {
-    return { 
-      value: await AsyncStorage.getItem("@storage_Key"), 
-      success: true 
+    return {
+      value: await AsyncStorage.getItem('@storage_Key'),
+      success: true,
     };
   } catch (e) {
-    return { 
+    return {
       value: e,
-      success: false 
+      success: false,
     };
   }
 };

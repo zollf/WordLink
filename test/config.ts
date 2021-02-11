@@ -31,7 +31,7 @@ jest.doMock('react-native', () => {
         sequence: jest.fn(() => animationMock),
         timing: jest.fn(() => animationMock),
         start: jest.fn(() => animationMock),
-      }
+      },
     },
     ReactNative,
   );

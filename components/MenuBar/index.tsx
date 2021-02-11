@@ -21,18 +21,29 @@ const MenuBar = () => {
     setCurrentPage('menu');
     setCurrentDifficultyOpen('');
   };
- 
+
   return (
     <View data-test-id="wrapper" style={styles.wrapper}>
-      <LinearGradient 
-        colors={[AppStyle.lightGrey, AppStyle.grey]} 
-        locations={[0.5, 0.5]} start={[-0.1, 0.1]} 
-        data-test-id="menu-bar" 
+      <LinearGradient
+        colors={[AppStyle.lightGrey, AppStyle.grey]}
+        locations={[0.5, 0.5]}
+        start={[-0.1, 0.1]}
+        data-test-id="menu-bar"
         style={styles.menuBar}
       >
-        <MenuItem active={currentPage === "welcome"} icon={avatar} onPress={() => setCurrentPage('welcome')} data-test-id="menu-index"/>
-        <MenuItem active={currentPage === "menu"} icon={gamepad} onPress={handleMenuClick} data-test-id="menu-menu"/>
-        <MenuItem active={currentPage === "profile"} icon={setting} onPress={() => setCurrentPage('profile')} data-test-id="menu-profile"/>
+        <MenuItem
+          active={currentPage === 'profile'}
+          icon={avatar}
+          onPress={() => setCurrentPage('profile')}
+          data-test-id="menu-index"
+        />
+        <MenuItem active={currentPage === 'menu'} icon={gamepad} onPress={handleMenuClick} data-test-id="menu-menu" />
+        <MenuItem
+          active={currentPage === 'settings'}
+          icon={setting}
+          onPress={() => setCurrentPage('settings')}
+          data-test-id="menu-profile"
+        />
         <BackBlock />
       </LinearGradient>
     </View>

@@ -13,7 +13,7 @@ interface Props {
 const Word = ({ word, color, style }: Props) => {
   return (
     <View style={[styles.box, style]}>
-      {word.split("").map((letter: string, i: number) => (
+      {word.split('').map((letter: string, i: number) => (
         <Letter color={color} key={`${word}-${letter}-${i}`} letter={letter} />
       ))}
     </View>

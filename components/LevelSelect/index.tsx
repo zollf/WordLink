@@ -12,31 +12,21 @@ const LevelSelect = () => {
   const [transitionTranslate, transitionOpacity] = useAnimate(-100, 0);
   const [levelTranslate, levelOpacity] = useAnimate(-100, 0);
 
-  const { 
-    currentDifficultyOpen, 
-    setCurrentDifficultyOpen,
-    getDifficultyColor
-  } = useStore('global');
+  const { currentDifficultyOpen, setCurrentDifficultyOpen, getDifficultyColor } = useStore('global');
 
   useEffect(() => {
     Animated.parallel([
-      Animated.stagger(50, [
-        ElasticSlideIn(transitionTranslate),
-        ElasticSlideIn(levelTranslate),
-      ]),
-      Animated.stagger(50, [
-        FadeSlideIn(transitionOpacity),
-        FadeSlideIn(levelOpacity),
-      ]),
+      Animated.stagger(50, [ElasticSlideIn(transitionTranslate), ElasticSlideIn(levelTranslate)]),
+      Animated.stagger(50, [FadeSlideIn(transitionOpacity), FadeSlideIn(levelOpacity)]),
     ]).start();
   });
 
   return (
     <View style={styles.levelSelect} data-test-id="level-select">
       <Animate transform={transitionTranslate} opacity={transitionOpacity}>
-        <Button 
-          text={currentDifficultyOpen.toUpperCase()} 
-          color={getDifficultyColor(currentDifficultyOpen)} 
+        <Button
+          text={currentDifficultyOpen.toUpperCase()}
+          color={getDifficultyColor(currentDifficultyOpen)}
           onPress={() => setCurrentDifficultyOpen('')}
         />
       </Animate>

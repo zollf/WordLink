@@ -1,7 +1,7 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 import { widthPercentageToDP, heightPercentageToDP } from 'react-native-responsive-screen';
 
-import AppStyle from "../../styles";
+import AppStyle from '../../styles';
 
 const styles = StyleSheet.create({
   levelCard: {
@@ -11,12 +11,12 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     shadowColor: '#000',
     shadowRadius: 4,
-    shadowOffset: { width: 2, height: 2},
+    shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.1,
     margin: 20,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center"
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   text: {
     fontSize: heightPercentageToDP('3%'),
@@ -30,9 +30,9 @@ const styles = StyleSheet.create({
     left: '8%',
     bottom: '22%',
     borderRadius: widthPercentageToDP('12.5%'),
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   circleText: {
     fontSize: heightPercentageToDP('5%'),
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     left: '11%',
     display: 'flex',
     flexDirection: 'row',
-  }
+  },
 });
 
 export default styles;

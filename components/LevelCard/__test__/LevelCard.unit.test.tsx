@@ -5,7 +5,7 @@ import LevelCard from '../';
 
 import renderer from 'react-test-renderer';
 
-const number = "1";
+const number = '1';
 const level: Level = {
   title: 'hello',
   difficulty: 'easy',
@@ -13,10 +13,10 @@ const level: Level = {
     start: 'FORTY',
     end: 'FIFTY',
     path: 5,
-  }
+  },
 };
 
-const component = useWithStores(<LevelCard level={level} number={number} difficulty="easy"/>);
+const component = useWithStores(<LevelCard level={level} number={number} difficulty="easy" />);
 
 describe('<LevelCard/>', () => {
   const wrapper = renderer.create(component);
@@ -25,7 +25,7 @@ describe('<LevelCard/>', () => {
   });
 
   it('function clicks correctly', () => {
-    wrapper.root.findByProps({"data-test-id": `card-${number}`}).props.onPress();
+    wrapper.root.findByProps({ 'data-test-id': `card-${number}` }).props.onPress();
     //todo
   });
 });

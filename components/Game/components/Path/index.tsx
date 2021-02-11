@@ -7,9 +7,9 @@ import Word from '../Word';
 const Path = () => {
   const { path, stepNumber, completed } = useStore('gameStore');
   const maxOnScreen = 2;
-  LayoutAnimation.configureNext({ 
-    duration: 500, 
-    update: { type: 'spring', springDamping: 0.4 }, 
+  LayoutAnimation.configureNext({
+    duration: 500,
+    update: { type: 'spring', springDamping: 0.4 },
   });
 
   const calcOpacity = (step: number) => {
@@ -49,20 +49,22 @@ const Path = () => {
   };
 
   return (
-    <View style={{
-      marginTop: calcMargin(),
-    }}>
-      {path.map((word: string, i: number) => (
-        completed && i === stepNumber ? null : 
-          (
-            <Word style={{
+    <View
+      style={{
+        marginTop: calcMargin(),
+      }}
+    >
+      {path.map((word: string, i: number) =>
+        completed && i === stepNumber ? null : (
+          <Word
+            style={{
               opacity: calcOpacity(i),
-            }} 
+            }}
             word={word}
             key={`path-${word}`}
-            />
-          )
-      ))}
+          />
+        ),
+      )}
     </View>
   );
 };
