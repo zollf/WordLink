@@ -1,15 +1,12 @@
-const GlobalMock: any = {
+const GlobalMock: Global = {
   currentPage: 'index',
   setCurrentPage: jest.fn(),
   previousPage: 'index',
   currentDifficultyOpen: '',
   setCurrentDifficultyOpen: jest.fn((d: string) => (GlobalMock.currentDifficultyOpen = d)),
   getDifficultyColor: jest.fn(() => ''),
-  loadGame: jest.fn(),
-  undo: jest.fn(),
-
-  currentGameNumber: 1,
-  currentGameDifficulty: 'easy',
+  setStartingPage: jest.fn(),
+  onStartingPage: false,
 };
 
 export default GlobalMock;

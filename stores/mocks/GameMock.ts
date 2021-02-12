@@ -8,10 +8,8 @@ const level: Level = {
   },
 };
 
-const GameMocks = {
-  gameId: 0,
+const GameMocks: GameStore = {
   difficulty: 'EASY',
-  inGame: false,
   loaded: false,
   error: false,
   game: level.game,
@@ -25,7 +23,6 @@ const GameMocks = {
   completed: false,
 
   loadGame: jest.fn(),
-  startGame: jest.fn(),
   getNewLetters: jest.fn(() => ['A', 'B', 'C']),
   isWord: jest.fn(),
   setSelectedLetter: jest.fn(),

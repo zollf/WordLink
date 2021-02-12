@@ -9,7 +9,7 @@ import styles from './styles';
 interface Props {
   onPress: () => void;
   text: string;
-  color?: 'green' | 'orange' | 'red' | 'blue';
+  color?: string;
 }
 
 const Button = ({ onPress, text, color }: Props) => {

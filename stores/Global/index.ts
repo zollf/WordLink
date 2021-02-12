@@ -30,7 +30,7 @@ class GlobalStore {
   getDifficultyColor = (difficulty: string) => {
     const color: Colors = {
       easy: 'green',
-      medium: 'orange_2',
+      medium: 'orange',
       hard: 'red',
       '': 'lightGrey',
     };
