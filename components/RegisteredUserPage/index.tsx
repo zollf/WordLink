@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { heightPercentageToDP } from 'react-native-responsive-screen';
 
-import { useStore } from '../../hooks';
+import { useStore } from 'app/hooks';
 import Button from '../Button';
 import InputField from '../InputField';
 import styles from './styles';

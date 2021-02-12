@@ -5,7 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { widthPercentageToDP } from 'react-native-responsive-screen';
 
 import InputFieldStyles from './styles';
-import AppStyle from '../../styles';
+import AppStyle from 'app/styles';
 
 interface Props {
   color: 'orange' | 'blue';
@@ -31,7 +31,7 @@ const InputField = ({ color, staticValue = '', size = 'full' }: Props) => {
   return (
     <LinearGradient
       colors={[AppStyle.lightBlue, AppStyle.blue]}
-      start={getGradientProps().start}
+      start={getGradientProps().start as [number, number]}
       locations={getGradientProps().locations}
       style={[
         InputFieldStyles.gradient,

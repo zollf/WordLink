@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text, TouchableOpacity, Animated } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useAnimate } from '../../hooks';
+import { useAnimate } from 'app/hooks';
 
-import AppStyle from '../../styles';
+import { getGradient } from 'app/styles';
 import styles from './styles';
 
 interface Props {
@@ -13,19 +13,6 @@ interface Props {
 }
 
 const Button = ({ onPress, text, color }: Props) => {
-  const getColor = () => {
-    switch (color) {
-      case 'green':
-        return [AppStyle.lightGreen, AppStyle.green];
-      case 'orange':
-        return [AppStyle.lightOrange, AppStyle.orange];
-      case 'red':
-        return [AppStyle.lightRed, AppStyle.red];
-      default:
-        return [AppStyle.lightOrange, AppStyle.orange];
-    }
-  };
-
   const [spring] = useAnimate(1);
   const handlePress = () => {
     Animated.sequence([
@@ -50,7 +37,7 @@ const Button = ({ onPress, text, color }: Props) => {
       }}
     >
       <TouchableOpacity data-test-id="button" onPress={handlePress}>
-        <LinearGradient colors={getColor()} style={styles.button} start={[-0.1, 0.1]} locations={[0.5, 0.5]}>
+        <LinearGradient colors={getGradient(color)} style={styles.button} start={[-0.1, 0.1]} locations={[0.5, 0.5]}>
           <Text style={styles.text}>{text}</Text>
         </LinearGradient>
       </TouchableOpacity>

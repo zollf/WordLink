@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { NewUserPage, RegisteredUserPage } from '../../components';
+import { NewUserPage, RegisteredUserPage } from 'app/components';
 
 import styles from './styles';
 

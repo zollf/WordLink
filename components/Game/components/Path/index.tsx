@@ -11,7 +11,7 @@ const Path = () => {
     duration: 500,
     update: { type: 'spring', springDamping: 0.4 },
   });
-
+  /* istanbul ignore next */
   const calcOpacity = (step: number) => {
     if (!completed) {
       if (step > 0) {
@@ -35,7 +35,7 @@ const Path = () => {
       }
     }
   };
-
+  /* istanbul ignore next */
   const calcMargin = () => {
     if (!completed) {
       if (stepNumber > maxOnScreen) {

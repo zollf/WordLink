@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Profile/> matches snapshot 1`] = `
+exports[`<Profile /> matches snapshot 1`] = `
 <View
   style={
     Object {
@@ -76,10 +76,10 @@ exports[`<Profile/> matches snapshot 1`] = `
           <TextInput
             allowFontScaling={true}
             data-test-id="text-input"
-            editable={true}
+            editable={false}
             onChange={[Function]}
             rejectResponderTermination={true}
-            selectTextOnFocus={true}
+            selectTextOnFocus={false}
             style={
               Array [
                 Object {
@@ -94,7 +94,7 @@ exports[`<Profile/> matches snapshot 1`] = `
               ]
             }
             underlineColorAndroid="transparent"
-            value=""
+            value="Fartman123"
           />
         </ViewManagerAdapter_ExpoLinearGradient>
       </View>
@@ -159,10 +159,10 @@ exports[`<Profile/> matches snapshot 1`] = `
             <TextInput
               allowFontScaling={true}
               data-test-id="text-input"
-              editable={true}
+              editable={false}
               onChange={[Function]}
               rejectResponderTermination={true}
-              selectTextOnFocus={true}
+              selectTextOnFocus={false}
               style={
                 Array [
                   Object {
@@ -177,7 +177,7 @@ exports[`<Profile/> matches snapshot 1`] = `
                 ]
               }
               underlineColorAndroid="transparent"
-              value=""
+              value="0"
             />
           </ViewManagerAdapter_ExpoLinearGradient>
         </View>
@@ -224,10 +224,10 @@ exports[`<Profile/> matches snapshot 1`] = `
             <TextInput
               allowFontScaling={true}
               data-test-id="text-input"
-              editable={true}
+              editable={false}
               onChange={[Function]}
               rejectResponderTermination={true}
-              selectTextOnFocus={true}
+              selectTextOnFocus={false}
               style={
                 Array [
                   Object {
@@ -242,7 +242,7 @@ exports[`<Profile/> matches snapshot 1`] = `
                 ]
               }
               underlineColorAndroid="transparent"
-              value=""
+              value="0"
             />
           </ViewManagerAdapter_ExpoLinearGradient>
         </View>

@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { observer } from 'mobx-react';
-import { useStore } from '../../hooks';
+import { useStore } from 'app/hooks';
 
-import { MenuBar, LevelButtons, LevelSelect, CircleButton } from '../../components';
+import { MenuBar, LevelButtons, LevelSelect, CircleButton } from 'app/components';
 
 import styles from './styles';
 

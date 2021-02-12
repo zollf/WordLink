@@ -23,6 +23,8 @@ const LetterSelection = () => {
       {!completed &&
         letters.map((letter: string, i: number) => (
           <Letter
+            data-test-id="selectable-letter"
+            data-test-selected={selectedLetter === letter}
             onPress={() => setSelectedLetter(letter)}
             color={selectedLetter === letter ? 'green' : ''}
             letter={letter}

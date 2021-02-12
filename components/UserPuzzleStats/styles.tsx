@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 import { heightPercentageToDP, widthPercentageToDP } from 'react-native-responsive-screen';
 
-import AppStyles from '../../styles';
+import AppStyles from 'app/styles';
 
 const styles = StyleSheet.create({
   PuzzleStats: {

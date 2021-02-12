@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Animated, View } from 'react-native';
 import { observer } from 'mobx-react';
-import { useStore, useAnimate } from '../../hooks';
+import { useStore, useAnimate } from 'app/hooks';
 import Button from '../Button';
 import Levels from '../Levels';
 
-import { ElasticSlideIn, FadeSlideIn, Animate } from '../../animations';
+import { ElasticSlideIn, FadeSlideIn, Animate } from 'app/animations';
 import styles from './styles';
 
 const LevelSelect = () => {

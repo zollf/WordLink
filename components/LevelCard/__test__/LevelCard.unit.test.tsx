@@ -1,9 +1,10 @@
 import React from 'react';
-import useWithStores from '../../../test/useWithStores';
+import renderer from 'react-test-renderer';
+import { Provider } from 'mobx-react';
+import GlobalMock from 'app/stores/mocks/GlobalMock';
+import GameMock from 'app/stores/mocks/GameMock';
 
 import LevelCard from '../';
-
-import renderer from 'react-test-renderer';
 
 const number = '1';
 const level: Level = {
@@ -16,7 +17,11 @@ const level: Level = {
   },
 };
 
-const component = useWithStores(<LevelCard level={level} number={number} difficulty="easy" />);
+const component = (
+  <Provider global={GlobalMock} gameStore={GameMock}>
+    <LevelCard level={level} number={number} difficulty="easy" />
+  </Provider>
+);
 
 describe('<LevelCard/>', () => {
   const wrapper = renderer.create(component);
@@ -25,7 +30,8 @@ describe('<LevelCard/>', () => {
   });
 
   it('function clicks correctly', () => {
-    wrapper.root.findByProps({ 'data-test-id': `card-${number}` }).props.onPress();
-    //todo
+    wrapper.root.findAllByProps({ 'data-test-id': `level-card` })[0].props.onPress();
+    expect(GlobalMock.setCurrentPage).toBeCalled();
+    expect(GameMock.loadGame).toBeCalled();
   });
 });

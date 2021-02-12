@@ -36,4 +36,31 @@ const AppStyle = {
   fontBold: 'Raleway_700Bold',
 };
 
+const Gradients: { [color: string]: [string, string] } = {
+  // GREEN GRADIANT
+  easy: [AppStyle.lightGreen, AppStyle.green],
+  green: [AppStyle.lightGreen, AppStyle.green],
+  // ORANGE
+  medium: [AppStyle.lightOrange, AppStyle.orange],
+  orange: [AppStyle.lightOrange, AppStyle.orange],
+  // RED
+  hard: [AppStyle.lightRed, AppStyle.red],
+  red: [AppStyle.lightRed, AppStyle.red],
+  // GREY
+  grey: [AppStyle.lightGrey, AppStyle.grey],
+  default: [AppStyle.lightGrey, AppStyle.grey],
+  // BLUE
+  blue: [AppStyle.lightBlue, AppStyle.blue],
+};
+
+// Includes null opertor
+const getGradient = (color?: string): [string, string] => {
+  if (color && ['easy', 'green', 'medium', 'orange', 'hard', 'red', 'grey', 'default', 'blue'].includes(color)) {
+    return Gradients[color];
+  } else {
+    return Gradients.default;
+  }
+};
+
+export { Gradients, getGradient };
 export default AppStyle;

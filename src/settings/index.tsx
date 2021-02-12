@@ -2,8 +2,8 @@ import React from 'react';
 import { View } from 'react-native';
 import { observer } from 'mobx-react';
 
-import { useStore } from '../../hooks';
-import { MenuBar, Button } from '../../components';
+import { useStore } from 'app/hooks';
+import { MenuBar, Button } from 'app/components';
 
 import styles from './styles';
 

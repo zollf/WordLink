@@ -1,10 +1,10 @@
 import React from 'react';
 import { TouchableOpacity, Text, View, Image } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { useStore } from '../../hooks';
+import { useStore } from 'app/hooks';
 
-import stars from '../../images/icons/STAR.png';
-import AppStyle from '../../styles';
+import stars from 'app/images/icons/STAR.png';
+import AppStyle, { getGradient } from 'app/styles';
 import styles from './styles';
 
 interface Props {
@@ -16,19 +16,6 @@ interface Props {
 const LevelCard = ({ level, number, difficulty }: Props) => {
   const { setCurrentPage } = useStore('global');
   const { loadGame } = useStore('gameStore');
-
-  const getColors = () => {
-    switch (difficulty) {
-      case 'easy':
-        return [AppStyle.lightGreen, AppStyle.green];
-      case 'medium':
-        return [AppStyle.lightOrange, AppStyle.orange];
-      case 'hard':
-        return [AppStyle.lightRed, AppStyle.red];
-      default:
-        return [AppStyle.lightGreen, AppStyle.green];
-    }
-  };
 
   const renderStars = () => {
     const starsArr = [];
@@ -44,14 +31,14 @@ const LevelCard = ({ level, number, difficulty }: Props) => {
   };
 
   return (
-    <TouchableOpacity onPress={handleClick} data-test-id={`card-${number}`}>
+    <TouchableOpacity onPress={handleClick} data-test-id="level-card">
       <LinearGradient
         colors={[AppStyle.lightGrey, AppStyle.grey]}
         style={styles.levelCard}
         locations={[0.5, 0.5]}
         start={[-0.1, 0.1]}
       >
-        <LinearGradient colors={getColors()} start={[-0.25, 0.25]} style={styles.circle}>
+        <LinearGradient colors={getGradient(difficulty)} start={[-0.25, 0.25]} style={styles.circle}>
           <Text style={styles.circleText}>{number}</Text>
         </LinearGradient>
         <View style={styles.words}>
@@ -62,7 +49,7 @@ const LevelCard = ({ level, number, difficulty }: Props) => {
           style={[
             styles.quarterCircle,
             {
-              backgroundColor: getColors()[1],
+              backgroundColor: getGradient(difficulty)[1],
             },
           ]}
         />

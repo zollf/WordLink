@@ -1,8 +1,7 @@
 import { observable, action, makeObservable } from 'mobx';
-import { dictionary } from '../../data';
+import { dictionary } from 'app/data';
 
 class GameStore {
-  gameId = 0;
   difficulty = '';
   loaded = false;
   error = false;
@@ -19,7 +18,6 @@ class GameStore {
   constructor() {
     // prettier-ignore
     makeObservable(this, {
-      gameId:             observable,
       path:               observable,
       difficulty:         observable,
       selectedLetter:     observable,
@@ -91,6 +89,10 @@ class GameStore {
     return !!dictionary[word.toUpperCase()];
   };
 
+  /**
+   * Set the selected letter
+   * @param letter , to be selected
+   */
   setSelectedLetter = (letter: string) => {
     if (this.selectedLetter === letter) {
       this.selectedLetter = '';

@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import { observer } from 'mobx-react';
 
-import { Game as WordLink } from '../../components';
+import { Game as WordLink } from 'app/components';
 
 import styles from './styles';
 

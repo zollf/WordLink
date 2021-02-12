@@ -27,7 +27,7 @@
     "module": "esnext",
     "isolatedModules": true,
     "paths": {
-      "@/*": ["./*"],
+      "app/*": ["./*"],
     },
   }
 }

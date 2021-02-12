@@ -15,7 +15,12 @@ const CurrentWord = () => {
         currentWord
           .split('')
           .map((letter: string, i: number) => (
-            <Letter onPress={() => changeLetter(i)} letter={letter} key={`currentWord-${letter}-${i}`} />
+            <Letter
+              data-test-id="letter"
+              onPress={() => changeLetter(i)}
+              letter={letter}
+              key={`currentWord-${letter}-${i}`}
+            />
           ))}
     </View>
   );

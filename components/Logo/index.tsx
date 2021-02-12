@@ -2,7 +2,7 @@ import React from 'react';
 import { Text } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import styles from './styles';
-import AppStyle from '../../styles';
+import AppStyle from 'app/styles';
 
 const Logo = () => {
   return (

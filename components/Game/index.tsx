@@ -57,7 +57,7 @@ const Game = () => {
 
   return (
     <View style={styles.game}>
-      {exitModal && <ExitModal close={() => setExitModal(false)} exit={handleExit} />}
+      {exitModal && <ExitModal data-test-id="exit" close={() => setExitModal(false)} exit={handleExit} />}
       <View style={styles.back}>
         <CircleButton overrideCallback={() => setExitModal(true)} />
       </View>
@@ -89,10 +89,10 @@ const Game = () => {
       </Animate>
 
       {!completed ? (
-        <ControlButtons />
+        <ControlButtons data-test-id="control-buttons" />
       ) : (
         <View style={styles.completed}>
-          <Completed />
+          <Completed data-test-id="completed" />
         </View>
       )}
     </View>

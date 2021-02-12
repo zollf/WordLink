@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import { observer } from 'mobx-react';
 
-import { MenuBar, UserStats, UserPuzzleStats } from '../../components';
+import { MenuBar, UserStats, UserPuzzleStats } from 'app/components';
 
 import styles from './styles';
 

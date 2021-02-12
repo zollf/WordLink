@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, LayoutAnimation } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import Button from '../../../Button';
-import CircleButton from '../../../CircleButton';
+import Button from 'app/components/Button';
+import CircleButton from 'app/components/CircleButton';
 
-import AppStyle from '../../../../styles';
+import AppStyle from 'app/styles';
 import styles from './styles';
 
 interface Props {
@@ -27,11 +27,11 @@ const ExitModal = ({ close, exit }: Props) => {
           start={[-0.1, 0.6]}
         >
           <View style={styles.quit}>
-            <CircleButton overrideCallback={close} />
+            <CircleButton data-test-id="close-button" overrideCallback={close} />
           </View>
           <Text style={styles.text}>Are you sure?</Text>
           <View style={styles.button}>
-            <Button onPress={exit} text="QUIT" />
+            <Button data-test-id="exit-button" color="orange" onPress={exit} text="QUIT" />
           </View>
         </LinearGradient>
       </View>

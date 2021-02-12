@@ -7,11 +7,11 @@ import { useStore } from '../../hooks';
 import MenuItem from '../MenuItem';
 import BackBlock from '../BackBlock';
 
-import setting from '../../images/icons/SETTING.png';
-import avatar from '../../images/icons/AVATAR.png';
-import gamepad from '../../images/icons/GAMEPAD.png';
+import setting from 'app/images/icons/SETTING.png';
+import avatar from 'app/images/icons/AVATAR.png';
+import gamepad from 'app/images/icons/GAMEPAD.png';
 
-import AppStyle from '../../styles';
+import AppStyle from 'app/styles';
 import styles from './styles';
 
 const MenuBar = () => {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
-import { useStore } from '../../../../hooks';
+import { useStore } from 'app/hooks';
 
-import Button from '../../../Button';
+import Button from 'app/components/Button';
 
 const Completed = () => {
   const { clearGame } = useStore('gameStore');
@@ -15,7 +15,7 @@ const Completed = () => {
 
   return (
     <View>
-      <Button onPress={handleExit} color="primary" text="FINISH" />
+      <Button data-test-id="exit-button" onPress={handleExit} color="orange" text="FINISH" />
     </View>
   );
 };

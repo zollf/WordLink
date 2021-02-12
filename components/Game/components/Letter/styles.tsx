@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { widthPercentageToDP, heightPercentageToDP } from 'react-native-responsive-screen';
 
-import AppStyle from '../../../../styles';
+import AppStyle from 'app/styles';
 
 const styles = StyleSheet.create({
   box: {
@@ -11,15 +11,17 @@ const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowRadius: 4,
-    shadowOffset: { width: 2, height: 2 },
-    shadowOpacity: 0.1,
     borderRadius: 5,
   },
   text: {
     fontFamily: AppStyle.fontBold,
     fontSize: heightPercentageToDP('3%'),
+  },
+  shadow: {
+    shadowColor: '#000',
+    shadowRadius: 4,
+    shadowOffset: { width: 2, height: 2 },
+    shadowOpacity: 0.05,
   },
 });
 

@@ -3,7 +3,7 @@ import { Text, View } from 'react-native';
 
 import PuzzleBlock from '../PuzzleBlock';
 
-import AppStyle from '../../../../styles';
+import AppStyle from 'app/styles';
 import styles from './styles';
 
 interface Props {

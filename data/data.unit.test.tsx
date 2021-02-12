@@ -18,8 +18,4 @@ describe('Level Data', () => {
       }
     });
   });
-
-  it('get level error', () => {
-    expect(getLevel('not a level')).toBeUndefined();
-  });
 });

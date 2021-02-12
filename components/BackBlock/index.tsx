@@ -3,9 +3,9 @@ import { Animated, LayoutAnimation } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { observer } from 'mobx-react';
 
-import { useStore } from '../../hooks';
+import { useStore } from 'app/hooks';
 
-import AppStyle from '../../styles';
+import AppStyle from 'app/styles';
 import styles from './styles';
 
 interface Pages {

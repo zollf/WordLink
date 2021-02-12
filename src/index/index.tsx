@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 import { observer } from 'mobx-react';
 
-import { MenuBar } from '../../components';
+import { MenuBar } from 'app/components';
 
 import styles from './styles';
 

@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 import { heightPercentageToDP } from 'react-native-responsive-screen';
-import AppStyle from '../../styles';
+import AppStyle from 'app/styles';
 
 const InputFieldStyles = StyleSheet.create({
   gradient: {

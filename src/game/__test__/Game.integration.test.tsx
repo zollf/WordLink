@@ -1,5 +1,5 @@
 import React from 'react';
-import useWithStores from '../../../test/useWithStores';
+import useWithStores from 'app/test/useWithStores';
 
 import Game from '../';
 

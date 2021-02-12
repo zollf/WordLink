@@ -2,7 +2,7 @@ import easy from '../data/easy';
 import medium from '../data/medium';
 import hard from '../data/hard';
 
-const getLevel = (level: string): Games | undefined => {
+const getLevel = (level: string) => {
   switch (level) {
     case 'easy':
       return easy;
@@ -11,7 +11,7 @@ const getLevel = (level: string): Games | undefined => {
     case 'hard':
       return hard;
     default:
-      return undefined;
+      return {};
   }
 };
 

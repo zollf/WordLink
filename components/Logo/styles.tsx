@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import AppStyle from '../../styles';
+import AppStyle from 'app/styles';
 
 import { heightPercentageToDP, widthPercentageToDP } from 'react-native-responsive-screen';
 

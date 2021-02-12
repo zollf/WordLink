@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { View, Animated } from 'react-native';
-import { useStore, useAnimate } from '../../hooks';
+import { useStore, useAnimate } from 'app/hooks';
 import Button from '../Button';
 
-import { ElasticSlideIn, FadeSlideIn } from '../../animations';
+import { ElasticSlideIn, FadeSlideIn } from 'app/animations';
 import styles from './styles';
 
 const LevelButtons = () => {
@@ -43,7 +43,7 @@ const LevelButtons = () => {
           },
         ]}
       >
-        <Button text="MEDIUM" color="orange_2" onPress={() => setCurrentDifficultyOpen('medium')} />
+        <Button text="MEDIUM" color="orange" onPress={() => setCurrentDifficultyOpen('medium')} />
       </Animated.View>
 
       <Animated.View

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
-import { useStore } from '../../../../hooks';
-import Button from '../../../Button';
+import { useStore } from 'app/hooks';
+import Button from 'app/components/Button';
 
 import styles from './styles';
 
@@ -11,10 +11,10 @@ const ControlButtons = () => {
   return (
     <View style={styles.buttons}>
       <View style={styles.button}>
-        <Button color="primary" onPress={() => resetCurrentWord()} text="RESET" />
+        <Button data-test-id="reset" color="orange" onPress={() => resetCurrentWord()} text="RESET" />
       </View>
       <View style={styles.button}>
-        <Button color="secondary" onPress={() => undo()} text="UNDO" />
+        <Button data-test-id="undo" color="orange" onPress={() => undo()} text="UNDO" />
       </View>
     </View>
   );
