@@ -101,6 +101,9 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
+            "display": "flex",
+            "justifyContent": "center",
             "position": "absolute",
             "top": 106.5,
           },
@@ -169,6 +172,57 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
           EASY
         </Text>
       </ViewManagerAdapter_ExpoLinearGradient>
+      <View>
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4284860671,
+                4282432255,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.1,
+                0.8,
+              ],
+              "startPoint": Array [
+                -0.1,
+                0.1,
+              ],
+            }
+          }
+          style={
+            Object {
+              "alignItems": "center",
+              "borderRadius": 30,
+              "display": "flex",
+              "height": 60,
+              "justifyContent": "center",
+              "margin": 10,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 60,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "Raleway_700Bold",
+                "fontSize": 33.5,
+                "marginBottom": 5,
+              }
+            }
+          >
+            0
+          </Text>
+        </ViewManagerAdapter_ExpoLinearGradient>
+      </View>
     </View>
     <View
       style={
@@ -248,7 +302,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -309,7 +362,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -370,7 +422,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -431,7 +482,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -492,7 +542,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -537,7 +586,7 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
         <View
           style={
             Object {
-              "marginTop": -50,
+              "marginTop": -44,
             }
           }
         >
@@ -593,7 +642,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -654,7 +702,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -715,7 +762,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -776,7 +822,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -837,7 +882,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -947,7 +991,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -1029,7 +1072,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -1111,7 +1153,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -1193,7 +1234,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -1275,7 +1315,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -1368,7 +1407,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -1429,7 +1467,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -1490,7 +1527,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -1551,7 +1587,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -1612,7 +1647,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -1731,7 +1765,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -1813,7 +1846,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -1895,7 +1927,6 @@ exports[`<Game /> loaded game matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -2208,6 +2239,9 @@ exports[`<Game /> matches snapshot 1`] = `
       style={
         Array [
           Object {
+            "alignItems": "center",
+            "display": "flex",
+            "justifyContent": "center",
             "position": "absolute",
             "top": 106.5,
           },
@@ -2276,6 +2310,57 @@ exports[`<Game /> matches snapshot 1`] = `
           EASY
         </Text>
       </ViewManagerAdapter_ExpoLinearGradient>
+      <View>
+        <ViewManagerAdapter_ExpoLinearGradient
+          proxiedProperties={
+            Object {
+              "colors": Array [
+                4284860671,
+                4282432255,
+              ],
+              "endPoint": undefined,
+              "locations": Array [
+                0.1,
+                0.8,
+              ],
+              "startPoint": Array [
+                -0.1,
+                0.1,
+              ],
+            }
+          }
+          style={
+            Object {
+              "alignItems": "center",
+              "borderRadius": 30,
+              "display": "flex",
+              "height": 60,
+              "justifyContent": "center",
+              "margin": 10,
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
+              "width": 60,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontFamily": "Raleway_700Bold",
+                "fontSize": 33.5,
+                "marginBottom": 5,
+              }
+            }
+          >
+            0
+          </Text>
+        </ViewManagerAdapter_ExpoLinearGradient>
+      </View>
     </View>
     <View
       style={
@@ -2355,7 +2440,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -2416,7 +2500,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -2477,7 +2560,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -2538,7 +2620,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -2599,7 +2680,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -2644,7 +2724,7 @@ exports[`<Game /> matches snapshot 1`] = `
         <View
           style={
             Object {
-              "marginTop": -50,
+              "marginTop": -44,
             }
           }
         >
@@ -2700,7 +2780,6 @@ exports[`<Game /> matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -2761,7 +2840,6 @@ exports[`<Game /> matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -2822,7 +2900,6 @@ exports[`<Game /> matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -2883,7 +2960,6 @@ exports[`<Game /> matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -2944,7 +3020,6 @@ exports[`<Game /> matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -3054,7 +3129,6 @@ exports[`<Game /> matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -3136,7 +3210,6 @@ exports[`<Game /> matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -3218,7 +3291,6 @@ exports[`<Game /> matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -3300,7 +3372,6 @@ exports[`<Game /> matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -3382,7 +3453,6 @@ exports[`<Game /> matches snapshot 1`] = `
                     "display": "flex",
                     "height": 75,
                     "justifyContent": "center",
-                    "margin": 5,
                     "width": 75,
                   }
                 }
@@ -3475,7 +3545,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -3536,7 +3605,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -3597,7 +3665,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -3658,7 +3725,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -3719,7 +3785,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -3838,7 +3903,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -3920,7 +3984,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }
@@ -4002,7 +4065,6 @@ exports[`<Game /> matches snapshot 1`] = `
                   "display": "flex",
                   "height": 75,
                   "justifyContent": "center",
-                  "margin": 5,
                   "width": 75,
                 }
               }

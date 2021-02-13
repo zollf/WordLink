@@ -4,23 +4,23 @@ import { widthPercentageToDP, heightPercentageToDP } from 'react-native-responsi
 import AppStyle from 'app/styles';
 
 const styles = StyleSheet.create({
-  box: {
-    width: widthPercentageToDP('10%'),
-    height: widthPercentageToDP('10%'),
+  circle: {
+    width: widthPercentageToDP('8%'),
+    height: widthPercentageToDP('8%'),
+    borderRadius: widthPercentageToDP('8%') / 2,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 5,
-  },
-  text: {
-    fontFamily: AppStyle.fontBold,
-    fontSize: heightPercentageToDP('3%'),
-  },
-  shadow: {
     shadowColor: '#000',
     shadowRadius: 4,
     shadowOffset: { width: 2, height: 2 },
-    shadowOpacity: 0.05,
+    shadowOpacity: 0.1,
+    margin: 10,
+  },
+  text: {
+    fontFamily: AppStyle.fontBold,
+    fontSize: heightPercentageToDP('2.5%'),
+    marginBottom: 5,
   },
 });
 

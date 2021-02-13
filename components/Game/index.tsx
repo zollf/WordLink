@@ -3,6 +3,7 @@ import { View, Animated } from 'react-native';
 import { observer } from 'mobx-react';
 import { useStore, useAnimate } from '../../hooks';
 import CircleButton from '../CircleButton';
+import CircleText from '../CircleText';
 
 import {
   Word,
@@ -19,7 +20,7 @@ import { ElasticSlideIn, FadeSlideIn, Animate } from '../../animations';
 import styles from './styles';
 
 const Game = () => {
-  const { game, clearGame, completed } = useStore('gameStore');
+  const { game, clearGame, completed, moves } = useStore('gameStore');
   const { setCurrentPage } = useStore('global');
   const [exitModal, setExitModal] = useState(false);
 
@@ -50,6 +51,12 @@ const Game = () => {
     ]).start();
   });
 
+  if (!game) {
+    setCurrentPage('menu');
+    clearGame();
+    return null;
+  }
+
   const handleExit = () => {
     setCurrentPage('menu');
     clearGame();
@@ -64,11 +71,12 @@ const Game = () => {
 
       <Animate style={styles.information} transform={infoT} opacity={infoO}>
         <Information />
+        <CircleText text={moves.toString()} />
       </Animate>
 
       <View style={styles.content}>
         <Animate transform={word1T} opacity={word1O}>
-          <Word color="orange" word={game!.start} />
+          <Word color="orange" word={game.start} />
         </Animate>
 
         <Animate transform={pathT} opacity={pathO}>
@@ -80,7 +88,7 @@ const Game = () => {
         </Animate>
 
         <Animate transform={word2T} opacity={word2O}>
-          <Word color="blue" word={game!.end} />
+          <Word color="blue" word={game.end} />
         </Animate>
       </View>
 

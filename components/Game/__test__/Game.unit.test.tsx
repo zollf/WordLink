@@ -8,9 +8,7 @@ import Game from '../';
 
 import renderer, { act } from 'react-test-renderer';
 
-GameMock.gameId = 1;
 GameMock.difficulty = 'easy';
-GameMock.inGame = true;
 
 const game = getLevel('easy')![1].game;
 GameMock.game = game;
@@ -27,6 +25,7 @@ describe('<Game />', () => {
   let wrapper: renderer.ReactTestRenderer;
   beforeEach(() => {
     GameMock.completed = false;
+    GameMock.game = game;
     wrapper = renderer.create(component());
   });
 
@@ -57,5 +56,12 @@ describe('<Game />', () => {
     GameMock.completed = true;
     wrapper = renderer.create(component());
     expect(wrapper.root.findByProps({ 'data-test-id': 'completed' })).toBeDefined();
+  });
+
+  it('no game loaded quits out of the game', () => {
+    GameMock.game = undefined;
+    wrapper = renderer.create(component());
+    expect(GameMock.clearGame).toBeCalled();
+    expect(GlobalMock.setCurrentPage).toBeCalled();
   });
 });
