@@ -14,6 +14,7 @@ const GameMocks: GameStore = {
   error: false,
   game: level.game,
   gameTitle: 'hello',
+  moves: 0,
 
   currentWord: level.game.start,
   selectedLetter: '',
@@ -30,6 +31,7 @@ const GameMocks: GameStore = {
   resetCurrentWord: jest.fn(),
   undo: jest.fn(),
   clearGame: jest.fn(),
+  incrementMove: jest.fn(),
 };
 
 export default GameMocks;

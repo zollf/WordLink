@@ -15,143 +15,64 @@ Array [
       }
     }
   >
-    <ViewManagerAdapter_ExpoLinearGradient
-      proxiedProperties={
-        Object {
-          "colors": Array [
-            4294950464,
-            4282432255,
-          ],
-          "endPoint": undefined,
-          "locations": Array [
-            0.5,
-            0.5,
-          ],
-          "startPoint": Array [
-            -0.1,
-            0.6,
-          ],
-        }
-      }
+    <View
       style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#F3F3F3",
-          "borderRadius": 5,
-          "display": "flex",
-          "justifyContent": "center",
-          "marginBottom": 40,
-          "paddingBottom": 30,
-          "paddingTop": 66.5,
-          "width": 450,
-        }
+        Array [
+          undefined,
+          Object {
+            "opacity": mockConstructor {},
+            "transform": Array [
+              Object {
+                "translateX": mockConstructor {},
+              },
+              Object {
+                "scale": 1,
+              },
+            ],
+          },
+        ]
       }
     >
-      <View
-        style={
+      <ViewManagerAdapter_ExpoLinearGradient
+        proxiedProperties={
           Object {
-            "height": "100%",
-            "left": 10,
-            "position": "absolute",
-            "top": 10,
-            "width": "100%",
+            "colors": Array [
+              4294950464,
+              4282432255,
+            ],
+            "endPoint": undefined,
+            "locations": Array [
+              0.5,
+              0.5,
+            ],
+            "startPoint": Array [
+              -0.1,
+              0.6,
+            ],
           }
         }
-      >
-        <View
-          accessible={true}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            Object {
-              "opacity": 1,
-            }
-          }
-        >
-          <ViewManagerAdapter_ExpoLinearGradient
-            proxiedProperties={
-              Object {
-                "colors": Array [
-                  4284860671,
-                  4282432255,
-                ],
-                "endPoint": undefined,
-                "locations": Array [
-                  0.5,
-                  0.5,
-                ],
-                "startPoint": Array [
-                  -0.1,
-                  0.1,
-                ],
-              }
-            }
-            style={
-              Object {
-                "alignItems": "center",
-                "borderRadius": 30,
-                "display": "flex",
-                "height": 60,
-                "justifyContent": "center",
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 60,
-              }
-            }
-          >
-            <Image
-              source={1}
-              style={
-                Object {
-                  "height": 30,
-                  "width": 30,
-                }
-              }
-            />
-          </ViewManagerAdapter_ExpoLinearGradient>
-        </View>
-      </View>
-      <Text
         style={
           Object {
-            "color": "white",
-            "fontFamily": "Raleway_700Bold",
-            "fontSize": 40,
-            "marginBottom": 5,
-            "textAlign": "center",
-            "width": 375,
-          }
-        }
-      >
-        Are you sure?
-      </Text>
-      <View
-        style={
-          Object {
-            "marginBottom": 10,
-            "marginTop": 10,
+            "alignItems": "center",
+            "backgroundColor": "#F3F3F3",
+            "borderRadius": 5,
+            "display": "flex",
+            "justifyContent": "center",
+            "marginBottom": 40,
+            "paddingBottom": 30,
+            "paddingTop": 66.5,
+            "width": 450,
           }
         }
       >
         <View
           style={
             Object {
-              "transform": Array [
-                Object {
-                  "scale": mockConstructor {},
-                },
-              ],
+              "height": "100%",
+              "left": 10,
+              "position": "absolute",
+              "top": 10,
+              "width": "100%",
             }
           }
         >
@@ -175,8 +96,8 @@ Array [
               proxiedProperties={
                 Object {
                   "colors": Array [
-                    4294956160,
-                    4294950464,
+                    4284860671,
+                    4282432255,
                   ],
                   "endPoint": undefined,
                   "locations": Array [
@@ -192,9 +113,9 @@ Array [
               style={
                 Object {
                   "alignItems": "center",
-                  "borderRadius": 5,
+                  "borderRadius": 30,
                   "display": "flex",
-                  "height": 106.5,
+                  "height": 60,
                   "justifyContent": "center",
                   "shadowColor": "#000",
                   "shadowOffset": Object {
@@ -203,26 +124,124 @@ Array [
                   },
                   "shadowOpacity": 0.1,
                   "shadowRadius": 4,
-                  "width": 300,
+                  "width": 60,
                 }
               }
             >
-              <Text
+              <Image
+                source={1}
                 style={
                   Object {
-                    "color": "white",
-                    "fontFamily": "Raleway_700Bold",
-                    "fontSize": 33.5,
+                    "height": 30,
+                    "width": 30,
                   }
                 }
-              >
-                QUIT
-              </Text>
+              />
             </ViewManagerAdapter_ExpoLinearGradient>
           </View>
         </View>
-      </View>
-    </ViewManagerAdapter_ExpoLinearGradient>
+        <Text
+          style={
+            Object {
+              "color": "white",
+              "fontFamily": "Raleway_700Bold",
+              "fontSize": 40,
+              "marginBottom": 5,
+              "textAlign": "center",
+              "width": 375,
+            }
+          }
+        >
+          Are you sure?
+        </Text>
+        <View
+          style={
+            Object {
+              "marginBottom": 10,
+              "marginTop": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "transform": Array [
+                  Object {
+                    "scale": mockConstructor {},
+                  },
+                ],
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+            >
+              <ViewManagerAdapter_ExpoLinearGradient
+                proxiedProperties={
+                  Object {
+                    "colors": Array [
+                      4294956160,
+                      4294950464,
+                    ],
+                    "endPoint": undefined,
+                    "locations": Array [
+                      0.5,
+                      0.5,
+                    ],
+                    "startPoint": Array [
+                      -0.1,
+                      0.1,
+                    ],
+                  }
+                }
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "borderRadius": 5,
+                    "display": "flex",
+                    "height": 106.5,
+                    "justifyContent": "center",
+                    "shadowColor": "#000",
+                    "shadowOffset": Object {
+                      "height": 2,
+                      "width": 2,
+                    },
+                    "shadowOpacity": 0.1,
+                    "shadowRadius": 4,
+                    "width": 300,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "white",
+                      "fontFamily": "Raleway_700Bold",
+                      "fontSize": 33.5,
+                    }
+                  }
+                >
+                  QUIT
+                </Text>
+              </ViewManagerAdapter_ExpoLinearGradient>
+            </View>
+          </View>
+        </View>
+      </ViewManagerAdapter_ExpoLinearGradient>
+    </View>
   </View>,
   <View
     style={

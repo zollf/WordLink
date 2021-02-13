@@ -12,6 +12,9 @@ const styles = StyleSheet.create({
   information: {
     position: 'absolute',
     top: heightPercentageToDP('8%'),
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   content: {
     display: 'flex',

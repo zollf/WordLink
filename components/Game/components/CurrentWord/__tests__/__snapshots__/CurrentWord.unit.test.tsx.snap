@@ -68,7 +68,6 @@ exports[`<CurrentWord /> matches snapshot 1`] = `
             "display": "flex",
             "height": 75,
             "justifyContent": "center",
-            "margin": 5,
             "width": 75,
           }
         }
@@ -150,7 +149,6 @@ exports[`<CurrentWord /> matches snapshot 1`] = `
             "display": "flex",
             "height": 75,
             "justifyContent": "center",
-            "margin": 5,
             "width": 75,
           }
         }
@@ -232,7 +230,6 @@ exports[`<CurrentWord /> matches snapshot 1`] = `
             "display": "flex",
             "height": 75,
             "justifyContent": "center",
-            "margin": 5,
             "width": 75,
           }
         }
@@ -314,7 +311,6 @@ exports[`<CurrentWord /> matches snapshot 1`] = `
             "display": "flex",
             "height": 75,
             "justifyContent": "center",
-            "margin": 5,
             "width": 75,
           }
         }
@@ -396,7 +392,6 @@ exports[`<CurrentWord /> matches snapshot 1`] = `
             "display": "flex",
             "height": 75,
             "justifyContent": "center",
-            "margin": 5,
             "width": 75,
           }
         }

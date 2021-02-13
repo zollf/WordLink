@@ -39,12 +39,12 @@ const Path = () => {
   const calcMargin = () => {
     if (!completed) {
       if (stepNumber > maxOnScreen) {
-        return -50 * (stepNumber - maxOnScreen) - 50;
+        return -44 * (stepNumber - maxOnScreen) - 44;
       } else {
-        return -50;
+        return -44;
       }
     } else {
-      return -50;
+      return -44;
     }
   };
 
@@ -61,7 +61,7 @@ const Path = () => {
               opacity: calcOpacity(i),
             }}
             word={word}
-            key={`path-${word}`}
+            key={`path-${word}-${i}`}
           />
         ),
       )}

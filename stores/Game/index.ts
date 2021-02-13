@@ -14,6 +14,7 @@ class GameStore {
   path: string[] = [];
   visited = {};
   completed = false;
+  moves = 0;
 
   constructor() {
     // prettier-ignore
@@ -27,6 +28,7 @@ class GameStore {
       error:              observable,
       completed:          observable,
       gameTitle:          observable,
+      moves:              observable,
 
       getNewLetters:      action,
       isWord:             action,
@@ -36,6 +38,7 @@ class GameStore {
       resetCurrentWord:   action,
       undo:               action,
       clearGame:          action,
+      incrementMove:      action,
     });
   }
 
@@ -116,6 +119,7 @@ class GameStore {
         // Add to path
         this.path.push(newWord);
         this.stepNumber++;
+        this.incrementMove();
 
         // Replace Current word with the newly made word
         this.currentWord = newWord;
@@ -167,7 +171,13 @@ class GameStore {
     this.path = [];
     this.stepNumber = 0;
     this.visited = {};
+    this.moves = 0;
   };
+
+  /**
+   * Increment move by 1
+   */
+  incrementMove = () => this.moves++;
 }
 
 const gameStore = new GameStore();
