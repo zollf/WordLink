@@ -40,10 +40,9 @@ exports[`<InputField /> matches snapshot 1`] = `
   <TextInput
     allowFontScaling={true}
     data-test-id="text-input"
-    editable={true}
-    onChange={[Function]}
+    editable={false}
     rejectResponderTermination={true}
-    selectTextOnFocus={true}
+    selectTextOnFocus={false}
     style={
       Array [
         Object {

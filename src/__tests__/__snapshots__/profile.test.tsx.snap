@@ -77,7 +77,6 @@ exports[`<Profile /> matches snapshot 1`] = `
             allowFontScaling={true}
             data-test-id="text-input"
             editable={false}
-            onChange={[Function]}
             rejectResponderTermination={true}
             selectTextOnFocus={false}
             style={
@@ -94,7 +93,7 @@ exports[`<Profile /> matches snapshot 1`] = `
               ]
             }
             underlineColorAndroid="transparent"
-            value="Fartman123"
+            value=""
           />
         </ViewManagerAdapter_ExpoLinearGradient>
       </View>
@@ -160,7 +159,6 @@ exports[`<Profile /> matches snapshot 1`] = `
               allowFontScaling={true}
               data-test-id="text-input"
               editable={false}
-              onChange={[Function]}
               rejectResponderTermination={true}
               selectTextOnFocus={false}
               style={
@@ -177,7 +175,7 @@ exports[`<Profile /> matches snapshot 1`] = `
                 ]
               }
               underlineColorAndroid="transparent"
-              value="0"
+              value=""
             />
           </ViewManagerAdapter_ExpoLinearGradient>
         </View>
@@ -225,7 +223,6 @@ exports[`<Profile /> matches snapshot 1`] = `
               allowFontScaling={true}
               data-test-id="text-input"
               editable={false}
-              onChange={[Function]}
               rejectResponderTermination={true}
               selectTextOnFocus={false}
               style={
@@ -242,7 +239,7 @@ exports[`<Profile /> matches snapshot 1`] = `
                 ]
               }
               underlineColorAndroid="transparent"
-              value="0"
+              value=""
             />
           </ViewManagerAdapter_ExpoLinearGradient>
         </View>

@@ -168,7 +168,6 @@ exports[`<Welcome /> matches snapshot 1`] = `
           allowFontScaling={true}
           data-test-id="text-input"
           editable={false}
-          onChange={[Function]}
           rejectResponderTermination={true}
           selectTextOnFocus={false}
           style={
