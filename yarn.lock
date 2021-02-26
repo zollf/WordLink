@@ -4255,13 +4255,6 @@ babel-preset-jest@^26.6.2:
     babel-plugin-jest-hoist "^26.6.2"
     babel-preset-current-node-syntax "^1.0.0"
 
-babel-root-slash-import@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/babel-root-slash-import/-/babel-root-slash-import-1.1.0.tgz#27db03489f99669c520a1486dd4ad75d55dad7d8"
-  integrity sha1-J9sDSJ+ZZpxSChSG3UrXXVXa19g=
-  dependencies:
-    babel "^6.1.18"
-
 babel-runtime@6.26.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
@@ -4269,11 +4262,6 @@ babel-runtime@6.26.0, babel-runtime@^6.26.0:
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.11.0"
-
-babel@^6.1.18:
-  version "6.23.0"
-  resolved "https://registry.yarnpkg.com/babel/-/babel-6.23.0.tgz#d0d1e7d803e974765beea3232d4e153c0efb90f4"
-  integrity sha1-0NHn2APpdHZb7qMjLU4VPA77kPQ=
 
 babylon@^6.18.0:
   version "6.18.0"
@@ -8841,11 +8829,6 @@ inquirer@^3.0.6:
     string-width "^2.1.0"
     strip-ansi "^4.0.0"
     through "^2.3.6"
-
-install@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/install/-/install-0.13.0.tgz#6af6e9da9dd0987de2ab420f78e60d9c17260776"
-  integrity sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==
 
 internal-ip@4.3.0, internal-ip@^4.3.0:
   version "4.3.0"

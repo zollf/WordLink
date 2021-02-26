@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Text, View } from 'react-native';
 import { heightPercentageToDP } from 'react-native-responsive-screen';
 
@@ -10,7 +10,9 @@ import styles from './styles';
 import Logo from '../Logo';
 
 const NewUserPage = () => {
-  const { setStartingPage } = useStore('global');
+  const { setStartingPage, setUserInfo } = useStore('global');
+  const [inputVal, setInputVal] = useState('');
+
   return (
     <View style={styles.container}>
       <View style={styles.logo}>
@@ -19,7 +21,7 @@ const NewUserPage = () => {
       </View>
       <View style={{ marginBottom: heightPercentageToDP('10%') }}>
         <Text style={styles.text}>Welcome Back!</Text>
-        <InputField color="blue" staticValue={'Username'} />
+        <InputField color="blue" value={'Username'} />
       </View>
       <Button text="START" color="orange" onPress={() => setStartingPage(false)} />
     </View>

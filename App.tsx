@@ -25,6 +25,8 @@ const App = () => {
     _getData().then((v) => {
       if (v.success) {
         setData(v.value);
+        // await _saveData(null);  JUST USING THIS TO RESET THE STORAGE DATA TO TEST
+        global.setUserInfo(v.value);
       }
     });
   }, []);

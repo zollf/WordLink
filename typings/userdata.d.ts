@@ -1,6 +1,16 @@
 interface UserData {
   username: string;
   // add image later
+  points: number;
+  puzzles: {
+    completed: number;
+    easy: Puzzle[];
+    medium: Puzzle[];
+    hard: Puzzle[];
+  };
 }
 
-export default UserData;
+interface Puzzle {
+  number: number;
+  stars: number;
+}
