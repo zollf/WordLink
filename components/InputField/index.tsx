@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextInput } from 'react-native';
+import { NativeSyntheticEvent, TextInput, TextInputChangeEventData } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { widthPercentageToDP } from 'react-native-responsive-screen';
@@ -9,13 +9,12 @@ import AppStyle from 'app/styles';
 
 interface Props {
   color: 'orange' | 'blue';
-  staticValue: string;
+  value: string;
   size?: 'small' | 'full';
+  onChange?: (e: NativeSyntheticEvent<TextInputChangeEventData>) => void;
 }
 
-const InputField = ({ color, staticValue = '', size = 'full' }: Props) => {
-  const [value, setValue] = useState('');
-
+const InputField = ({ color, value = '', size = 'full', onChange = undefined }: Props) => {
   const sizes = {
     full: '60%',
     small: '27.5%',
@@ -43,10 +42,10 @@ const InputField = ({ color, staticValue = '', size = 'full' }: Props) => {
     >
       <TextInput
         data-test-id="text-input"
-        editable={!staticValue}
-        selectTextOnFocus={!staticValue}
-        onChange={(e) => setValue(e.nativeEvent?.text)}
-        value={staticValue || value}
+        editable={!!onChange}
+        selectTextOnFocus={!!onChange}
+        onChange={onChange}
+        value={value}
         style={[
           InputFieldStyles.text,
           {
