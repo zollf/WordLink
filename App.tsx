@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { ImageBackground } from 'react-native';
 import { Raleway_400Regular, Raleway_700Bold, useFonts } from '@expo-google-fonts/raleway';
 import { configure } from 'mobx';
@@ -14,19 +14,15 @@ import styles from './styles/main';
 configure({ enforceActions: 'observed' });
 
 const App = () => {
-  const [, setData] = useState({});
-
   const [fontsLoaded] = useFonts({
     Raleway_400Regular,
     Raleway_700Bold,
   });
 
   useEffect(() => {
-    _getData().then((v) => {
+    _getData().then(async (v) => {
       if (v.success) {
-        setData(v.value);
-        // await _saveData(null);  JUST USING THIS TO RESET THE STORAGE DATA TO TEST
-        global.setUserInfo(v.value);
+        global.setUserInfo(JSON.parse(v.value));
       }
     });
   }, []);

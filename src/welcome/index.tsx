@@ -1,13 +1,14 @@
 import React from 'react';
 import { View } from 'react-native';
-import { NewUserPage, RegisteredUserPage } from 'app/components';
-import { useStore } from '../../hooks';
+import { observer } from 'mobx-react';
 
+import { NewUserPage, RegisteredUserPage } from 'app/components';
+import { useStore } from 'app/hooks';
 import styles from './styles';
 
 const Welcome = () => {
-  const { userInfo } = useStore('global');
-  return <View style={styles.welcome}>{userInfo !== 'null' ? <RegisteredUserPage /> : <NewUserPage />}</View>;
+  const global = useStore('global');
+  return <View style={styles.welcome}>{global.userInfo ? <RegisteredUserPage /> : <NewUserPage />}</View>;
 };
 
-export default Welcome;
+export default observer(Welcome);

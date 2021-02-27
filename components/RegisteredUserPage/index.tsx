@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Text, View } from 'react-native';
 import { heightPercentageToDP } from 'react-native-responsive-screen';
+import { observer } from 'mobx-react';
 
 import { useStore } from 'app/hooks';
 import Button from '../Button';
@@ -9,9 +10,8 @@ import styles from './styles';
 
 import Logo from '../Logo';
 
-const NewUserPage = () => {
-  const { setStartingPage, setUserInfo } = useStore('global');
-  const [inputVal, setInputVal] = useState('');
+const RegisteredUserPage = () => {
+  const { userInfo, setStartingPage } = useStore('global');
 
   return (
     <View style={styles.container}>
@@ -21,11 +21,11 @@ const NewUserPage = () => {
       </View>
       <View style={{ marginBottom: heightPercentageToDP('10%') }}>
         <Text style={styles.text}>Welcome Back!</Text>
-        <InputField color="blue" value={'Username'} />
+        <InputField color="blue" value={userInfo.username} />
       </View>
       <Button text="START" color="orange" onPress={() => setStartingPage(false)} />
     </View>
   );
 };
 
-export default NewUserPage;
+export default observer(RegisteredUserPage);

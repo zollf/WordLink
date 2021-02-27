@@ -212,7 +212,7 @@ exports[`<App/> matches snapshot 1`] = `
               ]
             }
             underlineColorAndroid="transparent"
-            value="Username"
+            value=""
           />
         </ViewManagerAdapter_ExpoLinearGradient>
       </View>
