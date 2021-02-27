@@ -91,6 +91,83 @@ exports[`<Settings /> matches snapshot 1`] = `
     </View>
   </View>
   <View
+    style={
+      Object {
+        "transform": Array [
+          Object {
+            "scale": mockConstructor {},
+          },
+        ],
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <ViewManagerAdapter_ExpoLinearGradient
+        proxiedProperties={
+          Object {
+            "colors": Array [
+              4294918208,
+              4290451737,
+            ],
+            "endPoint": undefined,
+            "locations": Array [
+              0.5,
+              0.5,
+            ],
+            "startPoint": Array [
+              -0.1,
+              0.1,
+            ],
+          }
+        }
+        style={
+          Object {
+            "alignItems": "center",
+            "borderRadius": 5,
+            "display": "flex",
+            "height": 106.5,
+            "justifyContent": "center",
+            "shadowColor": "#000",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 2,
+            },
+            "shadowOpacity": 0.1,
+            "shadowRadius": 4,
+            "width": 300,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "white",
+              "fontFamily": "Raleway_700Bold",
+              "fontSize": 33.5,
+            }
+          }
+        >
+          Reset Data
+        </Text>
+      </ViewManagerAdapter_ExpoLinearGradient>
+    </View>
+  </View>
+  <View
     data-test-id="wrapper"
     style={
       Object {

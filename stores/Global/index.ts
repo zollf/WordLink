@@ -4,6 +4,7 @@ class GlobalStore {
   previousPage = 'menu';
   currentDifficultyOpen = '';
   onStartingPage = true; // Always on starting page on initial load
+  userInfo: UserData | Record<string, never> = {};
 
   constructor() {
     makeObservable(this, {
@@ -11,11 +12,13 @@ class GlobalStore {
       previousPage: observable,
       currentDifficultyOpen: observable,
       onStartingPage: observable,
+      userInfo: observable,
 
       getDifficultyColor: action,
       setCurrentDifficultyOpen: action,
       setCurrentPage: action,
       setStartingPage: action,
+      setUserInfo: action,
     });
   }
 
@@ -26,6 +29,7 @@ class GlobalStore {
 
   setCurrentDifficultyOpen = (difficulty: string) => (this.currentDifficultyOpen = difficulty);
   setStartingPage = (onPage: boolean) => (this.onStartingPage = onPage);
+  setUserInfo = (info: UserData) => (this.userInfo = info);
 
   getDifficultyColor = (difficulty: string) => {
     const color: Colors = {
