@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NativeSyntheticEvent, TextInput, TextInputChangeEventData } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 

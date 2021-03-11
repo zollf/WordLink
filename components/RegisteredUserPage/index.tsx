@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Text, View } from 'react-native';
 import { heightPercentageToDP } from 'react-native-responsive-screen';
 import { observer } from 'mobx-react';
