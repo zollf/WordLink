@@ -1,5 +1,9 @@
-import { action, makeObservable, observable } from 'mobx';
+import { action, makeObservable, observable, flow } from 'mobx';
+import _getData from 'app/lib/getData';
+
 class GlobalStore {
+  _ready = false;
+
   currentPage = 'menu';
   previousPage = 'menu';
   currentDifficultyOpen = '';
@@ -8,6 +12,7 @@ class GlobalStore {
 
   constructor() {
     makeObservable(this, {
+      _ready: observable,
       currentPage: observable,
       previousPage: observable,
       currentDifficultyOpen: observable,
@@ -21,6 +26,14 @@ class GlobalStore {
       setUserInfo: action,
     });
   }
+
+  init = flow(function* (this: GlobalStore) {
+    const data = yield _getData();
+    if (data.success) {
+      this.setUserInfo(data.value);
+      this._ready = true;
+    }
+  });
 
   setCurrentPage = (page: string) => {
     this.previousPage = this.currentPage;

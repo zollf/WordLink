@@ -49,10 +49,8 @@ exports[`<App/> matches snapshot 1`] = `
       <View
         style={
           Object {
-            "alignItems": "center",
-            "flexDirection": "column",
-            "marginBottom": 133.5,
-            "width": 562.5,
+            "marginBottom": 66.5,
+            "marginTop": -66.5,
           }
         }
       >
@@ -132,29 +130,41 @@ exports[`<App/> matches snapshot 1`] = `
               },
               Object {
                 "fontSize": 53.5,
+                "marginLeft": 56.5,
+                "marginTop": 66.5,
+                "textAlign": "center",
+                "width": 450,
               },
             ]
           }
         >
-          CHALLENGE YOUR WORD LINKING SKILLS
+          TO GET LINKING ENTER A USERNAME
         </Text>
       </View>
+      <Image
+        source={1}
+        style={
+          Object {
+            "height": 66.5,
+            "marginBottom": 66.5,
+            "transform": Array [
+              Object {
+                "rotate": "-90deg",
+              },
+            ],
+            "width": 75,
+          }
+        }
+      />
       <View
         style={
           Object {
-            "marginBottom": 133.5,
+            "marginBottom": 167,
           }
         }
       >
-        <Text
-          style={
-            Object {
-              "color": "black",
-              "fontFamily": "Raleway_700Bold",
-            }
-          }
-        >
-          Welcome Back!
+        <Text>
+          Username
         </Text>
         <ViewManagerAdapter_ExpoLinearGradient
           proxiedProperties={
@@ -195,9 +205,10 @@ exports[`<App/> matches snapshot 1`] = `
           <TextInput
             allowFontScaling={true}
             data-test-id="text-input"
-            editable={false}
+            editable={true}
+            onChange={[Function]}
             rejectResponderTermination={true}
-            selectTextOnFocus={false}
+            selectTextOnFocus={true}
             style={
               Array [
                 Object {
@@ -216,81 +227,83 @@ exports[`<App/> matches snapshot 1`] = `
           />
         </ViewManagerAdapter_ExpoLinearGradient>
       </View>
-      <View
-        style={
-          Object {
-            "transform": Array [
-              Object {
-                "scale": mockConstructor {},
-              },
-            ],
-          }
-        }
-      >
+      <View>
         <View
-          accessible={true}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "opacity": 1,
+              "transform": Array [
+                Object {
+                  "scale": mockConstructor {},
+                },
+              ],
             }
           }
         >
-          <ViewManagerAdapter_ExpoLinearGradient
-            proxiedProperties={
-              Object {
-                "colors": Array [
-                  4294956160,
-                  4294950464,
-                ],
-                "endPoint": undefined,
-                "locations": Array [
-                  0.5,
-                  0.5,
-                ],
-                "startPoint": Array [
-                  -0.1,
-                  0.1,
-                ],
-              }
-            }
+          <View
+            accessible={true}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
             style={
               Object {
-                "alignItems": "center",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 106.5,
-                "justifyContent": "center",
-                "shadowColor": "#000",
-                "shadowOffset": Object {
-                  "height": 2,
-                  "width": 2,
-                },
-                "shadowOpacity": 0.1,
-                "shadowRadius": 4,
-                "width": 300,
+                "opacity": 1,
               }
             }
           >
-            <Text
+            <ViewManagerAdapter_ExpoLinearGradient
+              proxiedProperties={
+                Object {
+                  "colors": Array [
+                    4294956160,
+                    4294950464,
+                  ],
+                  "endPoint": undefined,
+                  "locations": Array [
+                    0.5,
+                    0.5,
+                  ],
+                  "startPoint": Array [
+                    -0.1,
+                    0.1,
+                  ],
+                }
+              }
               style={
                 Object {
-                  "color": "white",
-                  "fontFamily": "Raleway_700Bold",
-                  "fontSize": 33.5,
+                  "alignItems": "center",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 106.5,
+                  "justifyContent": "center",
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 2,
+                  },
+                  "shadowOpacity": 0.1,
+                  "shadowRadius": 4,
+                  "width": 300,
                 }
               }
             >
-              START
-            </Text>
-          </ViewManagerAdapter_ExpoLinearGradient>
+              <Text
+                style={
+                  Object {
+                    "color": "white",
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 33.5,
+                  }
+                }
+              >
+                Continue
+              </Text>
+            </ViewManagerAdapter_ExpoLinearGradient>
+          </View>
         </View>
       </View>
     </View>
