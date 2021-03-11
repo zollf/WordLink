@@ -15,15 +15,19 @@ configure({ enforceActions: 'observed' });
 
 const App = () => {
   const [_ready, _setReady] = useState(false);
+  const [fontsLoaded] = useFonts({ Raleway_400Regular, Raleway_700Bold });
+
   const _initialProps = async () => {
-    const [data] = await Promise.all<any>([await _getData()]);
-    const [fontsLoaded] = useFonts({ Raleway_400Regular, Raleway_700Bold });
-    if (!fontsLoaded || !data) throw new Error('Error occurred on initial load');
+    const data = await _getData();
+    if (!data) throw new Error('Error occurred on initial load');
     global.setUserInfo(JSON.parse(data.value));
     _setReady(true);
   };
 
-  if (!_ready) _initialProps();
+  if (!_ready || !fontsLoaded) {
+    _initialProps();
+    return null;
+  }
 
   return (
     <Provider global={global} gameStore={gameStore}>
