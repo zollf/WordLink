@@ -1,7 +1,7 @@
 import React from 'react';
 import useWithStores from '../../test/useWithStores';
 
-import { Profile } from '../';
+import { Profile } from '..';
 
 import renderer from 'react-test-renderer';
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import useWithStores from '../../test/useWithStores';
 
-import { Index } from '../';
+import { Welcome } from '..';
 
 import renderer from 'react-test-renderer';
 
-const component = useWithStores(<Index />);
+const component = useWithStores(<Welcome />);
 
-describe('<Index />', () => {
+describe('<Welcome />', () => {
   it('matches snapshot', () => {
     expect(renderer.create(component)).toMatchSnapshot();
   });

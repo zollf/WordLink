@@ -8,27 +8,17 @@ import { useStore } from 'app/hooks';
 import AppStyle from 'app/styles';
 import styles from './styles';
 
-interface Pages {
-  [key: string]: number;
-}
-
 const BackBlock = () => {
   const { currentPage, previousPage } = useStore('global');
 
-  const pages: Pages = {
-    profile: 10,
-    menu: 212 / 2 - 25.5,
-    settings: 150,
-  };
-
-  const [posX, setPosX] = useState(pages[previousPage]);
+  const [posX, setPosX] = useState(BackBlock.pages[previousPage]);
 
   useEffect(() => {
     LayoutAnimation.configureNext({
       duration: 200,
       update: { type: 'spring', springDamping: 0.9 },
     });
-    setPosX(pages[currentPage]);
+    setPosX(BackBlock.pages[currentPage]);
   }, [currentPage]);
 
   return (
@@ -43,6 +33,12 @@ const BackBlock = () => {
       <LinearGradient colors={[AppStyle.lightGreen, AppStyle.green]} style={styles.block} />
     </Animated.View>
   );
+};
+
+BackBlock.pages = {
+  profile: 10,
+  menu: 212 / 2 - 25.5,
+  settings: 150,
 };
 
 export default observer(BackBlock);

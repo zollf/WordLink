@@ -32,7 +32,7 @@ const Button = ({ overrideCallback, symbol }: Props) => {
     };
 
     return symbol ? images[symbol] : arrow;
-  }, []);
+  }, [symbol]);
 
   return (
     <TouchableOpacity data-test-id="circle-button" onPress={handleClick}>

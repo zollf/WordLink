@@ -16,7 +16,7 @@ const LetterSelection = () => {
       update: { type: 'spring', springDamping: 0.9 },
     });
     setLetters(getNewLetters());
-  }, [currentWord]);
+  }, [currentWord, getNewLetters]);
 
   return (
     <View style={styles.letterSelection}>

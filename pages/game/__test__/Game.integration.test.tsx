@@ -1,7 +1,7 @@
 import React from 'react';
 import useWithStores from 'app/test/useWithStores';
 
-import Game from '../';
+import Game from '..';
 
 import renderer from 'react-test-renderer';
 

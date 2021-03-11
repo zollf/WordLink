@@ -5,7 +5,7 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'react-hooks'],
   extends: ['plugin:@typescript-eslint/recommended', 'prettier/@typescript-eslint', 'plugin:prettier/recommended'],
   rules: {
     semi: [2, 'always'],
@@ -22,6 +22,13 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/no-non-null-assertion': [0],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'react-hooks/exhaustive-deps': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
   settings: {
     'import/resolver': {

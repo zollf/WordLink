@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useState } from 'react';
 import { ImageBackground } from 'react-native';
 import { Raleway_400Regular, Raleway_700Bold, useFonts } from '@expo-google-fonts/raleway';
 import { configure } from 'mobx';
@@ -6,7 +6,7 @@ import { Provider, observer } from 'mobx-react';
 
 import { gameStore, global } from './stores';
 import _getData from './lib/getData';
-import { Game, Index, Menu, Profile, Welcome, Settings } from './src';
+import { Game, Index, Menu, Profile, Welcome, Settings } from './pages';
 import image from './images/background.png';
 
 import styles from './styles/main';
@@ -14,42 +14,34 @@ import styles from './styles/main';
 configure({ enforceActions: 'observed' });
 
 const App = () => {
-  const [fontsLoaded] = useFonts({
-    Raleway_400Regular,
-    Raleway_700Bold,
-  });
+  const [_ready, _setReady] = useState(false);
+  const _initialProps = async () => {
+    const [data] = await Promise.all<any>([await _getData()]);
+    const [fontsLoaded] = useFonts({ Raleway_400Regular, Raleway_700Bold });
+    if (!fontsLoaded || !data) throw new Error('Error occurred on initial load');
+    global.setUserInfo(JSON.parse(data.value));
+    _setReady(true);
+  };
 
-  useEffect(() => {
-    _getData().then(async (v) => {
-      if (v.success) {
-        global.setUserInfo(JSON.parse(v.value));
-      }
-    });
-  }, []);
-
-  const loadPage = useMemo(() => {
-    const pages: Pages = {
-      index: <Index />,
-      menu: <Menu />,
-      profile: <Profile />,
-      game: <Game />,
-      settings: <Settings />,
-    };
-
-    if (global.onStartingPage) {
-      return <Welcome />;
-    } else {
-      return pages[global.currentPage];
-    }
-  }, [global.onStartingPage, global.currentPage]);
+  if (!_ready) _initialProps();
 
   return (
     <Provider global={global} gameStore={gameStore}>
       <ImageBackground source={image} style={styles.image}>
-        {fontsLoaded && loadPage}
+        {global.onStartingPage ? App.pages.welcome : App.pages[global.currentPage]}
       </ImageBackground>
     </Provider>
   );
 };
+
+// Pages only come from src
+App.pages = {
+  index: <Index />,
+  menu: <Menu />,
+  profile: <Profile />,
+  game: <Game />,
+  settings: <Settings />,
+  welcome: <Welcome />,
+} as const;
 
 export default observer(App);
