@@ -28,6 +28,9 @@ const NewUserPage = () => {
         medium: [],
         hard: [],
       },
+      hintsUsed: 0,
+      hardestDifficulty: 'None',
+      starsEarnt: 0,
     };
 
     await _saveData(newUser)

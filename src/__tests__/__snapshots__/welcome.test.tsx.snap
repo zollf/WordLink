@@ -184,7 +184,7 @@ exports[`<Welcome /> matches snapshot 1`] = `
             ]
           }
           underlineColorAndroid="transparent"
-          value=""
+          value="jeff"
         />
       </ViewManagerAdapter_ExpoLinearGradient>
     </View>

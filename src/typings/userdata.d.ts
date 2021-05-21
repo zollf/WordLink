@@ -8,6 +8,9 @@ interface UserData {
     medium: Puzzle[];
     hard: Puzzle[];
   };
+  hintsUsed: number;
+  hardestDifficulty: 'None' | 'Easy' | 'Medium' | 'Hard';
+  starsEarnt: number;
 }
 
 interface Puzzle {
