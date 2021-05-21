@@ -1,10 +1,13 @@
 {
   "expo": {
     "name": "WordLink",
-    "slug": "WordLink",
+    "slug": "wordlink",
+    "description": "Word Linking Game!",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "platform": ["ios", "android"],
+    "githubUrl": "https://github.com/zollf/WordLink",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -13,11 +16,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false
     },
     "android": {
       "adaptiveIcon": {
