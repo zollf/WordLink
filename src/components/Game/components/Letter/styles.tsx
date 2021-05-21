@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 5,
+    margin: 3,
   },
   text: {
     fontFamily: AppStyle.fontBold,

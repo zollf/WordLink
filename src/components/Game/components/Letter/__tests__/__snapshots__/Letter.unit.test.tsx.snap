@@ -60,6 +60,7 @@ exports[`<Letter /> matches snapshot 1`] = `
           "display": "flex",
           "height": 75,
           "justifyContent": "center",
+          "margin": 3,
           "width": 75,
         }
       }
