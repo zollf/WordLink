@@ -3,6 +3,7 @@ import { NativeSyntheticEvent, TextInput, TextInputChangeEventData } from 'react
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { widthPercentageToDP } from 'react-native-responsive-screen';
+import Shadow from '../Shadow';
 
 import InputFieldStyles from './styles';
 import AppStyle from 'app/src/styles';
@@ -28,32 +29,34 @@ const InputField = ({ color, value = '', size = 'full', onChange = undefined }: 
     }
   };
   return (
-    <LinearGradient
-      colors={[AppStyle.lightBlue, AppStyle.blue]}
-      start={getGradientProps().start as [number, number]}
-      locations={getGradientProps().locations}
-      style={[
-        InputFieldStyles.gradient,
-        {
-          width: widthPercentageToDP(sizes[size]),
-          backgroundColor: AppStyle[color],
-        },
-      ]}
-    >
-      <TextInput
-        data-test-id="text-input"
-        editable={!!onChange}
-        selectTextOnFocus={!!onChange}
-        onChange={onChange}
-        value={value}
+    <Shadow>
+      <LinearGradient
+        colors={[AppStyle.lightBlue, AppStyle.blue]}
+        start={getGradientProps().start as [number, number]}
+        locations={getGradientProps().locations}
         style={[
-          InputFieldStyles.text,
+          InputFieldStyles.gradient,
           {
             width: widthPercentageToDP(sizes[size]),
+            backgroundColor: AppStyle[color],
           },
         ]}
-      />
-    </LinearGradient>
+      >
+        <TextInput
+          data-test-id="text-input"
+          editable={!!onChange}
+          selectTextOnFocus={!!onChange}
+          onChange={onChange}
+          value={value}
+          style={[
+            InputFieldStyles.text,
+            {
+              width: widthPercentageToDP(sizes[size]),
+            },
+          ]}
+        />
+      </LinearGradient>
+    </Shadow>
   );
 };
 

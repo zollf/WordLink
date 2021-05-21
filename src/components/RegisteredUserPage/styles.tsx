@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { heightPercentageToDP, widthPercentageToDP } from 'react-native-responsive-screen';
-import AppStyle from 'app/src/styles';
+import { widthPercentageToDP } from 'react-native-responsive-screen';
 
 const styles = StyleSheet.create({
   container: {
@@ -11,13 +10,15 @@ const styles = StyleSheet.create({
   },
   text: {
     color: 'black',
-    fontFamily: AppStyle.fontBold,
   },
   logo: {
-    marginBottom: heightPercentageToDP('10%'),
     flexDirection: 'column',
     alignItems: 'center',
     width: widthPercentageToDP('75%'),
+    marginBottom: 50,
+  },
+  bottom: {
+    marginBottom: 50,
   },
 });
 

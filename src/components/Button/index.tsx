@@ -1,7 +1,9 @@
 import React from 'react';
 import { Text, TouchableOpacity, Animated } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+
 import { useAnimate } from 'app/src/hooks';
+import Shadow from '../Shadow';
 
 import { getGradient } from 'app/src/styles';
 import styles from './styles';
@@ -37,9 +39,11 @@ const Button = ({ onPress, text, color }: Props) => {
       }}
     >
       <TouchableOpacity data-test-id="button" onPress={handlePress}>
-        <LinearGradient colors={getGradient(color)} style={styles.button} start={[-0.1, 0.1]} locations={[0.5, 0.5]}>
-          <Text style={styles.text}>{text}</Text>
-        </LinearGradient>
+        <Shadow>
+          <LinearGradient colors={getGradient(color)} style={styles.button} start={[-0.1, 0.1]} locations={[0.5, 0.5]}>
+            <Text style={styles.text}>{text}</Text>
+          </LinearGradient>
+        </Shadow>
       </TouchableOpacity>
     </Animated.View>
   );

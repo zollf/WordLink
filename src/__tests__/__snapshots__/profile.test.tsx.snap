@@ -109,65 +109,79 @@ exports[`<Profile /> matches snapshot 1`] = `
         <Text>
           Completed Levels
         </Text>
-        <ViewManagerAdapter_ExpoLinearGradient
-          proxiedProperties={
+        <View
+          style={
             Object {
-              "colors": Array [
-                4284860671,
-                4282432255,
-              ],
-              "endPoint": undefined,
-              "locations": Array [
-                0.5,
-                0.5,
-              ],
-              "startPoint": Array [
-                0,
-                0.5,
-              ],
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
             }
           }
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 93.5,
-                "justifyContent": "center",
-                "shadowColor": "#000",
-                "shadowRadius": 4,
-              },
-              Object {
-                "backgroundColor": "#40BAFF",
-                "width": 206.5,
-              },
-            ]
-          }
         >
-          <TextInput
-            allowFontScaling={true}
-            data-test-id="text-input"
-            editable={false}
-            rejectResponderTermination={true}
-            selectTextOnFocus={false}
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4284860671,
+                  4282432255,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  0,
+                  0.5,
+                ],
+              }
+            }
             style={
               Array [
                 Object {
-                  "color": "white",
-                  "fontFamily": "Raleway_700Bold",
-                  "fontSize": 53.5,
-                  "textAlign": "center",
+                  "alignItems": "center",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 93.5,
+                  "justifyContent": "center",
+                  "shadowColor": "#000",
+                  "shadowRadius": 4,
                 },
                 Object {
+                  "backgroundColor": "#40BAFF",
                   "width": 206.5,
                 },
               ]
             }
-            underlineColorAndroid="transparent"
-            value="2"
-          />
-        </ViewManagerAdapter_ExpoLinearGradient>
+          >
+            <TextInput
+              allowFontScaling={true}
+              data-test-id="text-input"
+              editable={false}
+              rejectResponderTermination={true}
+              selectTextOnFocus={false}
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 53.5,
+                    "textAlign": "center",
+                  },
+                  Object {
+                    "width": 206.5,
+                  },
+                ]
+              }
+              underlineColorAndroid="transparent"
+              value="2"
+            />
+          </ViewManagerAdapter_ExpoLinearGradient>
+        </View>
       </View>
       <View
         style={
@@ -179,65 +193,79 @@ exports[`<Profile /> matches snapshot 1`] = `
         <Text>
           Stars Earnt
         </Text>
-        <ViewManagerAdapter_ExpoLinearGradient
-          proxiedProperties={
+        <View
+          style={
             Object {
-              "colors": Array [
-                4284860671,
-                4282432255,
-              ],
-              "endPoint": undefined,
-              "locations": Array [
-                0.5,
-                0.5,
-              ],
-              "startPoint": Array [
-                0,
-                0.5,
-              ],
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
             }
           }
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 93.5,
-                "justifyContent": "center",
-                "shadowColor": "#000",
-                "shadowRadius": 4,
-              },
-              Object {
-                "backgroundColor": "#40BAFF",
-                "width": 206.5,
-              },
-            ]
-          }
         >
-          <TextInput
-            allowFontScaling={true}
-            data-test-id="text-input"
-            editable={false}
-            rejectResponderTermination={true}
-            selectTextOnFocus={false}
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4284860671,
+                  4282432255,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  0,
+                  0.5,
+                ],
+              }
+            }
             style={
               Array [
                 Object {
-                  "color": "white",
-                  "fontFamily": "Raleway_700Bold",
-                  "fontSize": 53.5,
-                  "textAlign": "center",
+                  "alignItems": "center",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 93.5,
+                  "justifyContent": "center",
+                  "shadowColor": "#000",
+                  "shadowRadius": 4,
                 },
                 Object {
+                  "backgroundColor": "#40BAFF",
                   "width": 206.5,
                 },
               ]
             }
-            underlineColorAndroid="transparent"
-            value="69"
-          />
-        </ViewManagerAdapter_ExpoLinearGradient>
+          >
+            <TextInput
+              allowFontScaling={true}
+              data-test-id="text-input"
+              editable={false}
+              rejectResponderTermination={true}
+              selectTextOnFocus={false}
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 53.5,
+                    "textAlign": "center",
+                  },
+                  Object {
+                    "width": 206.5,
+                  },
+                ]
+              }
+              underlineColorAndroid="transparent"
+              value="69"
+            />
+          </ViewManagerAdapter_ExpoLinearGradient>
+        </View>
       </View>
       <View
         style={
@@ -249,65 +277,79 @@ exports[`<Profile /> matches snapshot 1`] = `
         <Text>
           Hints used
         </Text>
-        <ViewManagerAdapter_ExpoLinearGradient
-          proxiedProperties={
+        <View
+          style={
             Object {
-              "colors": Array [
-                4284860671,
-                4282432255,
-              ],
-              "endPoint": undefined,
-              "locations": Array [
-                0.5,
-                0.5,
-              ],
-              "startPoint": Array [
-                0,
-                0.5,
-              ],
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
             }
           }
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 93.5,
-                "justifyContent": "center",
-                "shadowColor": "#000",
-                "shadowRadius": 4,
-              },
-              Object {
-                "backgroundColor": "#40BAFF",
-                "width": 206.5,
-              },
-            ]
-          }
         >
-          <TextInput
-            allowFontScaling={true}
-            data-test-id="text-input"
-            editable={false}
-            rejectResponderTermination={true}
-            selectTextOnFocus={false}
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4284860671,
+                  4282432255,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  0,
+                  0.5,
+                ],
+              }
+            }
             style={
               Array [
                 Object {
-                  "color": "white",
-                  "fontFamily": "Raleway_700Bold",
-                  "fontSize": 53.5,
-                  "textAlign": "center",
+                  "alignItems": "center",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 93.5,
+                  "justifyContent": "center",
+                  "shadowColor": "#000",
+                  "shadowRadius": 4,
                 },
                 Object {
+                  "backgroundColor": "#40BAFF",
                   "width": 206.5,
                 },
               ]
             }
-            underlineColorAndroid="transparent"
-            value="6"
-          />
-        </ViewManagerAdapter_ExpoLinearGradient>
+          >
+            <TextInput
+              allowFontScaling={true}
+              data-test-id="text-input"
+              editable={false}
+              rejectResponderTermination={true}
+              selectTextOnFocus={false}
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 53.5,
+                    "textAlign": "center",
+                  },
+                  Object {
+                    "width": 206.5,
+                  },
+                ]
+              }
+              underlineColorAndroid="transparent"
+              value="6"
+            />
+          </ViewManagerAdapter_ExpoLinearGradient>
+        </View>
       </View>
       <View
         style={
@@ -319,65 +361,79 @@ exports[`<Profile /> matches snapshot 1`] = `
         <Text>
           Hardest Difficulty
         </Text>
-        <ViewManagerAdapter_ExpoLinearGradient
-          proxiedProperties={
+        <View
+          style={
             Object {
-              "colors": Array [
-                4284860671,
-                4282432255,
-              ],
-              "endPoint": undefined,
-              "locations": Array [
-                0.5,
-                0.5,
-              ],
-              "startPoint": Array [
-                0,
-                0.5,
-              ],
+              "shadowColor": "#000",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 2,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 4,
             }
           }
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "borderRadius": 5,
-                "display": "flex",
-                "height": 93.5,
-                "justifyContent": "center",
-                "shadowColor": "#000",
-                "shadowRadius": 4,
-              },
-              Object {
-                "backgroundColor": "#40BAFF",
-                "width": 206.5,
-              },
-            ]
-          }
         >
-          <TextInput
-            allowFontScaling={true}
-            data-test-id="text-input"
-            editable={false}
-            rejectResponderTermination={true}
-            selectTextOnFocus={false}
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4284860671,
+                  4282432255,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  0,
+                  0.5,
+                ],
+              }
+            }
             style={
               Array [
                 Object {
-                  "color": "white",
-                  "fontFamily": "Raleway_700Bold",
-                  "fontSize": 53.5,
-                  "textAlign": "center",
+                  "alignItems": "center",
+                  "borderRadius": 5,
+                  "display": "flex",
+                  "height": 93.5,
+                  "justifyContent": "center",
+                  "shadowColor": "#000",
+                  "shadowRadius": 4,
                 },
                 Object {
+                  "backgroundColor": "#40BAFF",
                   "width": 206.5,
                 },
               ]
             }
-            underlineColorAndroid="transparent"
-            value="Medium"
-          />
-        </ViewManagerAdapter_ExpoLinearGradient>
+          >
+            <TextInput
+              allowFontScaling={true}
+              data-test-id="text-input"
+              editable={false}
+              rejectResponderTermination={true}
+              selectTextOnFocus={false}
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "Raleway_700Bold",
+                    "fontSize": 53.5,
+                    "textAlign": "center",
+                  },
+                  Object {
+                    "width": 206.5,
+                  },
+                ]
+              }
+              underlineColorAndroid="transparent"
+              value="Medium"
+            />
+          </ViewManagerAdapter_ExpoLinearGradient>
+        </View>
       </View>
     </View>
   </View>

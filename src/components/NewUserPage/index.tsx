@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { Text, View, Image, NativeSyntheticEvent, TextInputChangeEventData, KeyboardAvoidingView } from 'react-native';
 import { observer } from 'mobx-react';
-import { heightPercentageToDP } from 'react-native-responsive-screen';
 
 import Button from '../Button';
 import InputField from '../InputField';
 import Logo from '../Logo';
-import styles from './styles';
+import Arrow from '../../images/left-arrow.png';
 import { useStore } from 'app/src/hooks';
 import _saveData from 'app/src/lib/saveData';
+
+import styles from './styles';
 
 const NewUserPage = () => {
   const [inputVal, setInputVal] = useState('');
@@ -19,6 +20,9 @@ const NewUserPage = () => {
   };
 
   const onSubmit = async () => {
+    if (!inputVal) {
+      return;
+    }
     const newUser: UserData = {
       username: inputVal,
       level: 1,
@@ -48,10 +52,12 @@ const NewUserPage = () => {
     <KeyboardAvoidingView style={styles.container} behavior="padding">
       <View style={styles.header}>
         <Logo />
-        <Text style={[styles.text, styles.logotext]}>TO GET LINKING ENTER A USERNAME</Text>
+        <View style={styles.textWrapper}>
+          <Text style={[styles.text, styles.logotext]}>Enter a Username to Continue</Text>
+        </View>
       </View>
-      <Image source={require('../../images/left-arrow.png')} style={styles.image} />
-      <View style={{ marginBottom: heightPercentageToDP('12.5%') }}>
+      <Image source={Arrow} style={styles.image} />
+      <View style={styles.bottom}>
         <Text>Username</Text>
         <InputField color="blue" value={inputVal} onChange={onChange} />
       </View>

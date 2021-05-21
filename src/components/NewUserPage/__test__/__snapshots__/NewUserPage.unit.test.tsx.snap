@@ -20,35 +20,98 @@ exports[`<NewUserPage /> matches snapshot 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 66.5,
+        "alignItems": "center",
+        "display": "flex",
+        "justifyContent": "center",
+        "marginBottom": 25,
         "marginTop": -66.5,
       }
     }
   >
-    <ViewManagerAdapter_ExpoLinearGradient
-      proxiedProperties={
-        Object {
-          "colors": Array [
-            4294950464,
-            4282432255,
-          ],
-          "endPoint": undefined,
-          "locations": Array [
-            0.5,
-            0.5,
-          ],
-          "startPoint": Array [
-            0.025,
-            0.2,
-          ],
-        }
-      }
+    <View
       style={
         Object {
-          "alignItems": "center",
-          "borderRadius": 10,
-          "height": 283.5,
-          "justifyContent": "center",
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 2,
+          },
+          "shadowOpacity": 0.1,
+          "shadowRadius": 4,
+        }
+      }
+    >
+      <ViewManagerAdapter_ExpoLinearGradient
+        proxiedProperties={
+          Object {
+            "colors": Array [
+              4294950464,
+              4282432255,
+            ],
+            "endPoint": undefined,
+            "locations": Array [
+              0.5,
+              0.5,
+            ],
+            "startPoint": Array [
+              0.025,
+              0.2,
+            ],
+          }
+        }
+        style={
+          Object {
+            "alignItems": "center",
+            "borderRadius": 10,
+            "height": 283.5,
+            "justifyContent": "center",
+            "width": 562.5,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontFamily": "Raleway_700Bold",
+                "fontSize": 93.5,
+                "fontStyle": "italic",
+                "height": 66.5,
+                "lineHeight": 93.5,
+              },
+              Object {
+                "marginRight": "10%",
+              },
+            ]
+          }
+        >
+          WORD
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontFamily": "Raleway_700Bold",
+                "fontSize": 93.5,
+                "fontStyle": "italic",
+                "height": 66.5,
+                "lineHeight": 93.5,
+              },
+              Object {
+                "marginLeft": "27.5%",
+              },
+            ]
+          }
+        >
+          LINK
+        </Text>
+      </ViewManagerAdapter_ExpoLinearGradient>
+    </View>
+    <View
+      style={
+        Object {
           "width": 562.5,
         }
       }
@@ -57,146 +120,123 @@ exports[`<NewUserPage /> matches snapshot 1`] = `
         style={
           Array [
             Object {
-              "color": "white",
+              "color": "black",
               "fontFamily": "Raleway_700Bold",
-              "fontSize": 93.5,
-              "fontStyle": "italic",
-              "height": 66.5,
-              "lineHeight": 93.5,
             },
             Object {
-              "marginRight": "10%",
+              "alignItems": "center",
+              "display": "flex",
+              "fontSize": 53.5,
+              "justifyContent": "center",
+              "marginTop": 66.5,
+              "textAlign": "center",
             },
           ]
         }
       >
-        WORD
+        Enter a Username to Continue
       </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "white",
-              "fontFamily": "Raleway_700Bold",
-              "fontSize": 93.5,
-              "fontStyle": "italic",
-              "height": 66.5,
-              "lineHeight": 93.5,
-            },
-            Object {
-              "marginLeft": "27.5%",
-            },
-          ]
-        }
-      >
-        LINK
-      </Text>
-    </ViewManagerAdapter_ExpoLinearGradient>
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "black",
-            "fontFamily": "Raleway_700Bold",
-          },
-          Object {
-            "fontSize": 53.5,
-            "marginLeft": 56.5,
-            "marginTop": 66.5,
-            "textAlign": "center",
-            "width": 450,
-          },
-        ]
-      }
-    >
-      TO GET LINKING ENTER A USERNAME
-    </Text>
+    </View>
   </View>
   <Image
     source={1}
     style={
       Object {
-        "height": 66.5,
-        "marginBottom": 66.5,
+        "height": 30,
+        "marginBottom": 25,
         "transform": Array [
           Object {
             "rotate": "-90deg",
           },
         ],
-        "width": 75,
+        "width": 30,
       }
     }
   />
   <View
     style={
       Object {
-        "marginBottom": 167,
+        "marginBottom": 50,
       }
     }
   >
     <Text>
       Username
     </Text>
-    <ViewManagerAdapter_ExpoLinearGradient
-      proxiedProperties={
+    <View
+      style={
         Object {
-          "colors": Array [
-            4284860671,
-            4282432255,
-          ],
-          "endPoint": undefined,
-          "locations": Array [
-            0.4,
-            0.4,
-          ],
-          "startPoint": Array [
-            0.2,
-            0.2,
-          ],
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 2,
+          },
+          "shadowOpacity": 0.1,
+          "shadowRadius": 4,
         }
       }
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "borderRadius": 5,
-            "display": "flex",
-            "height": 93.5,
-            "justifyContent": "center",
-            "shadowColor": "#000",
-            "shadowRadius": 4,
-          },
-          Object {
-            "backgroundColor": "#40BAFF",
-            "width": 450,
-          },
-        ]
-      }
     >
-      <TextInput
-        allowFontScaling={true}
-        data-test-id="text-input"
-        editable={true}
-        onChange={[Function]}
-        rejectResponderTermination={true}
-        selectTextOnFocus={true}
+      <ViewManagerAdapter_ExpoLinearGradient
+        proxiedProperties={
+          Object {
+            "colors": Array [
+              4284860671,
+              4282432255,
+            ],
+            "endPoint": undefined,
+            "locations": Array [
+              0.4,
+              0.4,
+            ],
+            "startPoint": Array [
+              0.2,
+              0.2,
+            ],
+          }
+        }
         style={
           Array [
             Object {
-              "color": "white",
-              "fontFamily": "Raleway_700Bold",
-              "fontSize": 53.5,
-              "textAlign": "center",
+              "alignItems": "center",
+              "borderRadius": 5,
+              "display": "flex",
+              "height": 93.5,
+              "justifyContent": "center",
+              "shadowColor": "#000",
+              "shadowRadius": 4,
             },
             Object {
+              "backgroundColor": "#40BAFF",
               "width": 450,
             },
           ]
         }
-        underlineColorAndroid="transparent"
-        value=""
-      />
-    </ViewManagerAdapter_ExpoLinearGradient>
+      >
+        <TextInput
+          allowFontScaling={true}
+          data-test-id="text-input"
+          editable={true}
+          onChange={[Function]}
+          rejectResponderTermination={true}
+          selectTextOnFocus={true}
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontFamily": "Raleway_700Bold",
+                "fontSize": 53.5,
+                "textAlign": "center",
+              },
+              Object {
+                "width": 450,
+              },
+            ]
+          }
+          underlineColorAndroid="transparent"
+          value=""
+        />
+      </ViewManagerAdapter_ExpoLinearGradient>
+    </View>
   </View>
   <View>
     <View
@@ -226,31 +266,9 @@ exports[`<NewUserPage /> matches snapshot 1`] = `
           }
         }
       >
-        <ViewManagerAdapter_ExpoLinearGradient
-          proxiedProperties={
-            Object {
-              "colors": Array [
-                4294956160,
-                4294950464,
-              ],
-              "endPoint": undefined,
-              "locations": Array [
-                0.5,
-                0.5,
-              ],
-              "startPoint": Array [
-                -0.1,
-                0.1,
-              ],
-            }
-          }
+        <View
           style={
             Object {
-              "alignItems": "center",
-              "borderRadius": 5,
-              "display": "flex",
-              "height": 106.5,
-              "justifyContent": "center",
               "shadowColor": "#000",
               "shadowOffset": Object {
                 "height": 2,
@@ -258,22 +276,58 @@ exports[`<NewUserPage /> matches snapshot 1`] = `
               },
               "shadowOpacity": 0.1,
               "shadowRadius": 4,
-              "width": 300,
             }
           }
         >
-          <Text
+          <ViewManagerAdapter_ExpoLinearGradient
+            proxiedProperties={
+              Object {
+                "colors": Array [
+                  4294956160,
+                  4294950464,
+                ],
+                "endPoint": undefined,
+                "locations": Array [
+                  0.5,
+                  0.5,
+                ],
+                "startPoint": Array [
+                  -0.1,
+                  0.1,
+                ],
+              }
+            }
             style={
               Object {
-                "color": "white",
-                "fontFamily": "Raleway_700Bold",
-                "fontSize": 33.5,
+                "alignItems": "center",
+                "borderRadius": 5,
+                "display": "flex",
+                "height": 106.5,
+                "justifyContent": "center",
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 2,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 4,
+                "width": 300,
               }
             }
           >
-            Continue
-          </Text>
-        </ViewManagerAdapter_ExpoLinearGradient>
+            <Text
+              style={
+                Object {
+                  "color": "white",
+                  "fontFamily": "Raleway_700Bold",
+                  "fontSize": 33.5,
+                }
+              }
+            >
+              Continue
+            </Text>
+          </ViewManagerAdapter_ExpoLinearGradient>
+        </View>
       </View>
     </View>
   </View>

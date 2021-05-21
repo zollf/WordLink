@@ -10,8 +10,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   header: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     marginTop: heightPercentageToDP('-5%'),
-    marginBottom: heightPercentageToDP('5%'),
+    marginBottom: 25,
   },
   username: {
     width: 229,
@@ -22,17 +25,24 @@ const styles = StyleSheet.create({
     fontFamily: AppStyle.fontBold,
   },
   logotext: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     fontSize: heightPercentageToDP('4%'),
-    width: widthPercentageToDP('60%'),
     textAlign: 'center',
-    marginLeft: widthPercentageToDP('7.5%'),
     marginTop: heightPercentageToDP('5%'),
   },
   image: {
-    height: heightPercentageToDP('5%'),
-    width: widthPercentageToDP('10%'),
+    height: 30,
+    width: 30,
     transform: [{ rotate: '-90deg' }],
-    marginBottom: heightPercentageToDP('5%'),
+    marginBottom: 25,
+  },
+  bottom: {
+    marginBottom: 50,
+  },
+  textWrapper: {
+    width: widthPercentageToDP('75%'),
   },
 });
 
