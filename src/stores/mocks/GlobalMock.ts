@@ -9,7 +9,19 @@ const GlobalMock: Global = {
   setStartingPage: jest.fn(),
   onStartingPage: false,
   setUserInfo: jest.fn(),
-  userInfo: {},
+  userInfo: {
+    username: 'jeff',
+    points: 20,
+    puzzles: {
+      completed: 2,
+      easy: [],
+      medium: [],
+      hard: [],
+    },
+    hintsUsed: 6,
+    hardestDifficulty: 'Medium',
+    starsEarnt: 69,
+  },
   init: jest.fn(),
 };
 

@@ -8,7 +8,7 @@ import renderer from 'react-test-renderer';
 const component = useWithStores(<Profile />);
 
 describe('<Profile />', () => {
-  xit('matches snapshot', () => {
+  it('matches snapshot', () => {
     expect(renderer.create(component)).toMatchSnapshot();
   });
 });

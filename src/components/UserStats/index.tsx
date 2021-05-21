@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { observer } from 'mobx-react';
-import { widthPercentageToDP } from 'react-native-responsive-screen';
 
 import InputField from '../InputField';
 import { useStore } from 'app/src/hooks';
@@ -12,19 +11,21 @@ const UserStats = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.stats}>
-        <Text>Username</Text>
-        <InputField color="blue" value={userInfo.username} />
+      <View style={styles.stat}>
+        <Text>Completed Levels</Text>
+        <InputField color="blue" value={`${userInfo.puzzles.completed}`} size="small" />
       </View>
-      <View style={[styles.stats, styles.statsContainer]}>
-        <View style={{ marginRight: widthPercentageToDP('5%') }}>
-          <Text>Points</Text>
-          <InputField color="orange" value={`${userInfo.points}`} size="small" />
-        </View>
-        <View>
-          <Text>Completed</Text>
-          <InputField color="orange" value={`${userInfo.puzzles.completed}`} size="small" />
-        </View>
+      <View style={styles.stat}>
+        <Text>Stars Earnt</Text>
+        <InputField color="blue" value={`${userInfo.starsEarnt}`} size="small" />
+      </View>
+      <View style={styles.stat}>
+        <Text>Hints used</Text>
+        <InputField color="blue" value={`${userInfo.hintsUsed}`} size="small" />
+      </View>
+      <View style={styles.stat}>
+        <Text>Hardest Difficulty</Text>
+        <InputField color="blue" value={userInfo.hardestDifficulty} size="small" />
       </View>
     </View>
   );

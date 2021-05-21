@@ -5,13 +5,13 @@ import { heightPercentageToDP, widthPercentageToDP } from 'react-native-responsi
 const styles = StyleSheet.create({
   container: {
     marginBottom: heightPercentageToDP('3%'),
-    width: widthPercentageToDP('85%'),
-  },
-  stats: {
-    marginBottom: heightPercentageToDP('2%'),
-  },
-  statsContainer: {
+    width: widthPercentageToDP('70%'),
     flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+  },
+  stat: {
+    marginBottom: 16,
   },
 });
 

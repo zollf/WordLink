@@ -21,6 +21,7 @@ const NewUserPage = () => {
   const onSubmit = async () => {
     const newUser: UserData = {
       username: inputVal,
+      level: 1,
       points: 0,
       puzzles: {
         completed: 0,
@@ -28,6 +29,9 @@ const NewUserPage = () => {
         medium: [],
         hard: [],
       },
+      hintsUsed: 0,
+      hardestDifficulty: 'None',
+      starsEarnt: 0,
     };
 
     await _saveData(newUser)
