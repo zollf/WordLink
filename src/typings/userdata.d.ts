@@ -1,5 +1,6 @@
 interface UserData {
   username: string;
+  level: number;
   // add image later
   points: number;
   puzzles: {

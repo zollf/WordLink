@@ -4,12 +4,15 @@ import { observer } from 'mobx-react';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { MenuBar, UserStats } from 'app/src/components';
+import { useStore } from 'app/src/hooks';
 import Avatar from 'app/src/images/icons/AVATAR.png';
 
 import AppStyle from 'app/src/styles';
 import styles from './styles';
 
 const Profile = () => {
+  const { userInfo } = useStore('global');
+
   return (
     <View style={styles.container}>
       <View style={styles.stats}>
@@ -21,8 +24,8 @@ const Profile = () => {
         >
           <Image source={Avatar} style={styles.avatar} />
           <View style={styles.userInfo}>
-            <Text style={styles.username}>Username</Text>
-            <Text style={styles.level}>Level 1</Text>
+            <Text style={styles.username}>{userInfo.username}</Text>
+            <Text style={styles.level}>{`Level ${userInfo.level}`}</Text>
           </View>
         </LinearGradient>
         <UserStats />

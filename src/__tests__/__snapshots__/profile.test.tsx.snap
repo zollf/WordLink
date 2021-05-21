@@ -75,7 +75,7 @@ exports[`<Profile /> matches snapshot 1`] = `
             }
           }
         >
-          Username
+          jeff
         </Text>
         <Text
           style={
@@ -84,7 +84,7 @@ exports[`<Profile /> matches snapshot 1`] = `
             }
           }
         >
-          Level 1
+          Level undefined
         </Text>
       </View>
     </ViewManagerAdapter_ExpoLinearGradient>
