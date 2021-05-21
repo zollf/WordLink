@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { heightPercentageToDP } from 'react-native-responsive-screen';
 import { observer } from 'mobx-react';
 
 import { useStore } from 'app/src/hooks';
@@ -17,9 +16,8 @@ const RegisteredUserPage = () => {
     <View style={styles.container}>
       <View style={styles.logo}>
         <Logo />
-        <Text style={[styles.text, { fontSize: heightPercentageToDP('4%') }]}>CHALLENGE YOUR WORD LINKING SKILLS</Text>
       </View>
-      <View style={{ marginBottom: heightPercentageToDP('10%') }}>
+      <View style={styles.bottom}>
         <Text style={styles.text}>Welcome Back!</Text>
         <InputField color="blue" value={userInfo.username} />
       </View>

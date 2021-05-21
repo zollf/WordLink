@@ -1,63 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<InputField /> matches snapshot 1`] = `
-<ViewManagerAdapter_ExpoLinearGradient
-  proxiedProperties={
+<View
+  style={
     Object {
-      "colors": Array [
-        4284860671,
-        4282432255,
-      ],
-      "endPoint": undefined,
-      "locations": Array [
-        0.4,
-        0.4,
-      ],
-      "startPoint": Array [
-        0.2,
-        0.2,
-      ],
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 2,
+      },
+      "shadowOpacity": 0.1,
+      "shadowRadius": 4,
     }
   }
-  style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "borderRadius": 5,
-        "display": "flex",
-        "height": 93.5,
-        "justifyContent": "center",
-        "shadowColor": "#000",
-        "shadowRadius": 4,
-      },
-      Object {
-        "backgroundColor": "#FFBE40",
-        "width": 450,
-      },
-    ]
-  }
 >
-  <TextInput
-    allowFontScaling={true}
-    data-test-id="text-input"
-    editable={false}
-    rejectResponderTermination={true}
-    selectTextOnFocus={false}
+  <ViewManagerAdapter_ExpoLinearGradient
+    proxiedProperties={
+      Object {
+        "colors": Array [
+          4284860671,
+          4282432255,
+        ],
+        "endPoint": undefined,
+        "locations": Array [
+          0.4,
+          0.4,
+        ],
+        "startPoint": Array [
+          0.2,
+          0.2,
+        ],
+      }
+    }
     style={
       Array [
         Object {
-          "color": "white",
-          "fontFamily": "Raleway_700Bold",
-          "fontSize": 53.5,
-          "textAlign": "center",
+          "alignItems": "center",
+          "borderRadius": 5,
+          "display": "flex",
+          "height": 93.5,
+          "justifyContent": "center",
+          "shadowColor": "#000",
+          "shadowRadius": 4,
         },
         Object {
+          "backgroundColor": "#FFBE40",
           "width": 450,
         },
       ]
     }
-    underlineColorAndroid="transparent"
-    value=""
-  />
-</ViewManagerAdapter_ExpoLinearGradient>
+  >
+    <TextInput
+      allowFontScaling={true}
+      data-test-id="text-input"
+      editable={false}
+      rejectResponderTermination={true}
+      selectTextOnFocus={false}
+      style={
+        Array [
+          Object {
+            "color": "white",
+            "fontFamily": "Raleway_700Bold",
+            "fontSize": 53.5,
+            "textAlign": "center",
+          },
+          Object {
+            "width": 450,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+  </ViewManagerAdapter_ExpoLinearGradient>
+</View>
 `;
