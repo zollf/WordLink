@@ -13,19 +13,19 @@ const UserStats = () => {
     <View style={styles.container}>
       <View style={styles.stat}>
         <Text>Completed Levels</Text>
-        <InputField color={'blue'} value={`${userInfo.puzzles.completed}`} size={'small'} />
+        <InputField color="blue" value={`${userInfo.puzzles.completed}`} size="small" />
       </View>
       <View style={styles.stat}>
         <Text>Stars Earnt</Text>
-        <InputField color={'blue'} value={`${userInfo.starsEarnt}`} size={'small'} />
+        <InputField color="blue" value={`${userInfo.starsEarnt}`} size="small" />
       </View>
       <View style={styles.stat}>
         <Text>Hints used</Text>
-        <InputField color={'blue'} value={`${userInfo.hintsUsed}`} size={'small'} />
+        <InputField color="blue" value={`${userInfo.hintsUsed}`} size="small" />
       </View>
       <View style={styles.stat}>
         <Text>Hardest Difficulty</Text>
-        <InputField color={'blue'} value={userInfo.hardestDifficulty} size={'small'} />
+        <InputField color="blue" value={userInfo.hardestDifficulty} size="small" />
       </View>
     </View>
   );
