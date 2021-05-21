@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, View, Image, NativeSyntheticEvent, TextInputChangeEventData } from 'react-native';
+import { Text, View, Image, NativeSyntheticEvent, TextInputChangeEventData, KeyboardAvoidingView } from 'react-native';
 import { observer } from 'mobx-react';
 import { heightPercentageToDP } from 'react-native-responsive-screen';
 
@@ -41,7 +41,7 @@ const NewUserPage = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <KeyboardAvoidingView style={styles.container} behavior="padding">
       <View style={styles.header}>
         <Logo />
         <Text style={[styles.text, styles.logotext]}>TO GET LINKING ENTER A USERNAME</Text>
@@ -54,7 +54,7 @@ const NewUserPage = () => {
       <View>
         <Button text="Continue" color="orange" onPress={onSubmit} />
       </View>
-    </View>
+    </KeyboardAvoidingView>
   );
 };
 

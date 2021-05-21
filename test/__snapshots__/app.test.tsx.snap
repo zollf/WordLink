@@ -37,13 +37,19 @@ exports[`<App/> matches snapshot 1`] = `
     }
   >
     <View
+      onLayout={[Function]}
       style={
-        Object {
-          "alignItems": "center",
-          "flex": 1,
-          "flexDirection": "column",
-          "justifyContent": "center",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "center",
+          },
+          Object {
+            "paddingBottom": 0,
+          },
+        ]
       }
     >
       <View
