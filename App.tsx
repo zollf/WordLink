@@ -4,11 +4,11 @@ import { Raleway_400Regular, Raleway_700Bold, useFonts } from '@expo-google-font
 import { configure } from 'mobx';
 import { Provider, observer } from 'mobx-react';
 
-import { gameStore, global } from 'app/stores';
+import { gameStore, global } from 'app/src/stores';
 import { Game, Index, Menu, Profile, Welcome, Settings } from './src';
-import image from './images/background.png';
+import image from 'app/src/images/background.png';
 
-import styles from './styles/main';
+import styles from './src/styles/main';
 
 configure({ enforceActions: 'observed' });
 
