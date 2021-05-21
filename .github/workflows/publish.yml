@@ -17,6 +17,6 @@ jobs:
           expo-version: 4.x
           expo-token: ${{ secrets.EXPO_TOKEN }}
       - run: yarn install
-      - run: expo publish --release-channel=v1
+      - run: expo publish
         env:
           NODE_OPTIONS: --max_old_space_size=8192
