@@ -10,12 +10,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js
+      -
+        name: Check out code
+        uses: actions/checkout@v2
+      - 
+        name: Setup Node
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - run: yarn
-      - run: yarn test
-      - run: yarn lint
-      - run: yarn run expo doctor 
+      - 
+        name: Yarn
+        run: yarn
+      - 
+        name: Unit/Integration Test
+        run: yarn test
+      - 
+        name: Lint Test
+        run: yarn lint
+      - 
+        name: Expo doctor
+        run: yarn run expo doctor 
