@@ -53,7 +53,7 @@ const NewUserPage = () => {
       <View style={styles.header}>
         <Logo />
         <View style={styles.textWrapper}>
-          <Text style={[styles.text, styles.logotext]}>Enter a Username to Continue</Text>
+          <Text style={[styles.text, styles.logotext]}>Enter a Username!</Text>
         </View>
       </View>
       <Image source={Arrow} style={styles.image} />

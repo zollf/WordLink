@@ -169,7 +169,7 @@ exports[`<App/> matches snapshot 1`] = `
               ]
             }
           >
-            Enter a Username to Continue
+            Enter a Username!
           </Text>
         </View>
       </View>

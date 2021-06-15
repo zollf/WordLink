@@ -10,13 +10,19 @@ https://expo.io/@zollf/WordLink
 
 ## Local
 
-```
+```bash
 yarn
 yarn start
 ```
 
 ## Test
 
-```
+```bash
 yarn test
+```
+
+## Convert List to json
+
+```bash
+python data/util/covert_list_to_json -i data/common_words.csv -o data/common_words.json
 ```
