@@ -18,7 +18,11 @@ const App = () => {
     await global.init();
   };
 
-  if (!global._ready || !fontsLoaded) {
+  if (!fontsLoaded) {
+    return null;
+  }
+
+  if (!global._ready) {
     if (!global._ready) _init();
     return null;
   }

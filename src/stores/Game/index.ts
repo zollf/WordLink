@@ -1,5 +1,7 @@
 import { observable, action, makeObservable } from 'mobx';
-import { dictionary } from 'app/data';
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const dictionary = require('app/data/dictionary.json');
 
 class GameStore {
   difficulty = '';
@@ -89,7 +91,7 @@ class GameStore {
    * @return if the word is included in the dictionary
    */
   isWord = (word: string): boolean => {
-    return !!dictionary[word.toUpperCase()];
+    return !!dictionary[word.toLowerCase()];
   };
 
   /**
@@ -146,6 +148,7 @@ class GameStore {
     this.currentWord = this.path[this.stepNumber];
     this.path = [this.currentWord];
     this.visited = {};
+    this.visited[this.currentWord] = true;
   };
 
   /**
